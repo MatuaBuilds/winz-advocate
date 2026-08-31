@@ -38,6 +38,27 @@ Record every significant decision here so future sessions don't relitigate it.
   file says "urgent, confirm with advocate" rather than asserting one.
 - Passes `docs/test-phase2.md` (Aroha / Ben / Mia personas).
 
+## 2026-09-01 — Phase 3.5: advocacy leverage
+
+- Bill's steer: the tool should "fight tooth and nail". Added a rights/pushback
+  layer from AAAP + Community Law + 2025 law changes.
+- New: `process/your-rights-and-how-to-push-back.md`, `process/2025-rule-changes.md`,
+  `entitlements/commonly-missed.md`. System prompt gained an "advocate hard" rule.
+- Kept the safety line: still hands reviews/appeals to a human advocate; still
+  never sends; still cites.
+
+## 2026-09-01 — Phase 4 direction (offline model dropped)
+
+- Bill: **no offline/local model.** Reasons for wanting it (privacy, no cost/sign-up,
+  independence) are better served another way.
+- Phase 4 = **free, open, published-openly access.** Distribution: publish openly for
+  anyone (people + advocates + orgs) to use and build on.
+- Open constraint to resolve with Bill: a zero-account hosted site needs someone to
+  fund the AI usage. Recommended v1 = publish the pack + a plain landing page so
+  anyone can run it in their own (free-tier) AI account; pursue a funded hosted
+  version later with a partner/grant.
+- Making the GitHub repo public requires Bill's explicit go-ahead (not done yet).
+
 ## 2026-09-01 — Phase 3 packaging
 
 - Delivery is two files: `BUILD/village-advocate-instructions.md` (project
