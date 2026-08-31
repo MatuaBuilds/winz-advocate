@@ -37,3 +37,16 @@ Record every significant decision here so future sessions don't relitigate it.
 - SSAA appeal time limit: sources conflict (3 months vs 60 working days) — knowledge
   file says "urgent, confirm with advocate" rather than asserting one.
 - Passes `docs/test-phase2.md` (Aroha / Ben / Mia personas).
+
+## 2026-09-01 — Phase 3 packaging
+
+- Delivery is two files: `BUILD/village-advocate-instructions.md` (project
+  instructions) + `BUILD/village-advocate-knowledge.md` (single knowledge pack,
+  concatenated from source by `BUILD/build.sh`). Chosen over uploading 16 separate
+  files to keep setup simple for a non-technical user.
+- Instructions rewritten to reference "the Knowledge Pack" sections instead of file
+  paths, and to work either as a Claude Project or pasted into a plain chat (fallback
+  for plans without Projects).
+- `HOW-TO-USE-THIS.md`: one-page end-user guide, includes 1737 and 111.
+- Maintenance model: edit `knowledge/`, run `bash BUILD/build.sh`, re-upload the pack.
+- Remaining human steps tracked in PLAN.md Phase 3 checkboxes.

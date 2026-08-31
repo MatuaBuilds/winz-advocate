@@ -33,5 +33,7 @@ deadlines a serious barrier.
 - Phase 1 (working Version 1) — built, passes the simulated "Sam" test (`docs/test-sam.md`)
 - Phase 2 (breadth: all main benefits, extra help, one-off grants, review-of-decision) —
   **built, passes three-persona test** (`docs/test-phase2.md`)
-- Next: Bill checks each cited source figure, then set it up as a Claude Project
-  (`docs/SET-UP-THE-CLAUDE-PROJECT.md`) and run once live (Phase 3)
+- Phase 3 (packaging + real-world testing) — **in progress**. Claude Project pack built
+  (`BUILD/`), user guide written (`HOW-TO-USE-THIS.md`), setup steps in
+  `docs/SET-UP-THE-CLAUDE-PROJECT.md`. Remaining: Bill builds the project on claude.ai
+  and tests with real people.

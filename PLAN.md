@@ -62,13 +62,17 @@ Payment declined; Jobseeker stand-down). All pass.
 
 ---
 
-## Phase 3 — Real use
+## Phase 3 — Real use  (IN PROGRESS)
 
-- Package as a shareable Claude Project with a one-page "how to use this" for a
-  non-technical person in distress.
-- Bill runs it *with* 2–3 real people (with their consent), watching for confusion,
-  wrong advice, or anything that adds stress.
-- Fix what those sessions reveal. Update `knowledge/` sources to current dates.
+- [x] Packaged for Claude Project: `BUILD/village-advocate-instructions.md` +
+  `BUILD/village-advocate-knowledge.md` (one uploadable pack, rebuilt by
+  `BUILD/build.sh`)
+- [x] One-page user guide for someone in distress: `HOW-TO-USE-THIS.md`
+- [x] Step-by-step setup + test script: `docs/SET-UP-THE-CLAUDE-PROJECT.md`
+- [ ] **Bill:** build the project on claude.ai (Part A) and self-test (Part B)
+- [ ] **Bill:** test with 2–3 real people, with consent (Part C) → notes in
+  `docs/real-tests.md`
+- [ ] Fix what those sessions reveal
 
 **Verify:** each person reaches a correct, sent email and reports it felt easier,
 not harder.
