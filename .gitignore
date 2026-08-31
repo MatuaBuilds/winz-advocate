@@ -1,0 +1,8 @@
+# Never commit real people's case files — they contain sensitive personal data
+/case-files/
+*.private.md
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.obsidian/
