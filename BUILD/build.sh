@@ -56,3 +56,12 @@ done
 } > "$OUT"
 
 echo "Wrote $OUT ($(wc -l < "$OUT") lines)"
+
+# Also build a single paste-once file: instructions + knowledge pack together.
+FULL=BUILD/winz-advocate-full-prompt.md
+{
+  cat BUILD/winz-advocate-instructions.md
+  printf '\n\n============ KNOWLEDGE PACK ============\n\n'
+  cat "$OUT"
+} > "$FULL"
+echo "Wrote $FULL ($(wc -l < "$FULL") lines)"

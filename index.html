@@ -4,104 +4,192 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>WINZ Advocate — free help with Work and Income</title>
+<meta name="description" content="A free, independent tool that helps you get what Work and Income (WINZ) owes you. Not the government.">
 <style>
   :root{
-    --bg:#fbfaf8; --fg:#1c1b1a; --muted:#5c5852; --card:#ffffff; --line:#e5e1da;
-    --accent:#b3143c; --accent-fg:#ffffff;
+    --bg:#f6f4ef; --panel:#ffffff; --ink:#1f1d1a; --soft:#5b564e; --line:#e3ddd2;
+    --brand:#0d5c53; --brand-ink:#ffffff; --accent:#c8532b; --ring:rgba(13,92,83,.35);
   }
   @media (prefers-color-scheme:dark){
-    :root{ --bg:#161514; --fg:#eceae7; --muted:#a5a099; --card:#211f1d; --line:#332f2b; --accent:#ff5b7f; --accent-fg:#1a0007; }
+    :root{
+      --bg:#14181a; --panel:#1c2225; --ink:#ecebe7; --soft:#a7a49d; --line:#2c343700;
+      --line:#2b3336; --brand:#3fb8a6; --brand-ink:#06201d; --accent:#ff7d54; --ring:rgba(63,184,166,.4);
+    }
   }
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--fg);
-    font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
-  .wrap{max-width:720px;margin:0 auto;padding:28px 20px 80px}
-  h1{font-size:1.9rem;line-height:1.2;margin:.2em 0 .1em}
-  h2{font-size:1.25rem;margin:2em 0 .5em;border-top:1px solid var(--line);padding-top:1.4em}
-  h2:first-of-type{border:0;padding-top:0}
-  p,li{color:var(--fg)}
-  .lede{font-size:1.15rem;color:var(--muted)}
-  a{color:var(--accent)}
-  ol,ul{padding-left:1.3em}
-  li{margin:.35em 0}
-  .btn{display:inline-block;background:var(--accent);color:var(--accent-fg);
-    text-decoration:none;font-weight:600;padding:.7em 1.1em;border-radius:10px;margin:.4em .4em .4em 0}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1em 1.2em;margin:1em 0}
-  .small{font-size:.9rem;color:var(--muted)}
-  code{background:var(--card);border:1px solid var(--line);border-radius:5px;padding:.05em .35em;font-size:.9em}
-  footer{margin-top:3em;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);padding-top:1.4em}
+  *{box-sizing:border-box;margin:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--ink);
+    font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;}
+  .wrap{max-width:760px;margin:0 auto;padding:22px 20px 90px}
+  a{color:var(--brand);text-underline-offset:2px}
+  h1{font-size:clamp(2rem,7vw,2.9rem);line-height:1.08;letter-spacing:-.02em;margin:.15em 0}
+  h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .6em}
+  p{margin:0 0 .9em}
+  section{margin:2.6em 0}
+  .badge{display:inline-flex;gap:.5em;align-items:center;font-size:.8rem;font-weight:600;
+    letter-spacing:.02em;text-transform:uppercase;color:var(--brand);
+    background:color-mix(in srgb,var(--brand) 12%,transparent);
+    border:1px solid color-mix(in srgb,var(--brand) 30%,transparent);
+    padding:.35em .7em;border-radius:999px}
+  .lede{font-size:1.2rem;color:var(--soft);margin:.5em 0 1.1em}
+  .cta{display:flex;flex-wrap:wrap;gap:.7em;margin:1.2em 0}
+  .btn{display:inline-block;font-weight:650;text-decoration:none;padding:.85em 1.3em;
+    border-radius:12px;border:1px solid transparent;cursor:pointer;font-size:1rem}
+  .btn-primary{background:var(--brand);color:var(--brand-ink)}
+  .btn-primary:hover{filter:brightness(1.06)}
+  .btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+  .btn-ghost:hover{border-color:var(--brand)}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:1.3em 1.4em}
+  .steps{counter-reset:s;list-style:none;padding:0;display:grid;gap:.9em}
+  .steps li{position:relative;padding-left:2.4em}
+  .steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:-.05em;
+    width:1.7em;height:1.7em;border-radius:50%;display:grid;place-items:center;
+    background:var(--brand);color:var(--brand-ink);font-weight:700;font-size:.85rem}
+  .copybar{display:flex;flex-wrap:wrap;gap:.6em;align-items:center;margin:.7em 0 .2em}
+  #copyBtn{background:var(--accent);color:#fff}
+  .ok{color:var(--brand);font-weight:600}
+  .grid{display:grid;gap:.8em}
+  @media(min-width:560px){.grid.two{grid-template-columns:1fr 1fr}}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:1em 1.15em}
+  .card h3{font-size:1rem;margin:0 0 .3em}
+  .card p{font-size:.95rem;color:var(--soft);margin:0}
+  ul.plain{padding-left:1.2em;margin:.3em 0 0}
+  ul.plain li{margin:.35em 0}
+  .small{font-size:.9rem;color:var(--soft)}
+  .crisis{border-left:4px solid var(--accent)}
+  footer{margin-top:3.5em;padding-top:1.4em;border-top:1px solid var(--line);
+    font-size:.88rem;color:var(--soft)}
+  hr{border:0;border-top:1px solid var(--line);margin:2.6em 0}
 </style>
 </head>
 <body>
 <div class="wrap">
 
-  <h1>WINZ Advocate</h1>
-  <p class="lede">Free help getting what Work and Income (WINZ) owes you — built for
-  people whose ADHD, AuDHD, or trauma makes the forms, phone calls, and deadlines
-  too much.</p>
+  <header>
+    <span class="badge">Free · Independent · Not the government</span>
+    <h1>WINZ Advocate</h1>
+    <p class="lede">Get what Work and Income owes you. It works out what you can apply
+      for, writes the emails for you, and helps you push back when a decision is
+      wrong.</p>
+    <p>Built for people whose ADHD, AuDHD, or trauma makes the forms, phone calls, and
+      deadlines too much. You are always the one who hits send.</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="#start">Start using it</a>
+      <a class="btn btn-ghost" href="#guide">Just read the guide</a>
+    </div>
+  </header>
 
-  <p>It works out what you can apply for, writes the emails for you to send, and
-  helps you push back when a decision is wrong. It is your advocate. You are always
-  the one who hits send.</p>
+  <section id="start">
+    <h2>Start using it — 3 steps</h2>
+    <div class="panel">
+      <ol class="steps">
+        <li>Open a free account at <a href="https://claude.ai" target="_blank" rel="noopener">claude.ai</a>
+          (or another AI assistant you already use) and start a new chat.</li>
+        <li>Copy the whole tool with the button below, and paste it into the chat.
+          <div class="copybar">
+            <button class="btn" id="copyBtn">Copy the tool</button>
+            <span id="copyMsg" class="small"></span>
+          </div>
+          <span class="small">Not working? <a href="./BUILD/winz-advocate-full-prompt.md" download>Download it instead</a>
+            and paste the contents.</span>
+        </li>
+        <li>Send this message: <em>"I need help with Work and Income."</em>
+          Then just answer its questions, one at a time. Take breaks whenever — paste
+          your saved notes back in next time to pick up where you left off.</li>
+      </ol>
+    </div>
+    <p class="small">Want it as a permanent project you don't have to paste each time?
+      See <a href="./docs/SET-UP-THE-CLAUDE-PROJECT.md">the setup guide</a>.</p>
+  </section>
 
-  <p><strong>Free, community-run, and independent.</strong> This is not Work and
-  Income and not the government. Nobody is paid, and no one can put a login or a
-  price on it.</p>
+  <section>
+    <h2>What it does for you</h2>
+    <div class="grid two">
+      <div class="card"><h3>Works out your entitlements</h3><p>Asks about your
+        situation and tells you every payment you can apply for — with the reason and
+        the source for each.</p></div>
+      <div class="card"><h3>Writes the emails</h3><p>Ready-to-send messages to your
+        case manager: apply for a grant, book an appointment, chase a delay.</p></div>
+      <div class="card"><h3>Helps you push back</h3><p>When a decision is wrong, it
+        drafts your Review of Decision and preps you for the hearing. It knows the
+        rules better than the front desk.</p></div>
+      <div class="card"><h3>Keeps it together</h3><p>A simple case file tracks your
+        deadlines, what you've applied for, and every reply from WINZ.</p></div>
+    </div>
+  </section>
 
-  <h2>Use it now</h2>
-  <p>WINZ Advocate runs inside a free AI assistant. Two steps:</p>
-  <ol>
-    <li>Open a free account at <a href="https://claude.ai">claude.ai</a> (or another
-      assistant you already use).</li>
-    <li>Start a chat, paste in the <a href="./BUILD/winz-advocate-instructions.md">instructions</a>
-      then the <a href="./BUILD/winz-advocate-knowledge.md">knowledge pack</a>, and
-      say <em>"I need help with Work and Income."</em></li>
-  </ol>
-  <p class="small">Full setup, including how to make it a reusable project:
-    <a href="./docs/SET-UP-THE-CLAUDE-PROJECT.md">SET-UP-THE-CLAUDE-PROJECT.md</a>.</p>
-
-  <h2>Read the guide (no AI needed)</h2>
-  <p>The plain-language guide works on its own. Start here:</p>
-  <ul>
-    <li><a href="./knowledge/entitlements/overview.md">What you might be entitled to</a></li>
-    <li><a href="./knowledge/process/your-rights-and-how-to-push-back.md">Your rights, and how to push back</a></li>
-    <li><a href="./knowledge/entitlements/commonly-missed.md">Payments WINZ often doesn't mention</a></li>
-    <li><a href="./knowledge/process/2025-rule-changes.md">What changed in 2025</a></li>
-    <li><a href="./knowledge/support-network.md">Free human backup</a></li>
-  </ul>
-
-  <div class="card">
-    <strong>The rules this tool always follows</strong>
-    <ul>
-      <li>It never sends anything — it writes the draft, you send it.</li>
-      <li>It never invents an entitlement — every claim points to its source.</li>
-      <li>Amounts change (usually each 1 April) — check the current figure with WINZ.</li>
-      <li>If WINZ pursues you for fraud or benefit crime, that's criminal — get a
-        lawyer through Community Law or Legal Aid.</li>
-      <li>Your information stays yours. Nothing is stored or sent anywhere.</li>
+  <section id="guide">
+    <h2>Read the guide (no AI needed)</h2>
+    <p>The plain-language guide works on its own:</p>
+    <ul class="plain">
+      <li><a href="./knowledge/entitlements/overview.md">What you might be entitled to</a></li>
+      <li><a href="./knowledge/process/your-rights-and-how-to-push-back.md">Your rights, and how to push back</a></li>
+      <li><a href="./knowledge/entitlements/commonly-missed.md">Payments WINZ often doesn't mention</a></li>
+      <li><a href="./knowledge/process/2025-rule-changes.md">What changed in 2025</a></li>
+      <li><a href="./knowledge/support-network.md">Free human backup</a></li>
     </ul>
-  </div>
+  </section>
 
-  <h2>Share what happened to you</h2>
-  <p>This tool gets stronger when people share what actually worked at WINZ — the
-  words, the evidence, the persistence. You don't need to be technical.</p>
-  <p><a class="btn" href="./CONTRIBUTING.md">How to share</a></p>
-  <p class="small">Please remove personal details — we want the lesson, not the identity.</p>
+  <section>
+    <div class="panel">
+      <h2>The rules it always follows</h2>
+      <ul class="plain">
+        <li><strong>It never sends anything.</strong> It writes the draft — you read it and send it.</li>
+        <li><strong>It never invents an entitlement.</strong> Every claim points to its source.</li>
+        <li><strong>Amounts change</strong> (usually each 1 April) — check the current figure with WINZ.</li>
+        <li><strong>Fraud is different.</strong> If WINZ accuses you of benefit crime, that's criminal — get a lawyer through Community Law or Legal Aid.</li>
+        <li><strong>Your information stays yours.</strong> Nothing is stored or sent anywhere.</li>
+      </ul>
+    </div>
+  </section>
 
-  <h2>For advocates and organisations</h2>
-  <p>Use it, adapt it, translate it, embed it. Content is <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>;
-  code is MIT. See <a href="./LICENSE">LICENSE</a> and <a href="./CONTRIBUTING.md">CONTRIBUTING</a>.</p>
+  <section>
+    <h2>Share what happened to you</h2>
+    <p>This tool gets stronger when people share what actually worked at WINZ — the
+      words, the evidence, the persistence. You don't need to be technical.</p>
+    <p><a class="btn btn-ghost" href="./CONTRIBUTING.md">How to share</a></p>
+    <p class="small">Please remove personal details — we want the lesson, not the identity.</p>
+  </section>
 
-  <h2>If you're not coping</h2>
-  <p>Free call or text <strong>1737</strong> any time to talk to a trained counsellor.
-  In an emergency, <strong>111</strong>.</p>
+  <section>
+    <h2>For advocates and organisations</h2>
+    <p>Use it, adapt it, translate it, embed it. Content is
+      <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>; code is MIT.
+      The knowledge and everything else is on
+      <a href="https://github.com/MatuaBuilds/winz-advocate">GitHub</a>.</p>
+  </section>
+
+  <hr>
+
+  <section class="panel crisis">
+    <h2>If you're not coping</h2>
+    <p style="margin:0">Free call or text <strong>1737</strong> any time to talk to a
+      trained counsellor. In an emergency, <strong>111</strong>.</p>
+  </section>
 
   <footer>
     WINZ Advocate is a free community tool. It is not legal advice and is not a
     substitute for a lawyer. Benefit rules change — always confirm important figures
-    with Work and Income or a free advocacy service.
+    with Work and Income or a free advocacy service. Not affiliated with Work and
+    Income, the Ministry of Social Development, or the New Zealand Government.
   </footer>
 
 </div>
+
+<script>
+  (function(){
+    var btn=document.getElementById('copyBtn'), msg=document.getElementById('copyMsg');
+    if(!btn) return;
+    btn.addEventListener('click',function(){
+      msg.textContent='Getting it…';
+      fetch('./BUILD/winz-advocate-full-prompt.md')
+        .then(function(r){ if(!r.ok) throw new Error(); return r.text(); })
+        .then(function(t){ return navigator.clipboard.writeText(t); })
+        .then(function(){ msg.innerHTML='<span class="ok">Copied ✓</span> now paste it into your chat'; })
+        .catch(function(){ msg.innerHTML='Couldn’t copy — use the download link above'; });
+    });
+  })();
+</script>
 </body>
 </html>

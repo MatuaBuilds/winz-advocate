@@ -1,11 +1,15 @@
 # WINZ Advocate
 
-A free tool that does the job of a New Zealand welfare/benefit advocate: it works out
-what a person is entitled to from Work and Income (WINZ), and drafts the emails to get
-it. Built for people whose ADHD, AuDHD, or trauma makes the system's forms, calls, and
-deadlines a serious barrier.
+**Free website: https://matuabuilds.github.io/winz-advocate/**
 
-**New here? Open [`START-HERE.md`](START-HERE.md).**
+A free, independent tool that does the job of a New Zealand welfare/benefit advocate:
+it works out what a person is entitled to from Work and Income (WINZ), drafts the
+emails and Review of Decision requests, and helps them push back. Built for people
+whose ADHD, AuDHD, or trauma makes the system's forms, calls, and deadlines a serious
+barrier. **Not Work and Income. Not the government.**
+
+**New here?** Working on the project → [`START-HERE.md`](START-HERE.md). Want to use
+it → [`HOW-TO-USE-THIS.md`](HOW-TO-USE-THIS.md). Want to help → [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## Documents
 
