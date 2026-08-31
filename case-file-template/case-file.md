@@ -29,9 +29,21 @@ Last updated: [date]
 
 ## Correspondence log
 
-| Date | Sent or received | Summary | What it needs from me |
-|---|---|---|---|
-| | | | |
+Every time you send something to Work and Income, or get something back, add a row.
+When you get a reply, paste the full text into **Notes** below and tell Village
+Advocate — it will work out what the reply means and what to do next.
+
+| Date | Sent or received | Summary | Reference # | What it needs from me / by when |
+|---|---|---|---|---|
+| | | | | |
+
+## Reviews / challenges
+
+Only if a decision has gone against you.
+
+| Decision challenged | Date I was notified | Review requested on | Stage (review / BRC / SSAA) | Advocate helping | Next date |
+|---|---|---|---|---|---|
+| | | | | | |
 
 ## Deadlines
 
@@ -41,4 +53,4 @@ Last updated: [date]
 
 ## Notes
 
--
+- (paste full text of any letters or emails from Work and Income here)

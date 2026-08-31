@@ -30,6 +30,8 @@ deadlines a serious barrier.
 ## Status
 
 - Phase 0 (setup) — done
-- Phase 1 (working Version 1) — **built, passes the simulated "Sam" test** (`docs/test-sam.md`)
-- Next: Bill checks each cited source, then set it up as a Claude Project
-  (`docs/SET-UP-THE-CLAUDE-PROJECT.md`) and run once live
+- Phase 1 (working Version 1) — built, passes the simulated "Sam" test (`docs/test-sam.md`)
+- Phase 2 (breadth: all main benefits, extra help, one-off grants, review-of-decision) —
+  **built, passes three-persona test** (`docs/test-phase2.md`)
+- Next: Bill checks each cited source figure, then set it up as a Claude Project
+  (`docs/SET-UP-THE-CLAUDE-PROJECT.md`) and run once live (Phase 3)

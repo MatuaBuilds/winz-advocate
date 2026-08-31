@@ -23,3 +23,17 @@ Record every significant decision here so future sessions don't relitigate it.
 - Passes simulated "Sam" acceptance test (`docs/test-sam.md`).
 - Delivery mechanism for v1 confirmed: Claude Project (`docs/SET-UP-THE-CLAUDE-PROJECT.md`).
 - Outstanding before "live": Bill verifies each cited source figure; one live test run.
+
+## 2026-09-01 — Phase 2 built
+
+- Added entitlements: Jobseeker Support, Sole Parent Support, Supported Living
+  Payment, Temporary Additional Support, Childcare Assistance, Advance Payment +
+  Recoverable Assistance Payment; plus `entitlements/overview.md` (situation → payment map).
+- Added `process/review-of-decision.md` + `templates/review-of-decision-request.md`.
+  Rule: the tool never positions itself as running a review/appeal — always hands off
+  to a free advocate (AAAP / Community Law) and stresses the 3-month limit.
+- Case file gained a Reviews/challenges section and a "paste WINZ replies back" workflow;
+  system prompt handles interpreting a pasted decision.
+- SSAA appeal time limit: sources conflict (3 months vs 60 working days) — knowledge
+  file says "urgent, confirm with advocate" rather than asserting one.
+- Passes `docs/test-phase2.md` (Aroha / Ben / Mia personas).

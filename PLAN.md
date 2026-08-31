@@ -47,19 +47,18 @@ Build, in order:
 
 ---
 
-## Phase 2 — Breadth
+## Phase 2 — Breadth ✅ DONE
 
-- Add the rest of the entitlements: all main benefits (Jobseeker, Sole Parent
-  Support, Supported Living Payment, etc.), supplementary help (Temporary Additional
-  Support, Childcare Assistance, Advance Payment), and hardship grants.
-- Add `knowledge/process/review-of-decision.md` and a Review of Decision draft
-  template (the 3-month window, what to include).
-- Add the correspondence-log workflow to the case file so replies get pasted back
-  and tracked.
+- [x] Main benefits: Jobseeker Support, Sole Parent Support, Supported Living Payment
+  (+ `entitlements/overview.md` mapping situations to payments)
+- [x] Supplementary: Temporary Additional Support, Childcare Assistance
+- [x] One-off repayable: Advance Payment of Benefit + Recoverable Assistance Payment
+- [x] `knowledge/process/review-of-decision.md` + `templates/review-of-decision-request.md`
+- [x] Correspondence-log + reviews workflow added to the case file; system prompt
+  now handles a pasted WINZ reply
 
-**Verify:** three more personas (sole parent; person on Supported Living Payment
-declined a Disability Allowance cost; someone facing a stand-down). Each gets a
-correct summary, actions, and draft.
+**Verified:** `docs/test-phase2.md` — three personas (sole parent; Supported Living
+Payment declined; Jobseeker stand-down). All pass.
 
 ---
 
