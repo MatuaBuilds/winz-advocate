@@ -17,7 +17,10 @@ FILES=(
   knowledge/entitlements/temporary-additional-support.md
   knowledge/entitlements/childcare-assistance.md
   knowledge/entitlements/advance-payment-and-recoverable-assistance.md
+  knowledge/entitlements/commonly-missed.md
   knowledge/process/contacting-your-case-manager.md
+  knowledge/process/your-rights-and-how-to-push-back.md
+  knowledge/process/2025-rule-changes.md
   knowledge/process/review-of-decision.md
   knowledge/templates/email-request-food-grant-and-appointment.md
   knowledge/templates/email-follow-up-on-delay.md

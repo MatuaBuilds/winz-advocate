@@ -30,11 +30,24 @@ Use this as the map. Details and sources are in the individual files.
 | is on a benefit and needs a big essential item/bill paid | **Advance Payment of Benefit** (repayable) | `advance-payment-and-recoverable-assistance.md` |
 | is NOT on a benefit and needs an essential item/bill paid | **Recoverable Assistance Payment** (repayable) | `advance-payment-and-recoverable-assistance.md` |
 
-## Almost always worth saying
+## Almost always worth checking (people miss these)
 
-- **Winter Energy Payment** is automatic if you're on a benefit or NZ Super (1 May–1 Oct). If they're on a benefit and not getting it, something's wrong — tell them to ask.
-- A **Community Services Card** usually comes automatically with a benefit and cuts health and other costs.
-- If a decision has gone against them: **Review of Decision** — see `../process/review-of-decision.md`. There's a time limit.
+See `commonly-missed.md` for detail:
+- **Winter Energy Payment** — automatic on a benefit/NZ Super (1 May–1 Oct); if missing, something's wrong
+- **Community Services Card** — cuts health costs; check they have a current one
+- **Unsupported Child's Benefit** — caring for someone else's child; not income tested
+- **Child Disability Allowance** — not income/asset tested; often missed for years
+- **Emergency Dental / Emergency Medical** grants — non-recoverable, beneficiary or not
+- Students can get food grants, RAP, Accommodation Supplement, TAS and more
+
+## When anything is declined or lowballed
+
+- **Review of Decision** — `../process/your-rights-and-how-to-push-back.md` and
+  `../process/review-of-decision.md`. Lodge it fast; there's a 3-month limit.
+- Check whether **discretion** applies — most "limits" (food grant cap, advance cap,
+  repayment rates) can be exceeded. See `your-rights-and-how-to-push-back.md`.
+- Check the **2025 rule changes** (`../process/2025-rule-changes.md`) — 26-week
+  Jobseeker reapplication, traffic-light warnings, new sanctions.
 
 ## Source
 
