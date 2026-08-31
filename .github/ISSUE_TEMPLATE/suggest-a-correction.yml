@@ -1,0 +1,29 @@
+name: Suggest a correction
+description: A figure, rule, or link in the knowledge base is out of date or wrong.
+title: "[Correction] "
+labels: ["correction"]
+body:
+  - type: input
+    id: file
+    attributes:
+      label: Which file or section? (e.g. knowledge/entitlements/disability-allowance.md)
+    validations:
+      required: false
+  - type: textarea
+    id: whats-wrong
+    attributes:
+      label: What is currently wrong or out of date?
+    validations:
+      required: true
+  - type: textarea
+    id: correct
+    attributes:
+      label: What is the correct information?
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Link to an official source (workandincome.govt.nz, legislation.govt.nz, communitylaw.org.nz)
+    validations:
+      required: false

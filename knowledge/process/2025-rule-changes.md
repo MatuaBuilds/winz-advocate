@@ -8,7 +8,7 @@ advocacy booklet, these are the parts that have changed.
 Work and Income now uses a "traffic light" status to tell people what's required of
 them and to **warn them before a sanction**. If someone gets a warning (moves to
 "orange"), that's the moment to act: check the obligation is correct, get it in
-writing, and get an advocate if it's disputed.
+writing, and challenge it with a Review of Decision if it's wrong.
 
 ## Jobseeker Support — reapply every 26 weeks
 

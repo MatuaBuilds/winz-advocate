@@ -1,0 +1,44 @@
+Village Advocate — Licence
+
+This project is free to use, share, adapt, translate, and build on — including by
+other advocates, community organisations, and services.
+
+CONTENT (everything in knowledge/, docs/, the guides, templates, prompts, and this
+project's text) is licensed under:
+
+    Creative Commons Attribution 4.0 International (CC BY 4.0)
+    https://creativecommons.org/licenses/by/4.0/
+
+You may copy and redistribute it in any medium or format, and remix, transform, and
+build upon it for any purpose, even commercially, as long as you give appropriate
+credit ("Village Advocate", with a link to the source) and indicate if changes were
+made.
+
+CODE (build.sh and any future scripts or software in this repository) is licensed
+under the MIT Licence:
+
+    Copyright (c) 2026 Village Advocate contributors
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy of
+    this software and associated documentation files (the "Software"), to deal in the
+    Software without restriction, including without limitation the rights to use,
+    copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the
+    Software, and to permit persons to whom the Software is furnished to do so,
+    subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+    FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+    COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN
+    AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+    WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+NO WARRANTY / NOT LEGAL ADVICE
+
+Village Advocate is a self-help tool. It is not legal advice and its authors are not
+your advocate or lawyer. Benefit rules change; always confirm important figures and
+rules with Work and Income or a free advocacy service. Use of this project is at your
+own risk.

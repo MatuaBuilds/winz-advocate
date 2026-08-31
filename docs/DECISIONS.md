@@ -57,7 +57,24 @@ Record every significant decision here so future sessions don't relitigate it.
   fund the AI usage. Recommended v1 = publish the pack + a plain landing page so
   anyone can run it in their own (free-tier) AI account; pursue a funded hosted
   version later with a partner/grant.
-- Making the GitHub repo public requires Bill's explicit go-ahead (not done yet).
+- Making the GitHub repo public requires Bill's explicit go-ahead.
+
+## 2026-09-01 — "We are the advocate" + public release scaffolding
+
+- Bill's steer: **do not push people to human advocates.** The tool carries the whole
+  WINZ process itself, including Reviews of Decision and Benefit Review Committee
+  preparation. `handoff.md` renamed to `support-network.md` and reframed as backup
+  the person can *also* use.
+- **One hard line kept:** fraud / benefit crime / prosecution / relationship-fraud
+  investigation → needs a lawyer (Community Law / Legal Aid). Also: never sends,
+  never invents, crisis → 1737/111.
+- Bill confirmed: free website + public repo. Distribution = publish openly; ask
+  users to contribute their experiences to grow the knowledge library; "do what we
+  can with nothing; funders/help will turn up."
+- Added: `LICENSE` (CC BY 4.0 / MIT), `CONTRIBUTING.md`, `.github/ISSUE_TEMPLATE/*`,
+  `knowledge/community-notes/`, `index.html` (GitHub Pages landing page).
+- Still to do (Bill): create the public GitHub repo + enable Pages; tell the orgs.
+  No `gh` CLI on the machine — will need browser + `git remote add` + `git push`.
 
 ## 2026-09-01 — Phase 3 packaging
 

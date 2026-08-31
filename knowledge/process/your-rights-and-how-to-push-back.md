@@ -17,9 +17,10 @@ wrong — they can lodge a **Review of Decision (ROD)**.
 - There is **no penalty** for lodging many. Never withdraw one.
 - Time limit: within **3 months** of being notified (later is possible with a "good
   and sufficient reason" for the delay — so act fast).
-- For a challenge that matters (a benefit decline, a sanction, a debt, SLP), get a
-  **free advocate** involved — see `../handoff.md`. The tool drafts the request
-  (`../templates/review-of-decision-request.md`); the advocate carries it.
+- Village Advocate helps you do this: draft the request
+  (`../templates/review-of-decision-request.md`), work out what evidence to attach,
+  and prepare you for a Benefit Review Committee meeting. Free human backup is also
+  available (`../support-network.md`) — you can use both.
 
 ## Bring someone
 
@@ -60,17 +61,18 @@ hardship**. The bigger the harm from a "no", the stronger the case.
 | "You've used up your food grant allowance" | Not true — no limit on applications | Ask them to apply "exceptional circumstances" and grant it |
 | "I'll give you a letter for the foodbank instead" | They're avoiding giving the grant | Say you want to **apply for the grant**; if refused, lodge an ROD |
 | "I can only give you $[less than asked]" | They don't want to give the full amount | **Accept what's offered** and lodge an ROD for the rest |
-| "You can only be paid from today / from the date of the letter" | Backdating is often available | Challenge it; lodge an ROD; get an advocate |
+| "You can only be paid from today / from the date of the letter" | Backdating is often available | Challenge it; lodge an ROD |
 | "You must see our designated doctor" | The person's own doctor's evidence counts | Push back; provide a full report from their own GP/specialist |
 | "You don't qualify because you're not on a benefit" | Many payments don't require a benefit | Point to the specific payment's rules (`../entitlements/`) |
-| "You've been sanctioned" (obligations) | Work and Income must follow a strict process first | Lodge an ROD; note that the process under **s 252 Social Security Act 2018** must be followed exactly; get an advocate |
+| "You've been sanctioned" (obligations) | Work and Income must follow a strict process first | Lodge an ROD; note that the process under **s 252 Social Security Act 2018** must be followed exactly |
 
 ## Sanctions
 
 If the person is sanctioned for an "obligation failure", Work and Income must have
 followed the correct process (including proper written notice) under **s 252 of the
 Social Security Act 2018**. Advocates report this is often not done properly. Lodge
-an ROD and get a free advocate — sanctions can often be overturned or back-paid.
+an ROD — Village Advocate can help prepare it, and free human backup is available
+too (`../support-network.md`). Sanctions can often be overturned or back-paid.
 
 ## Source
 

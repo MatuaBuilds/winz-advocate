@@ -1,0 +1,42 @@
+name: Share what happened
+description: Tell us about your experience with Work and Income so the next person is better prepared.
+title: "[Experience] "
+labels: ["community-note"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you. Please **remove personal details** — no full names, client numbers,
+        addresses, or dates of birth (yours or a staff member's). We want the lesson,
+        not the identity.
+  - type: textarea
+    id: asked
+    attributes:
+      label: What did you ask Work and Income for?
+    validations:
+      required: true
+  - type: textarea
+    id: said
+    attributes:
+      label: What did they say? (especially anything that turned out to be wrong)
+    validations:
+      required: true
+  - type: textarea
+    id: worked
+    attributes:
+      label: What worked? (the words, the section of the Act, the evidence, the persistence)
+    validations:
+      required: false
+  - type: textarea
+    id: advice
+    attributes:
+      label: What would you tell the next person in your situation?
+    validations:
+      required: false
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Consent
+      options:
+        - label: I've removed personal details and I'm okay with a de-identified version of this being added to the knowledge base.
+          required: true

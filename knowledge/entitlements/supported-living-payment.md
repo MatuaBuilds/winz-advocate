@@ -43,7 +43,8 @@ More than Jobseeker Support; exact rate depends on your situation and is set eac
 - **Declined because the medical form is thin.** Ask the doctor to spell out exactly
   how the condition restricts work and why it will last 2+ years. A specialist letter
   helps. If declined, this is very often worth a **Review of Decision**
-  (`../process/review-of-decision.md`) with an advocate.
+  (`../process/review-of-decision.md`) — Village Advocate can help you build it, with
+  a stronger letter from your doctor or specialist.
 - Stuck on Jobseeker (medical) for years when Supported Living Payment fits better —
   ask for a reassessment.
 - Carer route refused because the care recipient "could manage" — challenge with the

@@ -47,7 +47,7 @@ Non-recoverable grant to stay in emergency accommodation (motel, hostel, communi
 housing) while looking for a permanent place — usually 7 days at a time, extendable
 with proof of searching. You do **not** pay it back. If Work and Income tries to make
 someone repay 25% of their income (for "causing their own homelessness" etc.), that
-can be challenged — get an advocate.
+can be challenged with a Review of Decision.
 
 ## Students (Studylink) can get hardship help too
 

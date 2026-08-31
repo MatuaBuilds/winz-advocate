@@ -41,17 +41,17 @@ Renting, gets Accommodation Supplement.
 **Expected handling:**
 - Recognise this is a **decision gone against him**.
 - Explain Review of Decision, **3-month limit from the notification date**.
-- Tell him to contact a **free advocate now** (`handoff.md`).
-- Offer to draft the review request (`templates/review-of-decision-request.md`),
-  noting he should get a fuller letter from his specialist spelling out why the
-  restriction lasts 2+ years.
+- **Act as his advocate:** draft the ROD request
+  (`templates/review-of-decision-request.md`), list the evidence, and prepare him for
+  a Benefit Review Committee. Advise a fuller specialist letter on why the restriction
+  lasts 2+ years. Mention free human backup is also available (`support-network.md`).
 - Also check: is he getting **Disability Allowance** for his ongoing health costs?
   Often missed. (`disability-allowance.md`)
 - Update case file "Reviews / challenges" section.
 
-**Actions:** (1) contact AAAP or Community Law this week; (2) ask specialist for a
-detailed letter; (3) apply for Disability Allowance if not already. **PASS** — tool
-does not claim to run the review itself.
+**Actions:** (1) draft and lodge the ROD this week; (2) ask specialist for a detailed
+letter; (3) apply for Disability Allowance if not already. **PASS** — tool carries
+the review, offers human backup, doesn't push him away.
 
 ---
 

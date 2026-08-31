@@ -79,11 +79,25 @@ not harder.
 
 ---
 
-## Phase 4 — Only if Phase 3 proves it works
+## Phase 4 — Free, open, public  (IN PROGRESS)
 
-Reconsider a local desktop app for: offline privacy, a real case-file store, and
-actual deadline reminders. Decision recorded in `docs/DECISIONS.md` first. Not
-before.
+No offline model (dropped 2026-09-01). The tool is given away as text anyone can run.
+
+- [x] `LICENSE` (CC BY 4.0 content / MIT code)
+- [x] `CONTRIBUTING.md` + GitHub issue templates (share what happened / suggest a
+  correction / report something wrong)
+- [x] `knowledge/community-notes/` — de-identified real experiences grow the library
+- [x] `index.html` — plain-language landing page (works as a GitHub Pages site)
+- [x] "We are the advocate" reframe — carries RODs and BRC prep; human help is
+  backup, not a redirect; hard line only for criminal/fraud matters
+- [ ] **Bill:** make the GitHub repo public + turn on GitHub Pages
+- [ ] Share with community orgs (AAAP, Community Law, food banks, marae)
+- [ ] Later, if funded: a hosted no-login website
+
+## Phase 5 — Only if it proves out and help arrives
+
+A hosted site, or a local app for offline case files and deadline reminders. Recorded
+in `docs/DECISIONS.md` first. Not before.
 
 ---
 

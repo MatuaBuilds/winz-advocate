@@ -285,14 +285,15 @@ They should treat food as urgent and deal with it quickly.
   (rent, power, a debt payment) so it's clear it isn't available for food.
 - **Told you can't apply again.** Not true — you can always apply again; the limit
   is the dollar total, not the number of applications.
-- If declined and you believe it's wrong, you can ask for a **Review of Decision**
-  (there's a time limit — see a free advocate quickly: `knowledge/handoff.md`).
+- If declined and you believe it's wrong, ask for a **Review of Decision** (3-month
+  limit — do it quickly). Village Advocate can help you lodge it; see
+  `../process/review-of-decision.md`.
 
 ## Also ask about
 
 - **Recoverable Assistance Payment** — a repayable grant for essential costs if you're
   over the non-recoverable food grant limit.
-- **Food bank / food parcel** referral for the same week (see `knowledge/handoff.md`).
+- **Food bank / food parcel** referral for the same week (see `knowledge/support-network.md`).
 
 ## Source
 
@@ -414,8 +415,9 @@ Disability Allowance) is on top and often missed.
   genuinely more than half with the applicant, provide evidence (school records, a
   parenting agreement).
 - **"Relationship in the nature of marriage"** decisions — these are often wrong and
-  are reviewable. Get an advocate (`../handoff.md`) if flatting or a friendship is
-  being treated as a relationship.
+  are reviewable (flatting or a friendship is not a relationship). But if it becomes a
+  **fraud investigation**, that's criminal — get a lawyer via Community Law or Legal
+  Aid (`../support-network.md`) as well as challenging the decision.
 - Child support passed through incorrectly.
 - Not being told about **Childcare Assistance** or **Best Start**.
 
@@ -477,7 +479,8 @@ More than Jobseeker Support; exact rate depends on your situation and is set eac
 - **Declined because the medical form is thin.** Ask the doctor to spell out exactly
   how the condition restricts work and why it will last 2+ years. A specialist letter
   helps. If declined, this is very often worth a **Review of Decision**
-  (`../process/review-of-decision.md`) with an advocate.
+  (`../process/review-of-decision.md`) — Village Advocate can help you build it, with
+  a stronger letter from your doctor or specialist.
 - Stuck on Jobseeker (medical) for years when Supported Living Payment fits better —
   ask for a reassessment.
 - Carer route refused because the care recipient "could manage" — challenge with the
@@ -657,7 +660,8 @@ rent in advance), and other essential costs depending on your situation.
 - Told to use a Special Needs Grant instead (or vice versa) — ask which one fits and
   why; a non-recoverable grant is better for you if you qualify.
 - Multiple debts to Work and Income stacking up — ask for a **review of your total
-  repayments** and get advocacy help (`../handoff.md`).
+  repayments**; Village Advocate can help, and free human backup is available
+  (`../support-network.md`).
 
 ## Source
 
@@ -723,7 +727,7 @@ Non-recoverable grant to stay in emergency accommodation (motel, hostel, communi
 housing) while looking for a permanent place — usually 7 days at a time, extendable
 with proof of searching. You do **not** pay it back. If Work and Income tries to make
 someone repay 25% of their income (for "causing their own homelessness" etc.), that
-can be challenged — get an advocate.
+can be challenged with a Review of Decision.
 
 ## Students (Studylink) can get hardship help too
 
@@ -786,8 +790,9 @@ person, phone is usually faster, and it creates a note on your file.
 - You can ask for any decision, and the **reasons for it, in writing**.
 - You can ask to **see the information on your file** about you.
 - If you think a decision is wrong, you can ask for a **Review of Decision** — there
-  is a time limit (generally 3 months), so act quickly and get an advocate involved
-  (`knowledge/handoff.md`).
+  is a time limit (generally 3 months), so act quickly. Village Advocate can help you
+  lodge it (see `review-of-decision.md`); free human backup is also available
+  (`../support-network.md`).
 - Staff must treat you with respect. If they don't, you can make a complaint and/or
   ask to deal with a different case manager.
 
@@ -837,9 +842,10 @@ wrong — they can lodge a **Review of Decision (ROD)**.
 - There is **no penalty** for lodging many. Never withdraw one.
 - Time limit: within **3 months** of being notified (later is possible with a "good
   and sufficient reason" for the delay — so act fast).
-- For a challenge that matters (a benefit decline, a sanction, a debt, SLP), get a
-  **free advocate** involved — see `../handoff.md`. The tool drafts the request
-  (`../templates/review-of-decision-request.md`); the advocate carries it.
+- Village Advocate helps you do this: draft the request
+  (`../templates/review-of-decision-request.md`), work out what evidence to attach,
+  and prepare you for a Benefit Review Committee meeting. Free human backup is also
+  available (`../support-network.md`) — you can use both.
 
 ## Bring someone
 
@@ -880,17 +886,18 @@ hardship**. The bigger the harm from a "no", the stronger the case.
 | "You've used up your food grant allowance" | Not true — no limit on applications | Ask them to apply "exceptional circumstances" and grant it |
 | "I'll give you a letter for the foodbank instead" | They're avoiding giving the grant | Say you want to **apply for the grant**; if refused, lodge an ROD |
 | "I can only give you $[less than asked]" | They don't want to give the full amount | **Accept what's offered** and lodge an ROD for the rest |
-| "You can only be paid from today / from the date of the letter" | Backdating is often available | Challenge it; lodge an ROD; get an advocate |
+| "You can only be paid from today / from the date of the letter" | Backdating is often available | Challenge it; lodge an ROD |
 | "You must see our designated doctor" | The person's own doctor's evidence counts | Push back; provide a full report from their own GP/specialist |
 | "You don't qualify because you're not on a benefit" | Many payments don't require a benefit | Point to the specific payment's rules (`../entitlements/`) |
-| "You've been sanctioned" (obligations) | Work and Income must follow a strict process first | Lodge an ROD; note that the process under **s 252 Social Security Act 2018** must be followed exactly; get an advocate |
+| "You've been sanctioned" (obligations) | Work and Income must follow a strict process first | Lodge an ROD; note that the process under **s 252 Social Security Act 2018** must be followed exactly |
 
 ## Sanctions
 
 If the person is sanctioned for an "obligation failure", Work and Income must have
 followed the correct process (including proper written notice) under **s 252 of the
 Social Security Act 2018**. Advocates report this is often not done properly. Lodge
-an ROD and get a free advocate — sanctions can often be overturned or back-paid.
+an ROD — Village Advocate can help prepare it, and free human backup is available
+too (`../support-network.md`). Sanctions can often be overturned or back-paid.
 
 ## Source
 
@@ -918,7 +925,7 @@ advocacy booklet, these are the parts that have changed.
 Work and Income now uses a "traffic light" status to tell people what's required of
 them and to **warn them before a sanction**. If someone gets a warning (moves to
 "orange"), that's the moment to act: check the obligation is correct, get it in
-writing, and get an advocate if it's disputed.
+writing, and challenge it with a Review of Decision if it's wrong.
 
 ## Jobseeker Support — reapply every 26 weeks
 
@@ -975,9 +982,14 @@ than letting it stand.
 
 If Work and Income makes a decision you think is wrong — declines help, sets a low
 rate, picks the wrong start date, imposes a sanction, raises a debt — you can
-challenge it. **This is where a free human advocate should be involved** (see
-`../handoff.md`). This tool can help you get organised and draft the request, but an
-advocate should carry a review or appeal.
+challenge it. **A Review of Decision is designed to be done without a lawyer.**
+Advocacy services help people lodge these every day, and so can Village Advocate:
+drafting the request, listing the evidence, and preparing you for a Benefit Review
+Committee meeting. You can also get free human backup (`../support-network.md`) — use
+both if you want.
+
+**Exception:** if the decision is tied to a **fraud allegation or possible
+prosecution**, that is criminal — get a lawyer through Community Law or Legal Aid.
 
 ## Step 1 — Get the decision in writing
 
@@ -1152,8 +1164,9 @@ Ngā mihi,
 **When to use:** Work and Income has made a decision you believe is wrong and you're
 within 3 months of being notified (if longer, still apply and explain the delay).
 
-**Before you send:** contact a free advocate (`../handoff.md`) — they should help with
-or carry this. Use this draft to get your thoughts down and give them a head start.
+**Before you send:** Village Advocate can help you finish and lodge this — fill in the
+brackets, work out the evidence, and check it reads well. Free human backup is also
+available (`../support-network.md`) if you want a person alongside you.
 
 **How to send:** the official "Review of Decision Application" form is best; otherwise
 this letter, to your service centre, by MyMSD message or post. Keep a copy and note
@@ -1207,47 +1220,51 @@ Ngā mihi,
 
 ---
 
-<!-- FILE: knowledge/handoff.md -->
+<!-- FILE: knowledge/support-network.md -->
 
-# When to hand off to a real advocate — and who
+# Your support network
 
-This tool helps you get organised and draft what you need to say. For anything
-high-stakes, a **free human advocate** should take over or work alongside you.
+**Village Advocate is your advocate.** It works through the whole Work and Income
+process with you — applications, extra help, follow-ups, and challenging wrong
+decisions (Review of Decision, and preparing for a Benefit Review Committee). It does
+not send you away to find someone else.
 
-## Hand off to a human advocate when:
+You can **also** bring in free human help at any time. You don't have to choose one or
+the other — use both.
 
-- A decision has gone against you and you want to challenge it (Review of Decision,
-  Benefit Review Committee, or an appeal) — **there is a time limit, usually 3 months,
-  so contact them straight away**
-- You're facing a benefit **sanction, cut, or a debt** you think is wrong
-- You've been accused of fraud or overpayment
-- You've been declined help and you're still without food, power, or a safe place to stay
-- A case manager is treating you unfairly and it isn't improving
-- Anything involving immigration status, relationships-in-the-nature-of-marriage
-  decisions, or your children's care
+## Free human backup (never pay for this)
 
-## Free advocacy services (never pay for this)
+If anyone asks you to pay for Work and Income advocacy, it is not a genuine free service.
 
-**If someone asks you to pay for WINZ advocacy, it is not a genuine free service.**
-
-- **Auckland Action Against Poverty (AAAP)** — free advocacy nationwide (phone/online),
-  in person in Auckland.
-  Email: advocates@aaap.org.nz — Web: https://www.aaap.org.nz
+- **Auckland Action Against Poverty (AAAP)** — free advocacy nationwide (phone/online).
+  advocates@aaap.org.nz — https://www.aaap.org.nz
 - **Community Law Centres** — free legal help, nationwide, including benefit issues.
-  Web: https://communitylaw.org.nz — find your local centre:
-  https://communitylaw.org.nz/our-law-centres/
-- **Citizens Advice Bureau (CAB)** — free information and can refer you on.
-  Phone: 0800 367 222 — Web: https://www.cab.org.nz
-- **Beneficiary advocacy services** — many towns have a local one (e.g. Beneficiary
-  Advisory Service, Whanganui People's Centre). Search "[your town] beneficiary
-  advocate" or ask CAB or a Community Law Centre.
+  https://communitylaw.org.nz — find your centre: https://communitylaw.org.nz/our-law-centres/
+- **Citizens Advice Bureau (CAB)** — free info and referrals. 0800 367 222 — https://www.cab.org.nz
+- **Local beneficiary advocates** — many towns have one. Search "[your town] beneficiary advocate".
 
-## Food help this week (while other things are sorted)
+When it helps most to have a human alongside you:
+- a **Social Security Appeal Authority** hearing (a formal tribunal — the tool can
+  help you prepare, and experienced backup is worth having)
+- family violence, immigration status, or a mental health crisis is part of the picture
+
+## The one situation that needs a lawyer, not just an advocate
+
+If Work and Income **accuses you of fraud or benefit crime**, or you're told there may
+be a **prosecution** or a **relationship fraud investigation** — that is criminal, and
+you need a lawyer. Contact **Community Law** or ask about **Legal Aid** straight away.
+Village Advocate can help you get organised, but it must not be your only help here.
+
+## If you're not coping
+
+Free call or text **1737** any time to talk to a trained counsellor. In an emergency, **111**.
+
+## Food help this week
 
 - Ask Work and Income for a **Special Needs Grant for food** (see
   `entitlements/special-needs-grant-food.md`)
-- **Local food bank / food parcel** — CAB (0800 367 222) or https://www.familyservices.govt.nz/directory
-  can point you to the nearest one
+- **Local food bank / food parcel** — CAB (0800 367 222) or
+  https://www.familyservices.govt.nz/directory
 - **0800 HUNGRY** and community pātaka kai in many areas
 
 ## Source
@@ -1256,6 +1273,41 @@ high-stakes, a **free human advocate** should take over or work alongside you.
 - Community Law: https://communitylaw.org.nz/community-law-manual/chapter-23-dealing-with-work-and-income/
 - Citizens Advice Bureau: https://www.cab.org.nz
 - Checked: 2026-09-01. Verify phone numbers and that services still operate before relying on them.
+
+
+---
+
+<!-- FILE: knowledge/community-notes/README.md -->
+
+# Community notes
+
+Real experiences shared by people who dealt with Work and Income, de-identified and
+reviewed before being added here.
+
+## How Village Advocate should use these
+
+- Treat them as **"other people in a similar spot found…"** — useful, encouraging,
+  and often practical.
+- They are **anecdotes, not rules.** They never override the official eligibility
+  and process information in `../entitlements/` and `../process/`.
+- If a community note conflicts with a `## Source`-cited rule, the cited rule wins,
+  and say so.
+- Don't repeat any identifying detail from a note.
+
+## Format for each note (one file per note)
+
+```
+---
+situation: short description (e.g. "declined food grant, over 6-month limit")
+outcome: what happened in the end
+added: YYYY-MM-DD
+---
+
+What the person asked for, what WINZ said, what worked, what they'd tell the next
+person. No names, client numbers, addresses, or dates of birth.
+```
+
+Notes are added by the maintainers from submissions (see `../../CONTRIBUTING.md`).
 
 
 ---
@@ -1275,7 +1327,7 @@ Group A and the urgent check come first. The rest can be spread over more than o
 
 1. "Before anything else — is there something you need this week that you can't cover
    right now? Food, power, rent, somewhere to sleep?"
-   → If yes: go to the food grant + handoff info, offer to draft the urgent email now,
+   → If yes: go to the food grant + support-network info, offer to draft the urgent email now,
    then come back to intake.
 
 ## Group A — the basics

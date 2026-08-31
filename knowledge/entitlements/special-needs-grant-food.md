@@ -64,14 +64,15 @@ They should treat food as urgent and deal with it quickly.
   (rent, power, a debt payment) so it's clear it isn't available for food.
 - **Told you can't apply again.** Not true — you can always apply again; the limit
   is the dollar total, not the number of applications.
-- If declined and you believe it's wrong, you can ask for a **Review of Decision**
-  (there's a time limit — see a free advocate quickly: `knowledge/handoff.md`).
+- If declined and you believe it's wrong, ask for a **Review of Decision** (3-month
+  limit — do it quickly). Village Advocate can help you lodge it; see
+  `../process/review-of-decision.md`.
 
 ## Also ask about
 
 - **Recoverable Assistance Payment** — a repayable grant for essential costs if you're
   over the non-recoverable food grant limit.
-- **Food bank / food parcel** referral for the same week (see `knowledge/handoff.md`).
+- **Food bank / food parcel** referral for the same week (see `knowledge/support-network.md`).
 
 ## Source
 

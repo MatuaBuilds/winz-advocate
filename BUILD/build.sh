@@ -25,10 +25,16 @@ FILES=(
   knowledge/templates/email-request-food-grant-and-appointment.md
   knowledge/templates/email-follow-up-on-delay.md
   knowledge/templates/review-of-decision-request.md
-  knowledge/handoff.md
+  knowledge/support-network.md
+  knowledge/community-notes/README.md
   prompt/intake-script.md
   case-file-template/case-file.md
 )
+
+# Any real community notes (files named note-*.md) get appended too.
+for n in knowledge/community-notes/note-*.md; do
+  [ -e "$n" ] && FILES+=("$n")
+done
 
 {
   echo "# Village Advocate — Knowledge Pack"

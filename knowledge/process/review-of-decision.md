@@ -2,9 +2,14 @@
 
 If Work and Income makes a decision you think is wrong — declines help, sets a low
 rate, picks the wrong start date, imposes a sanction, raises a debt — you can
-challenge it. **This is where a free human advocate should be involved** (see
-`../handoff.md`). This tool can help you get organised and draft the request, but an
-advocate should carry a review or appeal.
+challenge it. **A Review of Decision is designed to be done without a lawyer.**
+Advocacy services help people lodge these every day, and so can Village Advocate:
+drafting the request, listing the evidence, and preparing you for a Benefit Review
+Committee meeting. You can also get free human backup (`../support-network.md`) — use
+both if you want.
+
+**Exception:** if the decision is tied to a **fraud allegation or possible
+prosecution**, that is criminal — get a lawyer through Community Law or Legal Aid.
 
 ## Step 1 — Get the decision in writing
 

@@ -11,7 +11,7 @@ Group A and the urgent check come first. The rest can be spread over more than o
 
 1. "Before anything else — is there something you need this week that you can't cover
    right now? Food, power, rent, somewhere to sleep?"
-   → If yes: go to the food grant + handoff info, offer to draft the urgent email now,
+   → If yes: go to the food grant + support-network info, offer to draft the urgent email now,
    then come back to intake.
 
 ## Group A — the basics

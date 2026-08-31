@@ -1,0 +1,26 @@
+name: Report something the tool got wrong
+description: The tool gave advice that was inaccurate or made someone's situation worse.
+title: "[Tool error] "
+labels: ["tool-error", "priority"]
+body:
+  - type: markdown
+    attributes:
+      value: This is the most important kind of report. Thank you for taking the time.
+  - type: textarea
+    id: what-it-said
+    attributes:
+      label: What did the tool say?
+    validations:
+      required: true
+  - type: textarea
+    id: why-wrong
+    attributes:
+      label: Why was it wrong, and what actually happened?
+    validations:
+      required: true
+  - type: textarea
+    id: should-have
+    attributes:
+      label: What should it have said?
+    validations:
+      required: false

@@ -37,8 +37,9 @@ Disability Allowance) is on top and often missed.
   genuinely more than half with the applicant, provide evidence (school records, a
   parenting agreement).
 - **"Relationship in the nature of marriage"** decisions — these are often wrong and
-  are reviewable. Get an advocate (`../handoff.md`) if flatting or a friendship is
-  being treated as a relationship.
+  are reviewable (flatting or a friendship is not a relationship). But if it becomes a
+  **fraud investigation**, that's criminal — get a lawyer via Community Law or Legal
+  Aid (`../support-network.md`) as well as challenging the decision.
 - Child support passed through incorrectly.
 - Not being told about **Childcare Assistance** or **Best Start**.
 

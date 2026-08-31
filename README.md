@@ -29,11 +29,12 @@ deadlines a serious barrier.
 
 ## Status
 
-- Phase 0 (setup) — done
-- Phase 1 (working Version 1) — built, passes the simulated "Sam" test (`docs/test-sam.md`)
-- Phase 2 (breadth: all main benefits, extra help, one-off grants, review-of-decision) —
-  **built, passes three-persona test** (`docs/test-phase2.md`)
-- Phase 3 (packaging + real-world testing) — **in progress**. Claude Project pack built
-  (`BUILD/`), user guide written (`HOW-TO-USE-THIS.md`), setup steps in
-  `docs/SET-UP-THE-CLAUDE-PROJECT.md`. Remaining: Bill builds the project on claude.ai
-  and tests with real people.
+- Phase 0–2 — done. Full knowledge base, passes simulated tests
+  (`docs/test-sam.md`, `docs/test-phase2.md`).
+- Phase 3 (packaging + testing) — pack built (`BUILD/`), passed live self-test
+  (`docs/real-tests.md`). Real-person testing still to do.
+- Phase 3.5 — "fight harder" layer added (rights, discretion, myths, 2025 changes).
+- Phase 4 (free + open + public) — **in progress.** LICENSE, CONTRIBUTING, issue
+  templates, `index.html`, community-notes all in place. "We are the advocate"
+  reframe done. Remaining: make the repo public + enable GitHub Pages; share with
+  community orgs.

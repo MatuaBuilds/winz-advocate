@@ -3,8 +3,9 @@
 **When to use:** Work and Income has made a decision you believe is wrong and you're
 within 3 months of being notified (if longer, still apply and explain the delay).
 
-**Before you send:** contact a free advocate (`../handoff.md`) — they should help with
-or carry this. Use this draft to get your thoughts down and give them a head start.
+**Before you send:** Village Advocate can help you finish and lodge this — fill in the
+brackets, work out the evidence, and check it reads well. Free human backup is also
+available (`../support-network.md`) if you want a person alongside you.
 
 **How to send:** the official "Review of Decision Application" form is best; otherwise
 this letter, to your service centre, by MyMSD message or post. Keep a copy and note
