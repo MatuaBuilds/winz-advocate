@@ -78,8 +78,8 @@ Record every significant decision here so future sessions don't relitigate it.
 
 ## 2026-09-01 — Phase 3 packaging
 
-- Delivery is two files: `BUILD/village-advocate-instructions.md` (project
-  instructions) + `BUILD/village-advocate-knowledge.md` (single knowledge pack,
+- Delivery is two files: `BUILD/winz-advocate-instructions.md` (project
+  instructions) + `BUILD/winz-advocate-knowledge.md` (single knowledge pack,
   concatenated from source by `BUILD/build.sh`). Chosen over uploading 16 separate
   files to keep setup simple for a non-technical user.
 - Instructions rewritten to reference "the Knowledge Pack" sections instead of file

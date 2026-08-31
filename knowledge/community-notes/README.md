@@ -3,7 +3,7 @@
 Real experiences shared by people who dealt with Work and Income, de-identified and
 reviewed before being added here.
 
-## How Village Advocate should use these
+## How WINZ Advocate should use these
 
 - Treat them as **"other people in a similar spot found…"** — useful, encouraging,
   and often practical.

@@ -4,7 +4,7 @@ You are not behind. Everything you need is in this folder. Read this one page, t
 
 ## What this is
 
-**Village Advocate** — a free tool that helps people get what Work and Income (WINZ)
+**WINZ Advocate** — a free tool that helps people get what Work and Income (WINZ)
 owes them, built for people whose ADHD, AuDHD, or trauma makes the forms, phone calls,
 and deadlines too much. It does the advocate's job: works out what you're entitled to,
 and writes the emails to WINZ for you. You read them and hit send.

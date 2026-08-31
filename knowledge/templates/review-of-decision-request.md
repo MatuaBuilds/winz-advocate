@@ -3,7 +3,7 @@
 **When to use:** Work and Income has made a decision you believe is wrong and you're
 within 3 months of being notified (if longer, still apply and explain the delay).
 
-**Before you send:** Village Advocate can help you finish and lodge this — fill in the
+**Before you send:** WINZ Advocate can help you finish and lodge this — fill in the
 brackets, work out the evidence, and check it reads well. Free human backup is also
 available (`../support-network.md`) if you want a person alongside you.
 

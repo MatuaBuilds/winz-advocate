@@ -65,7 +65,7 @@ They should treat food as urgent and deal with it quickly.
 - **Told you can't apply again.** Not true — you can always apply again; the limit
   is the dollar total, not the number of applications.
 - If declined and you believe it's wrong, ask for a **Review of Decision** (3-month
-  limit — do it quickly). Village Advocate can help you lodge it; see
+  limit — do it quickly). WINZ Advocate can help you lodge it; see
   `../process/review-of-decision.md`.
 
 ## Also ask about

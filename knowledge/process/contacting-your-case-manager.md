@@ -37,7 +37,7 @@ person, phone is usually faster, and it creates a note on your file.
 - You can ask for any decision, and the **reasons for it, in writing**.
 - You can ask to **see the information on your file** about you.
 - If you think a decision is wrong, you can ask for a **Review of Decision** — there
-  is a time limit (generally 3 months), so act quickly. Village Advocate can help you
+  is a time limit (generally 3 months), so act quickly. WINZ Advocate can help you
   lodge it (see `review-of-decision.md`); free human backup is also available
   (`../support-network.md`).
 - Staff must treat you with respect. If they don't, you can make a complaint and/or

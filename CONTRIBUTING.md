@@ -1,4 +1,4 @@
-# Help make Village Advocate stronger
+# Help make WINZ Advocate stronger
 
 This tool gets better when people share what actually happened to them at Work and
 Income. You don't need to be technical to help.

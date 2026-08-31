@@ -10,7 +10,7 @@ NZ citizen. About $15 in the bank, owed to power.
 
 ## Simulated run (abridged)
 
-**Village Advocate:** I help you work out what Work and Income owes you and write the
+**WINZ Advocate:** I help you work out what Work and Income owes you and write the
 messages to get it. You send them — I never do. First: is there anything you can't
 cover this week — food, power, rent, a place to sleep?
 

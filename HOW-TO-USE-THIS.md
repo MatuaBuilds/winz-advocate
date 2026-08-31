@@ -1,4 +1,4 @@
-# How to use Village Advocate
+# How to use WINZ Advocate
 
 This is a helper for getting what Work and Income (WINZ) owes you. It works out what
 you can apply for, and writes the emails for you. **You** send them.
@@ -30,12 +30,14 @@ and what to do next.
 
 ## Important
 
+- **Free, community-run, independent.** This is not Work and Income and not the government.
 - The tool **never sends anything** — it writes the draft, you read it and send it.
 - It uses real WINZ information but **amounts change** — check the dollar figures on
   the WINZ website or by phoning **0800 559 009**.
-- It is **help with advocacy, not legal advice**.
-- If a decision goes against you and you want to fight it, there is a **3-month time
-  limit** — contact a free advocate straight away:
+- If a decision goes against you, there is a **3-month time limit** to ask for a
+  Review of Decision — the tool helps you do it. If WINZ accuses you of **fraud**,
+  that's criminal — get a lawyer through Community Law or Legal Aid.
+- Free human backup, any time (you can use it alongside the tool):
   - Auckland Action Against Poverty — advocates@aaap.org.nz — aaap.org.nz
   - Community Law — communitylaw.org.nz
   - Citizens Advice Bureau — 0800 367 222

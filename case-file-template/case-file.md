@@ -1,6 +1,6 @@
 # Case file — [your name or initials]
 
-Keep this file. Bring it back each time you use Village Advocate so it remembers
+Keep this file. Bring it back each time you use WINZ Advocate so it remembers
 where you're up to. This file is yours. Don't share it unless you choose to.
 
 Last updated: [date]

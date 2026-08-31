@@ -41,7 +41,7 @@ rent in advance), and other essential costs depending on your situation.
 - Told to use a Special Needs Grant instead (or vice versa) — ask which one fits and
   why; a non-recoverable grant is better for you if you qualify.
 - Multiple debts to Work and Income stacking up — ask for a **review of your total
-  repayments**; Village Advocate can help, and free human backup is available
+  repayments**; WINZ Advocate can help, and free human backup is available
   (`../support-network.md`).
 
 ## Source

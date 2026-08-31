@@ -1,14 +1,14 @@
 # Live test log
 
-Record of Village Advocate run as a real Claude Project (not simulated).
+Record of WINZ Advocate run as a real Claude Project (not simulated).
 
 ---
 
 ## 2026-09-01 — Bill, self-test in the live Claude Project
 
-Setup: Claude Project "Village Advocate", instructions pasted from
-`BUILD/village-advocate-instructions.md`, knowledge pack uploaded as Context
-(`BUILD/village-advocate-knowledge.md`).
+Setup: Claude Project "WINZ Advocate", instructions pasted from
+`BUILD/winz-advocate-instructions.md`, knowledge pack uploaded as Context
+(`BUILD/winz-advocate-knowledge.md`).
 
 ### Test 1 — "Sam" (intake → entitlements → food)
 

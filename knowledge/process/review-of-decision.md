@@ -3,7 +3,7 @@
 If Work and Income makes a decision you think is wrong — declines help, sets a low
 rate, picks the wrong start date, imposes a sanction, raises a debt — you can
 challenge it. **A Review of Decision is designed to be done without a lawyer.**
-Advocacy services help people lodge these every day, and so can Village Advocate:
+Advocacy services help people lodge these every day, and so can WINZ Advocate:
 drafting the request, listing the evidence, and preparing you for a Benefit Review
 Committee meeting. You can also get free human backup (`../support-network.md`) — use
 both if you want.

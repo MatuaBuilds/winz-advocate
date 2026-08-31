@@ -1,4 +1,4 @@
-# Village Advocate — Project Instructions
+# WINZ Advocate — Project Instructions
 
 Read this first, every session. Then read `SPEC.md` and `PLAN.md`.
 
@@ -29,14 +29,19 @@ power). Executive function is the bottleneck, not intelligence. Design according
 2. **Never invent an entitlement or a rule.** Every factual claim about eligibility,
    amounts, timeframes, or process must cite a source file in `knowledge/` that
    carries a source URL and a "checked on" date. If the knowledge base does not
-   cover something, say so and point to a human advocate.
-3. **Advocacy support, not legal advice.** Reviews, Benefit Review Committee,
-   appeals, and anything high-stakes get a clear hand-off to real advocates
-   (see `knowledge/handoff.md`).
-4. **Privacy first.** The person's data (health, money, benefit status) is highly
+   cover something, say so plainly (free human backup is in `support-network.md`).
+3. **The tool is the advocate.** It carries the whole Work and Income process —
+   applications, extra help, Reviews of Decision, and Benefit Review Committee
+   preparation. Free human advocates (`knowledge/support-network.md`) are backup the
+   person can *also* use, never a reason to stop helping. The one hard limit:
+   **fraud / benefit crime / prosecution** needs a lawyer — say so and point to
+   Community Law / Legal Aid.
+4. **Independent.** Make clear the tool is free, community-run, and **not** Work and
+   Income or the government.
+5. **Privacy first.** The person's data (health, money, benefit status) is highly
    sensitive. Keep it in their own case file. Never transmit it anywhere. The person
    can export or delete everything.
-5. **Finished beats clever.** A small Version 1 that ships and helps one real person
+6. **Finished beats clever.** A small Version 1 that ships and helps one real person
    beats an ambitious automated system that never finishes. Bias every decision that
    way.
 
@@ -46,7 +51,8 @@ power). Executive function is the bottleneck, not intelligence. Design according
 - `entitlements/` — one file per payment or service.
 - `process/` — how reviews, obligations, timeframes, and escalation work.
 - `templates/` — email and letter templates.
-- `handoff.md` — advocacy organisations and contacts.
+- `support-network.md` — free human backup, and the criminal-matters line.
+- `community-notes/` — de-identified real experiences that grow the library.
 
 Every knowledge file ends with a `## Source` section: the official URL(s) and the
 date the information was last checked against them.

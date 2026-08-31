@@ -1,4 +1,4 @@
-# Village Advocate — Specification (v1 draft)
+# WINZ Advocate — Specification (v1 draft)
 
 Status: **draft** — written 2026-09-01. Open questions are marked `❓`. Bill approves before Phase 1 build.
 

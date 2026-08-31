@@ -1,4 +1,4 @@
-# Village Advocate
+# WINZ Advocate
 
 A free tool that does the job of a New Zealand welfare/benefit advocate: it works out
 what a person is entitled to from Work and Income (WINZ), and drafts the emails to get

@@ -6,7 +6,7 @@ scratch later, or start a related project.
 
 ---
 
-You are helping me design Version 1 of a free tool (working name: "Village Advocate").
+You are helping me design Version 1 of a free tool (working name: "WINZ Advocate").
 
 MISSION
 It does what a New Zealand welfare/benefit advocate does — helps people who are

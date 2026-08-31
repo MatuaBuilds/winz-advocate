@@ -1,4 +1,4 @@
-# Village Advocate — Build Plan
+# WINZ Advocate — Build Plan
 
 One phase at a time. Each phase ends with something you can check. Stop between
 phases as often as you need.
@@ -29,7 +29,7 @@ Build, in order:
 3. **`knowledge/templates/` — two files:**
    - `email-request-food-grant-and-appointment.md`
    - `email-follow-up-on-delay.md`
-4. **`knowledge/handoff.md`** — AAAP, Community Law, and how to tell a real advocacy
+4. **`knowledge/support-network.md`** — AAAP, Community Law, and how to tell a real advocacy
    service from a paid impostor.
 5. **`case-file-template/case-file.md`** — the structure from `SPEC.md` section 5.
 6. **`prompt/system-prompt.md`** — the assistant's instructions: the intake flow,
@@ -64,8 +64,8 @@ Payment declined; Jobseeker stand-down). All pass.
 
 ## Phase 3 — Real use  (IN PROGRESS)
 
-- [x] Packaged for Claude Project: `BUILD/village-advocate-instructions.md` +
-  `BUILD/village-advocate-knowledge.md` (one uploadable pack, rebuilt by
+- [x] Packaged for Claude Project: `BUILD/winz-advocate-instructions.md` +
+  `BUILD/winz-advocate-knowledge.md` (one uploadable pack, rebuilt by
   `BUILD/build.sh`)
 - [x] One-page user guide for someone in distress: `HOW-TO-USE-THIS.md`
 - [x] Step-by-step setup + test script: `docs/SET-UP-THE-CLAUDE-PROJECT.md`
@@ -104,5 +104,5 @@ in `docs/DECISIONS.md` first. Not before.
 ## If you get stuck
 
 Tell Claude: *"I'm stuck on Phase [n], step [n]. Explain it simply and do the next
-smallest piece."* Or contact a free advocate (`knowledge/handoff.md`) — the tool
+smallest piece."* Or contact a free advocate (`knowledge/support-network.md`) — the tool
 does not have to be finished for you to get help now.

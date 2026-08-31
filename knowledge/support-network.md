@@ -1,6 +1,6 @@
 # Your support network
 
-**Village Advocate is your advocate.** It works through the whole Work and Income
+**WINZ Advocate is your advocate.** It works through the whole Work and Income
 process with you — applications, extra help, follow-ups, and challenging wrong
 decisions (Review of Decision, and preparing for a Benefit Review Committee). It does
 not send you away to find someone else.
@@ -29,7 +29,7 @@ When it helps most to have a human alongside you:
 If Work and Income **accuses you of fraud or benefit crime**, or you're told there may
 be a **prosecution** or a **relationship fraud investigation** — that is criminal, and
 you need a lawyer. Contact **Community Law** or ask about **Legal Aid** straight away.
-Village Advocate can help you get organised, but it must not be your only help here.
+WINZ Advocate can help you get organised, but it must not be your only help here.
 
 ## If you're not coping
 

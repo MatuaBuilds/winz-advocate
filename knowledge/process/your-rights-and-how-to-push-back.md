@@ -17,7 +17,7 @@ wrong — they can lodge a **Review of Decision (ROD)**.
 - There is **no penalty** for lodging many. Never withdraw one.
 - Time limit: within **3 months** of being notified (later is possible with a "good
   and sufficient reason" for the delay — so act fast).
-- Village Advocate helps you do this: draft the request
+- WINZ Advocate helps you do this: draft the request
   (`../templates/review-of-decision-request.md`), work out what evidence to attach,
   and prepare you for a Benefit Review Committee meeting. Free human backup is also
   available (`../support-network.md`) — you can use both.
@@ -71,7 +71,7 @@ hardship**. The bigger the harm from a "no", the stronger the case.
 If the person is sanctioned for an "obligation failure", Work and Income must have
 followed the correct process (including proper written notice) under **s 252 of the
 Social Security Act 2018**. Advocates report this is often not done properly. Lodge
-an ROD — Village Advocate can help prepare it, and free human backup is available
+an ROD — WINZ Advocate can help prepare it, and free human backup is available
 too (`../support-network.md`). Sanctions can often be overturned or back-paid.
 
 ## Source
