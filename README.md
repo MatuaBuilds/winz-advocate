@@ -29,4 +29,7 @@ deadlines a serious barrier.
 
 ## Status
 
-Phase 0 (setup) done. Phase 1 (the working Version 1) is the next job — see `PLAN.md`.
+- Phase 0 (setup) — done
+- Phase 1 (working Version 1) — **built, passes the simulated "Sam" test** (`docs/test-sam.md`)
+- Next: Bill checks each cited source, then set it up as a Claude Project
+  (`docs/SET-UP-THE-CLAUDE-PROJECT.md`) and run once live
