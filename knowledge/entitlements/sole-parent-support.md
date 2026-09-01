@@ -21,9 +21,9 @@ but obligations change, so get help before the switch.
 
 ## How much
 
-Calculated on your earnings and situation (changes 1 April). Winter Energy Payment is
-automatic in winter. Extra help (Accommodation Supplement, Childcare Assistance,
-Disability Allowance) is on top and often missed.
+Base rate **$606.69/week before tax** (from 1 April 2026), reduced by what you earn.
+Winter Energy Payment is automatic in winter. Extra help (Accommodation Supplement,
+Childcare Assistance, Disability Allowance) is on top and often missed.
 
 ## How to apply
 
@@ -49,4 +49,6 @@ Disability Allowance) is on top and often missed.
   https://www.workandincome.govt.nz/products/a-z-benefits/sole-parent-support.html
 - Community Law Manual — Dealing with Work and Income:
   https://communitylaw.org.nz/community-law-manual/chapter-23-dealing-with-work-and-income/
-- Checked: 2026-09-01. Re-check rates and rules after 1 April.
+- Work and Income — Benefit rates at 1 April 2026:
+  https://www.workandincome.govt.nz/products/benefit-rates/benefit-rates-april-2026.html
+- Checked: 2026-09-01 against the 1 April 2026 rates. Re-check after the next 1 April.

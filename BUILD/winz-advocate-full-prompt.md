@@ -197,8 +197,18 @@ You may be eligible if you:
   - single: assets of **$8,100 or less**
   - couples or sole parents: assets of **$16,200 or less**
 
-The amount you get depends on where you live (NZ is split into areas with different
-maximum rates), your housing costs, your income, and your family situation.
+The amount you get depends on where you live (NZ is split into 4 areas), your housing
+costs, your income, and your family situation. The lower your rent, the lower the
+payment. **Maximum** weekly rates (from 1 April 2026):
+
+| Situation | Area 1 | Area 2 | Area 3 | Area 4 |
+|---|---|---|---|---|
+| Single, no children | $165 | $105 | $80 | $70 |
+| Couple no children / sole parent 1 child | $235 | $155 | $105 | $80 |
+| Couple with children / sole parent 2+ children | $305 | $220 | $160 | $120 |
+
+Area 1 is the most expensive (most of urban Auckland). Use the calculator at
+check.msd.govt.nz for an estimate for your address.
 
 ## How to apply
 
@@ -235,8 +245,9 @@ maximum rates), your housing costs, your income, and your family situation.
   https://www.workandincome.govt.nz/products/a-z-benefits/accommodation-supplement.html
 - Community Law Manual — Dealing with Work and Income (Ongoing extra help):
   https://communitylaw.org.nz/community-law-manual/test/dealing-with-work-and-income/
-- Checked: 2026-09-01. Dollar figures and area rates change — re-check the Work and
-  Income page, especially after 1 April each year.
+- Checked: 2026-09-01 against the Work and Income page (rates page last updated
+  24 July 2026). Asset limits $8,100 / $16,200 and the area maximums confirmed
+  current. Re-check after 1 April each year.
 
 
 ---
@@ -265,9 +276,10 @@ You may be eligible if you:
 - have **regular ongoing costs** because of it that aren't fully covered by another
   agency (e.g. Pharmac, ACC)
 - are a New Zealand citizen or permanent resident, normally living in NZ
-- are under the income limit for your situation. As a rough guide the limits run from
-  about **$696.60 to $1,295.11 a week before tax** depending on your family situation
-  (single, couple, with children). You can be working and still qualify.
+- are under the income limit for your situation. From 1 April 2026, before tax:
+  single 18+ **$870.00/week**, sole parent with 1 child **$971.51/week**, sole parent
+  with 2+ children **$1,023.59/week** (couple limits are higher — check the current
+  table). You can be working and still qualify.
 
 You do not have to be on a benefit.
 
@@ -316,8 +328,10 @@ health practitioner**.
   https://www.workandincome.govt.nz/products/a-z-benefits/disability-allowance.html
 - Community Law Manual — Dealing with Work and Income:
   https://communitylaw.org.nz/community-law-manual/test/dealing-with-work-and-income/
-- Checked: 2026-09-01. The maximum ($82.85) and income limits change each 1 April —
-  re-check the Work and Income page.
+- Work and Income — Benefit rates at 1 April 2026:
+  https://www.workandincome.govt.nz/products/benefit-rates/benefit-rates-april-2026.html
+- Checked: 2026-09-01 against the 1 April 2026 rates. The maximum ($82.85) and income
+  limits change each 1 April — re-check then.
 
 
 ---
@@ -433,16 +447,18 @@ condition or injury**.
   - unable to work full-time right now because of a **health condition, injury or
     disability** (this needs a **Work Capacity Medical Certificate** from your doctor —
     it's sometimes called being "on Jobseeker with a medical deferral")
-- Under the income limit — as a guide, a single person 25+ must earn under about
-  **$693 a week before tax** (limits differ by age and family situation)
+- Within the income rules — the benefit reduces as you earn more and cuts out past a
+  certain point. Check the current abatement thresholds with Work and Income; you can
+  usually earn a modest amount each week before it starts reducing.
 - NZ citizen or resident, normally lived in NZ for **at least 2 years** since gaining
   that status
 
 ## How much
 
-A guide only (changes 1 April; "after tax"): single 25+ up to about **$372.55/week**;
-single with children up to about **$521.52/week**. Extra help (Accommodation
-Supplement, etc.) is on top.
+A guide only (before tax, from 1 April 2026): single 25+ **$426.12/week**; sole
+parent **$606.69/week**. Tax comes off this. Extra help (Accommodation Supplement,
+Disability Allowance, Temporary Additional Support) is paid on top and is often
+where the real money is.
 
 ## Obligations
 
@@ -474,7 +490,9 @@ certificate covers.
   https://www.workandincome.govt.nz/products/a-z-benefits/jobseeker-support.html
 - Community Law Manual — Dealing with Work and Income:
   https://communitylaw.org.nz/community-law-manual/chapter-23-dealing-with-work-and-income/
-- Checked: 2026-09-01. Rates and income limits change each 1 April — re-check.
+- Work and Income — Benefit rates at 1 April 2026:
+  https://www.workandincome.govt.nz/products/benefit-rates/benefit-rates-april-2026.html
+- Checked: 2026-09-01 against the 1 April 2026 rates. Re-check after the next 1 April.
 
 
 ---
@@ -504,9 +522,9 @@ but obligations change, so get help before the switch.
 
 ## How much
 
-Calculated on your earnings and situation (changes 1 April). Winter Energy Payment is
-automatic in winter. Extra help (Accommodation Supplement, Childcare Assistance,
-Disability Allowance) is on top and often missed.
+Base rate **$606.69/week before tax** (from 1 April 2026), reduced by what you earn.
+Winter Energy Payment is automatic in winter. Extra help (Accommodation Supplement,
+Childcare Assistance, Disability Allowance) is on top and often missed.
 
 ## How to apply
 
@@ -532,7 +550,9 @@ Disability Allowance) is on top and often missed.
   https://www.workandincome.govt.nz/products/a-z-benefits/sole-parent-support.html
 - Community Law Manual — Dealing with Work and Income:
   https://communitylaw.org.nz/community-law-manual/chapter-23-dealing-with-work-and-income/
-- Checked: 2026-09-01. Re-check rates and rules after 1 April.
+- Work and Income — Benefit rates at 1 April 2026:
+  https://www.workandincome.govt.nz/products/benefit-rates/benefit-rates-april-2026.html
+- Checked: 2026-09-01 against the 1 April 2026 rates. Re-check after the next 1 April.
 
 
 ---
@@ -569,8 +589,9 @@ income-tested (with a partner's income counted if you have one).
 
 ## How much
 
-More than Jobseeker Support; exact rate depends on your situation and is set each
-1 April. Extra help is on top.
+More than Jobseeker Support. From 1 April 2026, before tax: single 18+
+**$489.21/week**, sole parent **$679.95/week**. Extra help (Accommodation
+Supplement, Disability Allowance, Temporary Additional Support) is on top.
 
 ## How to apply
 
@@ -598,7 +619,9 @@ More than Jobseeker Support; exact rate depends on your situation and is set eac
   https://www.workandincome.govt.nz/products/a-z-benefits/supported-living-payment.html
 - Community Law Manual — Dealing with Work and Income:
   https://communitylaw.org.nz/community-law-manual/chapter-23-dealing-with-work-and-income/
-- Checked: 2026-09-01. Re-check rates and rules after 1 April.
+- Work and Income — Benefit rates at 1 April 2026:
+  https://www.workandincome.govt.nz/products/benefit-rates/benefit-rates-april-2026.html
+- Checked: 2026-09-01 against the 1 April 2026 rates. Re-check after the next 1 April.
 
 
 ---
@@ -800,8 +823,8 @@ full-time helps. Rate is set by Work and Income.
 
 For the caregiver of a child with a serious physical or mental disability needing
 care and attention **substantially more** than other children, for 12+ months.
-**Not income or asset tested.** Many caregivers miss it for years. Separate from
-Disability Allowance — a child can have both.
+**Not income or asset tested.** **$62.43/week** (from 1 April 2026). Many caregivers
+miss it for years. Separate from Disability Allowance — a child can have both.
 
 ## Emergency Dental grant
 

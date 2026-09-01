@@ -15,8 +15,8 @@ full-time helps. Rate is set by Work and Income.
 
 For the caregiver of a child with a serious physical or mental disability needing
 care and attention **substantially more** than other children, for 12+ months.
-**Not income or asset tested.** Many caregivers miss it for years. Separate from
-Disability Allowance — a child can have both.
+**Not income or asset tested.** **$62.43/week** (from 1 April 2026). Many caregivers
+miss it for years. Separate from Disability Allowance — a child can have both.
 
 ## Emergency Dental grant
 

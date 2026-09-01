@@ -20,8 +20,18 @@ You may be eligible if you:
   - single: assets of **$8,100 or less**
   - couples or sole parents: assets of **$16,200 or less**
 
-The amount you get depends on where you live (NZ is split into areas with different
-maximum rates), your housing costs, your income, and your family situation.
+The amount you get depends on where you live (NZ is split into 4 areas), your housing
+costs, your income, and your family situation. The lower your rent, the lower the
+payment. **Maximum** weekly rates (from 1 April 2026):
+
+| Situation | Area 1 | Area 2 | Area 3 | Area 4 |
+|---|---|---|---|---|
+| Single, no children | $165 | $105 | $80 | $70 |
+| Couple no children / sole parent 1 child | $235 | $155 | $105 | $80 |
+| Couple with children / sole parent 2+ children | $305 | $220 | $160 | $120 |
+
+Area 1 is the most expensive (most of urban Auckland). Use the calculator at
+check.msd.govt.nz for an estimate for your address.
 
 ## How to apply
 
@@ -58,5 +68,6 @@ maximum rates), your housing costs, your income, and your family situation.
   https://www.workandincome.govt.nz/products/a-z-benefits/accommodation-supplement.html
 - Community Law Manual — Dealing with Work and Income (Ongoing extra help):
   https://communitylaw.org.nz/community-law-manual/test/dealing-with-work-and-income/
-- Checked: 2026-09-01. Dollar figures and area rates change — re-check the Work and
-  Income page, especially after 1 April each year.
+- Checked: 2026-09-01 against the Work and Income page (rates page last updated
+  24 July 2026). Asset limits $8,100 / $16,200 and the area maximums confirmed
+  current. Re-check after 1 April each year.

@@ -16,16 +16,18 @@ condition or injury**.
   - unable to work full-time right now because of a **health condition, injury or
     disability** (this needs a **Work Capacity Medical Certificate** from your doctor —
     it's sometimes called being "on Jobseeker with a medical deferral")
-- Under the income limit — as a guide, a single person 25+ must earn under about
-  **$693 a week before tax** (limits differ by age and family situation)
+- Within the income rules — the benefit reduces as you earn more and cuts out past a
+  certain point. Check the current abatement thresholds with Work and Income; you can
+  usually earn a modest amount each week before it starts reducing.
 - NZ citizen or resident, normally lived in NZ for **at least 2 years** since gaining
   that status
 
 ## How much
 
-A guide only (changes 1 April; "after tax"): single 25+ up to about **$372.55/week**;
-single with children up to about **$521.52/week**. Extra help (Accommodation
-Supplement, etc.) is on top.
+A guide only (before tax, from 1 April 2026): single 25+ **$426.12/week**; sole
+parent **$606.69/week**. Tax comes off this. Extra help (Accommodation Supplement,
+Disability Allowance, Temporary Additional Support) is paid on top and is often
+where the real money is.
 
 ## Obligations
 
@@ -57,4 +59,6 @@ certificate covers.
   https://www.workandincome.govt.nz/products/a-z-benefits/jobseeker-support.html
 - Community Law Manual — Dealing with Work and Income:
   https://communitylaw.org.nz/community-law-manual/chapter-23-dealing-with-work-and-income/
-- Checked: 2026-09-01. Rates and income limits change each 1 April — re-check.
+- Work and Income — Benefit rates at 1 April 2026:
+  https://www.workandincome.govt.nz/products/benefit-rates/benefit-rates-april-2026.html
+- Checked: 2026-09-01 against the 1 April 2026 rates. Re-check after the next 1 April.

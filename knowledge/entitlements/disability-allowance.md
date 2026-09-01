@@ -20,9 +20,10 @@ You may be eligible if you:
 - have **regular ongoing costs** because of it that aren't fully covered by another
   agency (e.g. Pharmac, ACC)
 - are a New Zealand citizen or permanent resident, normally living in NZ
-- are under the income limit for your situation. As a rough guide the limits run from
-  about **$696.60 to $1,295.11 a week before tax** depending on your family situation
-  (single, couple, with children). You can be working and still qualify.
+- are under the income limit for your situation. From 1 April 2026, before tax:
+  single 18+ **$870.00/week**, sole parent with 1 child **$971.51/week**, sole parent
+  with 2+ children **$1,023.59/week** (couple limits are higher — check the current
+  table). You can be working and still qualify.
 
 You do not have to be on a benefit.
 
@@ -71,5 +72,7 @@ health practitioner**.
   https://www.workandincome.govt.nz/products/a-z-benefits/disability-allowance.html
 - Community Law Manual — Dealing with Work and Income:
   https://communitylaw.org.nz/community-law-manual/test/dealing-with-work-and-income/
-- Checked: 2026-09-01. The maximum ($82.85) and income limits change each 1 April —
-  re-check the Work and Income page.
+- Work and Income — Benefit rates at 1 April 2026:
+  https://www.workandincome.govt.nz/products/benefit-rates/benefit-rates-april-2026.html
+- Checked: 2026-09-01 against the 1 April 2026 rates. The maximum ($82.85) and income
+  limits change each 1 April — re-check then.

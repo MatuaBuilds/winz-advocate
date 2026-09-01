@@ -28,8 +28,9 @@ income-tested (with a partner's income counted if you have one).
 
 ## How much
 
-More than Jobseeker Support; exact rate depends on your situation and is set each
-1 April. Extra help is on top.
+More than Jobseeker Support. From 1 April 2026, before tax: single 18+
+**$489.21/week**, sole parent **$679.95/week**. Extra help (Accommodation
+Supplement, Disability Allowance, Temporary Additional Support) is on top.
 
 ## How to apply
 
@@ -57,4 +58,6 @@ More than Jobseeker Support; exact rate depends on your situation and is set eac
   https://www.workandincome.govt.nz/products/a-z-benefits/supported-living-payment.html
 - Community Law Manual — Dealing with Work and Income:
   https://communitylaw.org.nz/community-law-manual/chapter-23-dealing-with-work-and-income/
-- Checked: 2026-09-01. Re-check rates and rules after 1 April.
+- Work and Income — Benefit rates at 1 April 2026:
+  https://www.workandincome.govt.nz/products/benefit-rates/benefit-rates-april-2026.html
+- Checked: 2026-09-01 against the 1 April 2026 rates. Re-check after the next 1 April.
