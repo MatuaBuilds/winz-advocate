@@ -8,8 +8,9 @@ emails and Review of Decision requests, and helps them push back. Built for peop
 whose ADHD, AuDHD, or trauma makes the system's forms, calls, and deadlines a serious
 barrier. **Not Work and Income. Not the government.**
 
-**New here?** Working on the project → [`START-HERE.md`](START-HERE.md). Want to use
-it → [`HOW-TO-USE-THIS.md`](HOW-TO-USE-THIS.md). Want to help → [`CONTRIBUTING.md`](CONTRIBUTING.md).
+**New here?** Working on the project → [`START-HERE.md`](START-HERE.md) then
+[`HOW-WE-WORK.md`](HOW-WE-WORK.md). Want to use it → [`HOW-TO-USE-THIS.md`](HOW-TO-USE-THIS.md).
+Want to help → [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## Documents
 
