@@ -122,7 +122,8 @@ See `../docs/ADVOCATE-CAPABILITY-MAP.md` for the full advocate-skills scoreboard
 Covered: contacting a case manager · rights & pushback · discretion arguments ·
 myths · 2025 rule changes · Review of Decision → BRC → SSAA · Medical Appeal Board
 (brief) · Ombudsman (brief) · stand-downs · earning while on a benefit · overpayments
-& debt · fraud investigations · sanctions (s252).
+& debt · fraud investigations · sanctions (s252) · **how WINZ operates** (institutional
+picture, evidence-graded) · **precedents** (legal principles).
 Still thin/missing: work-ability assessments · drug-testing obligations · Privacy Act
 file requests · reinstating a cancelled benefit · relationship-status disputes ·
 warrant-to-arrest / incarceration payments.

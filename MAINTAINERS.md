@@ -4,15 +4,43 @@ The knowledge base is a living brain. This file is the loop that keeps it comple
 current, and honest. Anyone can run these — Bill, a helper, or a Claude session with
 this repo open.
 
-**The three sources of truth**, in order:
+**The sources of truth**, in order:
 1. Legislation — `legislation.govt.nz` (Social Security Act 2018 + regulations + the
    Ministerial Directions / Welfare Programmes)
-2. Work and Income — `workandincome.govt.nz` (A–Z Benefits, benefit rates, "what to bring")
-3. Community Law Manual — `communitylaw.org.nz/community-law-manual` (chapter on
+2. **MAP — the Guide to Social Development Policy** — `map.workandincome.govt.nz` —
+   the actual policy manual Work and Income staff use to make decisions. This is
+   where the **discretions** are written down. Public. Higher authority than the
+   consumer-facing pages.
+3. Work and Income consumer site — `workandincome.govt.nz` (A–Z Benefits, benefit
+   rates, "what to bring")
+4. Community Law Manual — `communitylaw.org.nz/community-law-manual` (chapter on
    dealing with Work and Income) — best for rights, process, and how discretion works
+5. Official watchdogs — Ombudsman, Auditor-General, Privacy Commissioner; court and
+   Social Security Appeal Authority decisions (NZLII); MSD's published OIA responses
 
-Advocacy know-how (AAAP, beneficiary advocates, lived experience) fills the gaps
-between what the rules say and what actually happens.
+Advocacy know-how (AAAP, beneficiary advocates, lived experience) fills the gap
+between what the rules say and what actually happens — graded as below.
+
+---
+
+## Evidence grading — every claim earns its place
+
+The knowledge base is only useful if it's trusted. Grade every factual claim:
+
+| Grade | What it is | Where it can appear |
+|---|---|---|
+| **Confirmed** | Legislation, MAP, official watchdog reports, court/SSAA decisions, MSD OIA releases | Stated as fact anywhere |
+| **Documented** | Named expert reports (WEAG, CPAG), investigative journalism citing named sources or documents, former staff on the public record | Stated as fact anywhere |
+| **Reported** | An advocacy organisation's stated collective experience; a pattern consistent across many independent accounts | Only as "advocates consistently report…" — never as bare fact |
+| **Lead** | Circulating online / word of mouth / a single unverified account | Never stated to a person as fact. An investigation lead, or a labelled community note |
+
+Rules:
+- Files in `knowledge/entitlements/` and `knowledge/process/` state only **Confirmed**
+  and **Documented** as fact.
+- `knowledge/how-winz-operates.md` carries the grade **inline** on every claim.
+- `knowledge/community-notes/` holds de-identified individual accounts, clearly
+  labelled, and they never override a cited rule.
+- A **Lead** gets promoted only when a Confirmed/Documented source is found for it.
 
 ---
 
@@ -81,6 +109,31 @@ a cited rule.
    `knowledge/precedents.md`: the principle, one line on the facts, the citation.
 3. Cross-link it from the relevant knowledge file.
 
+## Loop 6 — Institutional watch (quarterly)
+
+**Goal:** keep `knowledge/how-winz-operates.md` current and honest — the picture of
+how the machine actually works, so advocacy is grounded, not naive.
+
+1. Check for new material from:
+   - **Ombudsman** (`ombudsman.parliament.nz`) — investigations into MSD / hardship
+     assistance / emergency housing
+   - **Auditor-General** (`oag.parliament.nz`) — MSD performance audits
+   - **Privacy Commissioner** (`privacy.org.nz`) — MSD inquiries
+   - **MSD OIA responses** (`msd.govt.nz` → publications → official information
+     responses) — training material, KPIs, case-management processes
+   - **Select committee** submissions and reports on social security bills
+   - Named investigative journalism (RNZ, Stuff, Newsroom) on WINZ culture, sanctions,
+     treatment — cite the specific piece
+2. For anything relevant, **grade it** (Confirmed / Documented / Reported / Lead) and
+   add it to `how-winz-operates.md` with the grade inline and the source.
+3. Review the **Lead** items — has a verifiable source appeared? Promote or leave.
+
+**On "leaks" and ex-staff accounts:** treat them as **Leads**. Useful for knowing
+what to look for. They become **Documented** only when the person goes on the public
+record by name, or a document surfaces (e.g. via OIA, a court case, or a select
+committee). Never publish someone else's leaked document or name a source who hasn't
+chosen to be named.
+
 ## Loop 5 — Persona sweep (quarterly)
 
 **Goal:** find blind spots by walking real lives through the base.
@@ -106,10 +159,11 @@ Paste this into a Claude Code session with the repo open (monthly, or after 1 Ap
 
 > Run the knowledge health check from MAINTAINERS.md:
 > 1. Re-fetch the WINZ A–Z index and diff against knowledge/COVERAGE.md — list new or renamed payments.
-> 2. Re-fetch the `## Source` URLs for every file in knowledge/entitlements/ and knowledge/process/. List any figure, threshold, timeframe or rule that has changed.
-> 3. Check NZLII for Social Security Appeal Authority decisions in the last 3 months — summarise any new principle.
-> 4. Pick the top 3 `✗` items from COVERAGE.md by priority and draft those files.
-> Produce a short report, then make the safe changes, rebuild, and commit. Flag anything uncertain for me to check.
+> 2. Re-fetch the `## Source` URLs for every file in knowledge/entitlements/ and knowledge/process/. List any figure, threshold, timeframe or rule that has changed. Prefer MAP (map.workandincome.govt.nz) where the consumer page is vague.
+> 3. Check NZLII for Social Security Appeal Authority decisions in the last 3 months — summarise any new principle for knowledge/precedents.md.
+> 4. Check Ombudsman / Auditor-General / Privacy Commissioner / MSD OIA responses for new material on how WINZ operates — grade it and update knowledge/how-winz-operates.md.
+> 5. Pick the top 3 `✗` items from COVERAGE.md by priority and draft those files.
+> Produce a short graded report, then make the safe changes, rebuild, and commit. Flag anything uncertain, and every **Lead**, for me to check.
 
 ## Automating it
 
