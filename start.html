@@ -27,20 +27,15 @@
     font-size:18px; line-height:1.55; -webkit-font-smoothing:antialiased;
   }
   h1,h2{font-family:Fraunces,Georgia,serif; font-weight:600; line-height:1.15; letter-spacing:-.005em}
-  .wrap{max-width:560px; margin:0 auto; padding:20px 20px 64px}
-
-  /* progress */
+  .wrap{max-width:560px; margin:0 auto; padding:20px 20px 72px}
   .top{position:sticky; top:0; background:var(--paper); padding:14px 0 12px; z-index:5}
   .bar{height:8px; background:var(--line); border-radius:999px; overflow:hidden}
   .bar > i{display:block; height:100%; background:var(--pine); border-radius:999px; transition:width .35s ease}
   .steplabel{font-size:.82rem; color:var(--faint); margin-top:7px; display:flex; justify-content:space-between}
   .steplabel a{color:var(--faint)}
-
-  /* card / screen */
   .screen{margin-top:22px}
-  .q{font-size:1.5rem; margin:0 0 6px}
+  .q{font-size:1.45rem; margin:0 0 6px}
   .hint{color:var(--soft); font-size:.98rem; margin-bottom:20px}
-
   .choices{display:grid; gap:12px}
   button.choice{
     text-align:left; font:inherit; color:var(--ink); background:var(--raise);
@@ -50,42 +45,36 @@
   button.choice:hover{border-color:var(--clay)}
   button.choice:active{transform:translateY(1px)}
   button.choice[aria-pressed="true"]{border-color:var(--pine); background:var(--pine-soft)}
-  button.choice .tick{width:22px; height:22px; border-radius:50%; border:2px solid var(--faint); flex:none; display:grid; place-items:center}
+  button.choice .tick{width:22px; height:22px; border-radius:50%; border:2px solid var(--faint); flex:none; display:grid; place-items:center; font-size:.8rem}
   button.choice[aria-pressed="true"] .tick{border-color:var(--pine); background:var(--pine); color:var(--paper)}
-
   .nav{display:flex; gap:10px; margin-top:24px}
   .btn{font:inherit; font-weight:600; border-radius:12px; padding:14px 20px; cursor:pointer; border:1.5px solid transparent}
   .btn-next{background:var(--clay); color:var(--clay-ink); flex:1}
   .btn-next[disabled]{opacity:.4; cursor:default}
   .btn-back{background:transparent; color:var(--soft); border-color:var(--line)}
-
-  input.amount{
-    font:inherit; width:100%; padding:15px 16px; border:1.5px solid var(--line);
-    border-radius:12px; background:var(--raise); color:var(--ink);
-  }
+  input.amount{font:inherit; width:100%; padding:15px 16px 15px 32px; border:1.5px solid var(--line); border-radius:12px; background:var(--raise); color:var(--ink)}
   .prefix{position:relative}
   .prefix span{position:absolute; left:16px; top:50%; transform:translateY(-50%); color:var(--faint)}
-  .prefix input{padding-left:32px}
-
-  /* results */
   .result-h{font-size:1.7rem; margin:6px 0 4px}
   .checklist{display:grid; gap:12px; margin:18px 0}
   .item{background:var(--raise); border:1px solid var(--line); border-left:4px solid var(--pine); border-radius:12px; padding:14px 16px}
   .item.maybe{border-left-color:var(--faint)}
+  .item.urgent{border-left-color:var(--clay)}
   .item h3{font-family:Inter,sans-serif; font-size:1.08rem; margin:0 0 3px}
   .item p{font-size:.95rem; color:var(--soft); margin:0}
   .badge{font-size:.72rem; font-weight:700; text-transform:uppercase; letter-spacing:.06em; color:var(--pine)}
   .item.maybe .badge{color:var(--faint)}
+  .item.urgent .badge{color:var(--clay)}
   .actions-box{background:var(--pine-soft); border-radius:14px; padding:16px 18px; margin:18px 0}
   .actions-box ol{margin:8px 0 0; padding-left:20px}
   .actions-box li{margin:8px 0}
   details.draft{background:var(--raise); border:1px solid var(--line); border-radius:12px; padding:4px 16px; margin:10px 0}
   details.draft summary{padding:12px 0; cursor:pointer; font-weight:600}
-  details.draft pre{white-space:pre-wrap; font:inherit; font-size:.92rem; color:var(--ink); background:var(--paper); border:1px solid var(--line); border-radius:10px; padding:14px; margin:0 0 14px}
+  details.draft pre{white-space:pre-wrap; font:inherit; font-size:.9rem; color:var(--ink); background:var(--paper); border:1px solid var(--line); border-radius:10px; padding:14px; margin:0 0 14px; overflow-x:auto}
   .copy{font:inherit; font-weight:600; background:var(--pine); color:var(--paper); border:0; border-radius:10px; padding:10px 14px; cursor:pointer; margin-bottom:14px}
   .disclaim{font-size:.86rem; color:var(--faint); margin-top:22px; border-top:1px solid var(--line); padding-top:16px}
   a{color:var(--clay)}
-  .cheer{color:var(--pine); font-size:.92rem; margin-top:10px; font-weight:500}
+  .cheer{color:var(--pine); font-size:.92rem; margin-top:14px; font-weight:500}
 </style>
 </head>
 <body>
@@ -101,209 +90,293 @@
 (function(){
   "use strict";
 
-  // ---- questions -----------------------------------------------------------
   var Q = [
-    { id:"urgent", q:"Is anything urgent this week?", hint:"Pick all that apply. If nothing's on fire, choose the last one.",
-      multi:true, options:[
+    { id:"urgent", q:"Is anything urgent this week?", hint:"Pick all that apply. If nothing's on fire, choose the last one.", multi:true, options:[
         {v:"food", t:"No money for food"},
         {v:"power", t:"Power about to be cut off"},
-        {v:"rent", t:"Behind on rent / could be evicted"},
+        {v:"rent", t:"Behind on rent, or could be evicted"},
         {v:"housing", t:"Nowhere to stay tonight or this week"},
-        {v:"none", t:"None of these right now", clears:true}
-      ]},
-    { id:"income", q:"Are you getting any money coming in right now?",
-      options:[
+        {v:"none", t:"None of these right now", clears:true} ]},
+
+    { id:"bigcosts", q:"Any of these costs you can't afford right now?", hint:"Pick all that apply.", multi:true, options:[
+        {v:"dental", t:"Dental treatment (pain, infection, a broken tooth)"},
+        {v:"glasses", t:"Glasses"},
+        {v:"car", t:"Car repairs, WoF or rego — and I need the car"},
+        {v:"school", t:"School uniform, stationery or a device for school"},
+        {v:"whiteware", t:"A fridge, washing machine, or beds"},
+        {v:"none", t:"None of these", clears:true} ]},
+
+    { id:"income", q:"Are you getting any money coming in right now?", options:[
         {v:"benefit", t:"A benefit from Work and Income"},
         {v:"wages", t:"Wages from a job"},
         {v:"both", t:"A benefit and some wages"},
-        {v:"nothing", t:"Nothing at all"}
-      ]},
-    { id:"age", q:"How old are you?",
-      options:[
+        {v:"nothing", t:"Nothing at all"} ]},
+
+    { id:"which_benefit", q:"Which main benefit are you on?", options:[
+        {v:"jobseeker", t:"Jobseeker Support"},
+        {v:"sole", t:"Sole Parent Support"},
+        {v:"slp", t:"Supported Living Payment"},
+        {v:"super", t:"NZ Superannuation"},
+        {v:"other", t:"Another one / an emergency benefit"},
+        {v:"notsure", t:"Not sure what it's called"} ],
+      skipIf:function(a){ return a.income!=="benefit" && a.income!=="both"; }},
+
+    { id:"already", q:"Which of these extra payments are you already getting?", hint:"Pick all you get. Not sure? Leave them and we'll flag it.", multi:true, options:[
+        {v:"as", t:"Accommodation Supplement (help with rent)"},
+        {v:"da", t:"Disability Allowance"},
+        {v:"tas", t:"Temporary Additional Support"},
+        {v:"none", t:"None of these", clears:true} ],
+      skipIf:function(a){ return a.income!=="benefit" && a.income!=="both"; }},
+
+    { id:"age", q:"How old are you?", options:[
         {v:"u18", t:"Under 18"},
         {v:"18_19", t:"18 or 19"},
         {v:"20_24", t:"20 to 24"},
         {v:"25_64", t:"25 to 64"},
-        {v:"65", t:"65 or older"}
-      ]},
-    { id:"kids", q:"Do you have children who live with you and depend on you?",
-      options:[
+        {v:"65", t:"65 or older"} ]},
+
+    { id:"kids", q:"Are there children who live with you and depend on you?", options:[
         {v:"none", t:"No"},
         {v:"one_young", t:"Yes — my youngest is under 3"},
         {v:"one_u14", t:"Yes — my youngest is 3 to 13"},
-        {v:"teen", t:"Yes — all are 14 or older"}
-      ]},
-    { id:"single", q:"Are you doing this on your own, or with a partner?",
-      options:[
+        {v:"teen", t:"Yes — all are 14 or older"},
+        {v:"whangai", t:"Yes — caring for a child who isn't mine (whāngai, grandchild, etc.)"} ]},
+
+    { id:"childcare", q:"Does a child go to daycare, kōhanga reo, or before/after-school care?", options:[
+        {v:"yes", t:"Yes, and I pay for it"},
+        {v:"want", t:"Not yet, but I'd like them to"},
+        {v:"no", t:"No"} ],
+      skipIf:function(a){ return !a.kids || a.kids==="none" || a.kids==="teen"; }},
+
+    { id:"single", q:"Are you doing this on your own, or with a partner?", options:[
         {v:"single", t:"On my own"},
-        {v:"partner", t:"I have a partner"}
-      ]},
-    { id:"housing", q:"Where are you living?",
-      options:[
+        {v:"partner", t:"I have a partner"} ]},
+
+    { id:"housing", q:"Where are you living?", options:[
         {v:"rent_private", t:"Renting from a private landlord"},
         {v:"board", t:"Boarding / paying to stay somewhere"},
         {v:"kaingaora", t:"Kāinga Ora or community housing"},
         {v:"own", t:"Paying a mortgage on my own home"},
         {v:"staying", t:"Staying with family or friends"},
-        {v:"nofixed", t:"No fixed place right now"}
-      ]},
-    { id:"housingcost", q:"Roughly how much do you pay a week for that?",
-      type:"amount", hint:"A rough number is fine. Put 0 if you don't pay anything.",
+        {v:"nofixed", t:"No fixed place right now"} ]},
+
+    { id:"housingcost", q:"Roughly how much do you pay a week for that?", type:"amount",
+      hint:"A rough number is fine. Put 0 if you don't pay anything.",
       skipIf:function(a){ return a.housing==="staying" || a.housing==="nofixed"; }},
-    { id:"health", q:"Do you have a health condition, disability, injury or the effects of trauma that affects your daily life or your ability to work?",
-      options:[
+
+    { id:"health", q:"Do you have a health condition, disability, injury, or effects of trauma that affects daily life or your ability to work?", options:[
         {v:"no", t:"No"},
-        {v:"short", t:"Yes — but it's short-term (under 6 months)"},
-        {v:"long", t:"Yes — it's lasted or will last 6 months or more"},
-        {v:"severe", t:"Yes — it severely limits my ability to work, long-term"}
-      ]},
+        {v:"short", t:"Yes — but short-term (under 6 months)"},
+        {v:"long", t:"Yes — lasted or will last 6 months or more"},
+        {v:"severe", t:"Yes — it severely limits my ability to work, long-term"} ]},
+
     { id:"healthcosts", q:"Do you have regular ongoing costs because of it?",
       hint:"Doctor's visits, prescriptions, counselling, travel to appointments, extra heating, special food.",
       options:[ {v:"yes", t:"Yes, regularly"}, {v:"some", t:"Some, now and then"}, {v:"no", t:"No"} ],
       skipIf:function(a){ return a.health==="no"; }},
-    { id:"bank", q:"Roughly how much money do you have in your bank accounts right now?",
-      type:"amount", hint:"A rough number is fine."},
-    { id:"resident", q:"Are you a New Zealand citizen or permanent resident?",
+
+    { id:"bank", q:"Roughly how much money do you have in your bank accounts right now?", type:"amount", hint:"A rough number is fine." },
+
+    { id:"debt", q:"Do you owe money to Work and Income, or have deductions coming off your payments?", options:[
+        {v:"yes", t:"Yes"},
+        {v:"no", t:"No"},
+        {v:"notsure", t:"Not sure"} ]},
+
+    { id:"trouble", q:"Has any of this happened recently?", hint:"Pick all that apply.", multi:true, options:[
+        {v:"declined", t:"WINZ turned down something I applied for"},
+        {v:"sanction", t:"WINZ cut or reduced my payment as a penalty"},
+        {v:"delay", t:"I'm waiting on a decision that's taking too long"},
+        {v:"none", t:"None of these", clears:true} ]},
+
+    { id:"declined_when", q:"How long ago did you get the decision letter?",
+      hint:"This matters — there's a 3-month limit to challenge it.",
       options:[
+        {v:"within3", t:"Within the last 3 months"},
+        {v:"longer", t:"Longer than 3 months ago"},
+        {v:"notsure", t:"Not sure — I'd have to check the letter"} ],
+      skipIf:function(a){ return !(a.trouble||[]).includes("declined"); }},
+
+    { id:"resident", q:"Are you a New Zealand citizen or permanent resident?", options:[
         {v:"yes", t:"Yes"},
         {v:"visa", t:"No — I'm here on a visa"},
-        {v:"unsure", t:"Not sure"}
-      ]},
-    { id:"newhere", q:"Have you lived in New Zealand for at least 2 years as a citizen or resident?",
-      options:[ {v:"yes", t:"Yes"}, {v:"no", t:"No, less than 2 years"} ],
+        {v:"unsure", t:"Not sure"} ]},
+
+    { id:"newhere", q:"Have you lived in NZ for at least 2 years as a citizen or resident?", options:[
+        {v:"yes", t:"Yes"}, {v:"no", t:"No, less than 2 years"} ],
       skipIf:function(a){ return a.resident!=="yes"; }}
   ];
 
-  // ---- entitlement rules --------------------------------------------------
-  // each returns null, or {level:'yes'|'maybe', name, why, doThis}
+  function num(x){ x = parseFloat(String(x||"").replace(/[^0-9.]/g,"")); return isNaN(x)?0:x; }
+  function onBenefit(a){ return a.income==="benefit" || a.income==="both"; }
+  function has(a,k,v){ return (a[k]||[]).includes(v); }
+  function single(a){ return a.single!=="partner"; }
+
+  // rules: return null or {level:'urgent'|'yes'|'maybe', name, why, doThis}
   var RULES = [
-    function food(a){
-      if(!(a.urgent||[]).includes("food")) return null;
-      var single = a.single!=="partner";
-      var cap = single ? 1400 : 2350;
-      var lots = num(a.bank) > cap;
-      return { level: lots?"maybe":"yes", name:"Special Needs Grant — food",
-        why: lots ? "You told us you have no money for food. There's a cash-asset guide (about $"+ (single?"1,400":"2,350") +") — you're near or over it, so explain what your money is committed to."
-                  : "You have no money for food and no other way to pay. You usually don't pay this back, and there's no limit on how many times you can apply.",
-        doThis:"Phone 0800 559 009 today, or apply on MyMSD. Ask for the amount you actually need." };
+    function foodGrant(a){
+      if(!has(a,"urgent","food")) return null;
+      var cap = single(a)?1400:2350, lots = num(a.bank) > cap;
+      return { level:"urgent", name:"Special Needs Grant — food",
+        why: lots ? "You said you have no money for food. There's a cash-asset guide (about $"+(single(a)?"1,400":"2,350")+"). You're near or over it, so explain what your money is committed to (rent, power, a debt)."
+                  : "You have no money for food and no other way to pay. You usually don't pay this back, and there's no limit on how often you can apply.",
+        doThis:"Phone 0800 559 009 today, or apply on MyMSD. Ask for the amount you actually spend on food — not what they offer." };
     },
-    function power(a){
-      if(!(a.urgent||[]).includes("power") && !(a.urgent||[]).includes("rent")) return null;
-      var onben = a.income==="benefit" || a.income==="both";
-      return { level:"yes", name: onben ? "Advance Payment for the arrears" : "Recoverable Assistance for the arrears",
-        why:"For power or rent arrears you can get help to clear them. It's repayable, but you can ask for repayments as low as a few dollars a week.",
-        doThis:"Ask about this in the same phone call. Bring the bill or the landlord's letter." };
+    function arrears(a){
+      if(!has(a,"urgent","power") && !has(a,"urgent","rent")) return null;
+      return { level:"urgent", name: onBenefit(a) ? "Advance Payment for the arrears" : "Recoverable Assistance for the arrears",
+        why:"For power or rent arrears you can get help to clear them. It's repayable, but you can ask for repayments as low as a few dollars a week so it doesn't leave you short.",
+        doThis:"Ask about this in the same phone call. Bring the bill or a letter from your landlord stating the amount owed." };
     },
     function emergencyHousing(a){
-      if(!(a.urgent||[]).includes("housing") && a.housing!=="nofixed") return null;
-      return { level:"yes", name:"Emergency Housing",
+      if(!has(a,"urgent","housing") && a.housing!=="nofixed") return null;
+      return { level:"urgent", name:"Emergency Housing",
         why:"You have nowhere to stay. The first 7 nights are usually a grant you don't pay back.",
-        doThis:"Phone 0800 559 009 now. Also ask to go on the social housing register — the wait counts from today." };
+        doThis:"Phone 0800 559 009 now. Ask to go on the social housing register too — the wait counts from today." };
+    },
+    function declined(a){
+      if(!has(a,"trouble","declined")) return null;
+      var w = a.declined_when;
+      var level = "yes", why, doThis;
+      if(w==="within3"){ why="WINZ turned something down and you're still inside the 3-month window to challenge it. A Review of Decision is designed to be done without a lawyer — and WINZ can't cut your benefit for lodging one."; doThis="Lodge a Review of Decision now — ask for the form, or write a letter. Get it date-stamped, keep a copy. The full AI version can draft this for you."; }
+      else if(w==="longer"){ level="maybe"; why="It's been more than 3 months, but a late Review of Decision can still be accepted if you have a 'good and sufficient reason' for the delay (being unwell, overwhelmed, or not knowing the deadline can count)."; doThis="Lodge the Review of Decision anyway and explain the delay. Get free advocacy help — Community Law or AAAP."; }
+      else { why="There's a 3-month limit to challenge a WINZ decision, counted from the date on the letter. Check that date."; doThis="Find the decision letter and check the date. If it's within 3 months, lodge a Review of Decision straight away."; }
+      return { level:level, name:"Review of Decision (challenge the decline)", why:why, doThis:doThis };
+    },
+    function sanction(a){
+      if(!has(a,"trouble","sanction")) return null;
+      return { level:"yes", name:"Challenge the sanction",
+        why:"Before WINZ can sanction you for an 'obligation failure', it has to follow a strict process and give you proper written notice (section 252 of the Social Security Act). Advocates say this is often not done right — sanctions are frequently overturned or back-paid.",
+        doThis:"Lodge a Review of Decision. Ask for the written notice they say they sent. Get free advocacy help." };
+    },
+    function delay(a){
+      if(!has(a,"trouble","delay")) return null;
+      return { level:"yes", name:"Follow up on the delay",
+        why:"You're entitled to a decision and to know how long it will take. Chasing it in writing creates a record and often unsticks it.",
+        doThis:"Send a written follow-up (MyMSD or email) asking for the current status and a date for the decision. The AI version can draft this." };
+    },
+    function debt(a){
+      if(a.debt!=="yes") return null;
+      return { level:"yes", name:"Sort out the debt / deductions",
+        why:"A WINZ debt can be disputed (whether it exists, the amount, the period). If it came from a WINZ error and you received the money in good faith, it can be written off. And the weekly deductions can be reduced — as low as 50c — so they don't leave you short.",
+        doThis:"Ask for a full breakdown of the debt in writing. Then ask for a write-off (if it was their mistake) or for the deductions to be reduced. The AI version has ready templates for all three." };
     },
     function mainBenefit(a){
-      if(a.income==="benefit" || a.income==="both") return null; // already on one
-      if(a.age==="65") return { level:"yes", name:"NZ Superannuation", why:"You're 65 or older.", doThis:"Apply through Work and Income — you don't have to have stopped working." };
+      if(onBenefit(a)){
+        if(a.which_benefit==="notsure" || a.which_benefit==="other")
+          return { level:"maybe", name:"Check you're on the right benefit", why:"Being on the wrong benefit can cost you money — Supported Living Payment pays more than Jobseeker, for example.", doThis:"Ask WINZ which benefit you're on and whether a different one fits your situation better." };
+        return null;
+      }
+      if(a.age==="65") return { level:"yes", name:"NZ Superannuation", why:"You're 65 or older.", doThis:"Apply through Work and Income. You don't have to have stopped working." };
       if(a.resident==="visa" || a.newhere==="no")
-        return { level:"maybe", name:"Emergency Benefit", why:"You can't get a standard benefit yet (residence or the 2-year rule), but you're in hardship.", doThis:"Phone 0800 559 009 and say you can't support yourself and don't qualify for another benefit. Get immigration advice too." };
-      if((a.kids==="one_young"||a.kids==="one_u14") && a.single==="single")
+        return { level:"maybe", name:"Emergency Benefit", why:"You can't get a standard benefit yet (residence or the 2-year rule), but you're in hardship. If you're a sole parent, ask about the Emergency Maintenance Allowance.", doThis:"Phone 0800 559 009. Say you can't support yourself and don't qualify for another benefit. Get immigration advice too — some visas have conditions." };
+      if((a.kids==="one_young"||a.kids==="one_u14") && single(a))
         return { level:"yes", name:"Sole Parent Support", why:"You're a single parent with a child under 14.", doThis:"Start the application on MyMSD, then a phone appointment." };
       if(a.health==="severe")
-        return { level:"maybe", name:"Supported Living Payment", why:"Your health condition severely limits your ability to work long-term. It pays more than Jobseeker.", doThis:"Get a thorough report from your doctor or specialist. Apply through Work and Income." };
-      return { level:"yes", name:"Jobseeker Support", why:"You're not working, or not enough, and under 65.", doThis:"Start the application on MyMSD. If a health condition stops you working for now, ask about a medical deferral." };
+        return { level:"maybe", name:"Supported Living Payment", why:"Your health condition severely limits your ability to work long-term. It pays more than Jobseeker.", doThis:"Get a thorough report from your doctor or specialist spelling out how the condition limits work and why it will last 2+ years." };
+      return { level:"yes", name:"Jobseeker Support", why:"You're under 65 and not working, or not enough.", doThis:"Start the application on MyMSD. If a health condition stops you working right now, ask about a medical deferral so work obligations are paused." };
     },
     function accommodation(a){
-      if(a.housing==="kaingaora") return { level:"maybe", name:"Accommodation Supplement — probably not", why:"You're in Kāinga Ora / community housing, so this doesn't apply. But check your rent is set correctly.", doThis:"If your income drops, tell your housing provider — your rent should drop too." };
+      if(a.housing==="kaingaora")
+        return { level:"maybe", name:"Accommodation Supplement — check your rent instead", why:"You're in Kāinga Ora / community housing, so this doesn't apply. But if your income drops, your income-related rent should drop too.", doThis:"Tell your housing provider about any income change." };
       if(["rent_private","board","own"].includes(a.housing)){
-        return { level:"yes", name:"Accommodation Supplement",
-          why:"You pay "+ (a.housing==="own"?"a mortgage":a.housing==="board"?"board":"rent") +". This is a weekly payment toward housing costs — for people on a benefit and low-income workers. It's often the biggest ongoing money people miss.",
-          doThis:"Apply on MyMSD, or ask for the form. Bring your tenancy/board agreement and proof of what you pay." };
+        if(has(a,"already","as"))
+          return { level:"maybe", name:"Accommodation Supplement — check it's at the right rate", why:"You already get this. It can drift below what you're owed — especially if your rent went up and wasn't reported.", doThis:"Report any rent increase. Ask WINZ to confirm your area and current rate." };
+        return { level:"yes", name:"Accommodation Supplement", why:"You pay "+(a.housing==="own"?"a mortgage":a.housing==="board"?"board":"rent")+". It's a weekly payment toward housing costs — for people on a benefit and low-income workers. Often the biggest ongoing money people miss.", doThis:"Apply on MyMSD or ask for the form. Bring your tenancy/board agreement and proof of what you pay." };
       }
       return null;
     },
     function disability(a){
-      if(a.health==="long" || a.health==="severe"){
-        var costs = a.healthcosts==="yes" || a.healthcosts==="some";
-        return { level: costs?"yes":"maybe", name:"Disability Allowance",
-          why: costs ? "Your condition has lasted 6+ months and you have regular costs (doctor, prescriptions, travel, heating, special food). It's a weekly payment, not taxed, never repaid — up to about $82.85/week toward those costs."
-                     : "Your condition has lasted 6+ months. If you have any regular costs because of it, you can claim them.",
-          doThis:"Book a longer GP appointment and ask them to complete a Disability Certificate listing each cost. Keep a list of your health costs for a month." };
-      }
-      return null;
+      if(a.health!=="long" && a.health!=="severe") return null;
+      var costs = a.healthcosts==="yes" || a.healthcosts==="some";
+      if(has(a,"already","da"))
+        return { level:"maybe", name:"Disability Allowance — check it's not underpaid", why:"You already get this. It's paid only up to your verified costs — if a cost changed or was left off, you're owed more (up to about $82.85/week).", doThis:"List every current health cost. Ask WINZ to recalculate, with updated proof." };
+      return { level: costs?"yes":"maybe", name:"Disability Allowance",
+        why: costs ? "Your condition has lasted 6+ months and you have regular costs (doctor, prescriptions, travel, heating, special food). Weekly payment, not taxed, never repaid — up to about $82.85/week toward those costs."
+                   : "Your condition has lasted 6+ months. If there are any regular costs because of it, you can claim them.",
+        doThis:"Book a longer GP appointment and ask for a Disability Certificate listing each cost. Keep a list of your health costs for a month." };
     },
     function tas(a){
-      var lowIncome = a.income!=="wages";
-      var pays = num(a.housingcost) > 0;
-      if(lowIncome && pays){
-        return { level:"maybe", name:"Temporary Additional Support",
-          why:"If your essential costs (rent, power, etc.) are more than your income after other help, this tops up the gap. Worth checking once your main benefit and Accommodation Supplement are sorted.",
-          doThis:"Apply after the above are in place. Every essential cost left out means you're underpaid — list them all." };
-      }
+      if(has(a,"already","tas"))
+        return { level:"maybe", name:"Temporary Additional Support — reapply every 13 weeks", why:"You get this, but it stops after 13 weeks and you have to reapply. People lose it just by missing that.", doThis:"Put the reapplication date in your notes. Check every essential cost is included — leaving one out means you're underpaid." };
+      if(a.income!=="wages" && num(a.housingcost) > 0)
+        return { level:"maybe", name:"Temporary Additional Support", why:"If your essential costs (rent, power, etc.) are more than your income after other help, this tops up the gap. Best checked once your main benefit and Accommodation Supplement are in place.", doThis:"Apply after those. List every essential cost — each one left out means less money." };
+      return null;
+    },
+    function trainingIncentive(a){
+      if((a.which_benefit==="sole" || a.which_benefit==="slp") || (single(a) && (a.kids==="one_young"||a.kids==="one_u14")))
+        return { level:"maybe", name:"Training Incentive Allowance (if you study)", why:"If you're on Sole Parent Support or Supported Living Payment and doing (or wanting to do) a course, this helps with fees, transport, childcare and materials.", doThis:"Ask WINZ about it before you enrol." };
       return null;
     },
     function wff(a){
-      if(a.kids && a.kids!=="none"){
-        var best = a.kids==="one_young";
-        return { level:"yes", name:"Working for Families" + (best?" + Best Start":""),
-          why:"You have dependent children. These are paid by Inland Revenue (not Work and Income) — Family Tax Credit, and "+(best?"Best Start (about $77/week for a child under 1).":"Best Start for children under 3.")+" A lot of newly-single parents aren't registered.",
-          doThis:"Register on myIR at ird.govt.nz, or phone IRD 0800 227 773. Ask for it weekly, not as a lump sum." };
-      }
-      return null;
+      if(!a.kids || a.kids==="none" || a.kids==="whangai") return null;
+      var best = a.kids==="one_young";
+      return { level:"yes", name:"Working for Families"+(best?" + Best Start":""),
+        why:"You have dependent children. Paid by Inland Revenue (not WINZ) — Family Tax Credit, and "+(best?"Best Start (about $77/week for a child under 1).":"Best Start for children under 3.")+" A lot of newly-single parents aren't registered.",
+        doThis:"Register on myIR at ird.govt.nz, or phone IRD 0800 227 773. Ask for it weekly." };
     },
-    function childcare(a){
-      if(a.kids==="one_young"||a.kids==="one_u14"){
-        return { level:"maybe", name:"Childcare Assistance",
-          why:"If your child goes to daycare, kōhanga reo, or before/after-school care, this helps with the cost — up to 50 hours a week if you're working, studying or on a Work and Income activity, otherwise 9 hours.",
-          doThis:"Apply through MyMSD / SmartStart. The childcare place fills in part of the form." };
-      }
-      return null;
+    function ucb(a){
+      if(a.kids!=="whangai") return null;
+      return { level:"yes", name:"Unsupported Child's Benefit",
+        why:"You're caring for a child because their parents can't. It's not income tested — you can be working and still get it. Many carers miss it for years because WINZ doesn't tell them.",
+        doThis:"Apply through WINZ. A letter from a doctor, kōhanga reo or school confirming you care for the child full-time helps. Also check the Child Disability Allowance if the child has a disability." };
+    },
+    function childcareAssist(a){
+      if(a.childcare!=="yes" && a.childcare!=="want") return null;
+      return { level:"yes", name:"Childcare Assistance (Childcare Subsidy / OSCAR)",
+        why:"Helps with the cost of daycare, kōhanga reo, or before/after-school care — up to 50 hours a week if you're working, studying, or doing a WINZ activity; otherwise up to 9 hours.",
+        doThis:"Apply through MyMSD / SmartStart. The childcare place fills in part of the form. Make sure your work/study hours are recorded so you get the higher rate." };
+    },
+    function dental(a){
+      if(!has(a,"bigcosts","dental")) return null;
+      return { level:"yes", name:"Emergency Dental grant",
+        why:"A grant (up to about $1,000 a year — confirm current) toward emergency dental treatment. You don't pay it back. Available whether or not you're on a benefit.",
+        doThis:"Phone 0800 559 009. Get a quote from the dentist first if you can." };
+    },
+    function otherGrants(a){
+      var bits = [];
+      if(has(a,"bigcosts","glasses")) bits.push("glasses");
+      if(has(a,"bigcosts","car")) bits.push("essential car repairs");
+      if(has(a,"bigcosts","school")) bits.push("school uniform / stationery / a device");
+      if(has(a,"bigcosts","whiteware")) bits.push("a fridge, washing machine or beds");
+      if(!bits.length) return null;
+      return { level:"yes", name:"Grants for "+bits.join(", "),
+        why:"WINZ can help with essential one-off costs you can't meet another way. Some you pay back (an Advance or Recoverable Assistance), some you don't — ask which, and ask for the non-recoverable option first.",
+        doThis:"Phone 0800 559 009 or use MyMSD. Say the exact cost and why it's essential. For furniture get two quotes; for whiteware they have a supplier arrangement (no quote needed)." };
     },
     function winter(a){
-      if(a.income==="benefit"||a.income==="both"){
-        return { level:"maybe", name:"Winter Energy Payment — check it's being paid",
-          why:"If you're on a benefit, this is automatic from about 1 May to 1 October. If it's not showing in your payments over winter, something's wrong.",
-          doThis:"Check your payment history. If it's missing, ask Work and Income why." };
-      }
-      return null;
+      if(!onBenefit(a)) return null;
+      return { level:"maybe", name:"Winter Energy Payment — check it's being paid",
+        why:"On a benefit, this is automatic from about 1 May to 1 October. If it's not in your payments over winter, something's wrong.",
+        doThis:"Check your payment history. If it's missing, ask WINZ why." };
     },
     function csc(a){
-      if(a.income==="benefit"||a.income==="both") return null;
+      if(onBenefit(a)) return null;
       return { level:"maybe", name:"Community Services Card",
-        why:"Low-income, not on a benefit — this cuts the cost of doctor's visits and prescriptions.",
-        doThis:"Apply through Work and Income or check if you already have a current one." };
+        why:"Low income and not on a benefit — this cuts the cost of doctor's visits and prescriptions.",
+        doThis:"Apply through WINZ, or check whether you already have a current one." };
     },
     function deferral(a){
-      if((a.income==="benefit"||a.income==="both") && (a.health==="short"||a.health==="long"||a.health==="severe")){
+      if(onBenefit(a) && (a.health==="short"||a.health==="long"||a.health==="severe"))
         return { level:"maybe", name:"Work-obligation deferral",
           why:"If a health condition stops you meeting work obligations, they should be paused for the period your medical certificate covers. This gets missed — and people get sanctioned for things they were excused from.",
-          doThis:"Give Work and Income a medical certificate and ask for the deferral to be confirmed in writing." };
-      }
+          doThis:"Give WINZ a medical certificate and ask for the deferral to be confirmed in writing." };
       return null;
     }
   ];
 
-  // ---- engine ------------------------------------------------------------
-  var A = load();            // answers
-  var order = [];            // visible question index list, built as we go
-  var pos = 0;
-
-  function num(x){ x = parseFloat(String(x||"").replace(/[^0-9.]/g,"")); return isNaN(x)?0:x; }
+  var A = load(), pos = 0;
   function load(){ try{ return JSON.parse(localStorage.getItem("wa_answers")||"{}"); }catch(e){ return {}; } }
   function save(){ try{ localStorage.setItem("wa_answers", JSON.stringify(A)); }catch(e){} }
-
-  function visibleQuestions(){
-    return Q.filter(function(q){ return !(q.skipIf && q.skipIf(A)); });
-  }
+  function visible(){ return Q.filter(function(q){ return !(q.skipIf && q.skipIf(A)); }); }
 
   function render(){
-    var vis = visibleQuestions();
-    if(pos >= vis.length){ return renderResults(); }
+    var vis = visible();
+    if(pos >= vis.length) return renderResults();
     var q = vis[pos];
-    document.getElementById("fill").style.width = Math.round((pos/(vis.length))*100) + "%";
-    document.getElementById("stepnum").textContent = "Question " + (pos+1) + " of " + vis.length;
-
-    var el = document.getElementById("app");
-    el.innerHTML = "";
-    var h = document.createElement("h1"); h.className="q"; h.textContent=q.q; el.appendChild(h);
+    document.getElementById("fill").style.width = Math.round((pos/vis.length)*100)+"%";
+    document.getElementById("stepnum").textContent = "Question "+(pos+1)+" of "+vis.length;
+    var el = document.getElementById("app"); el.innerHTML="";
+    var h=document.createElement("h1"); h.className="q"; h.textContent=q.q; el.appendChild(h);
     if(q.hint){ var p=document.createElement("p"); p.className="hint"; p.textContent=q.hint; el.appendChild(p); }
 
     if(q.type==="amount"){
@@ -315,7 +388,7 @@
       var wrap=document.createElement("div"); wrap.className="choices";
       q.options.forEach(function(o){
         var b=document.createElement("button"); b.className="choice"; b.type="button";
-        var chosen = q.multi ? (A[q.id]||[]).includes(o.v) : A[q.id]===o.v;
+        var chosen = q.multi ? has(A,q.id,o.v) : A[q.id]===o.v;
         b.setAttribute("aria-pressed", chosen?"true":"false");
         b.innerHTML='<span class="tick">'+(chosen?"✓":"")+'</span><span>'+o.t+'</span>';
         b.addEventListener("click", function(){
@@ -325,10 +398,7 @@
             else { cur = cur.filter(function(x){return x!=="none";});
                    A[q.id] = cur.includes(o.v) ? cur.filter(function(x){return x!==o.v;}) : cur.concat([o.v]); }
             save(); render();
-          } else {
-            A[q.id]=o.v; save();
-            pos++; render(); window.scrollTo(0,0);
-          }
+          } else { A[q.id]=o.v; save(); pos++; render(); window.scrollTo(0,0); }
         });
         wrap.appendChild(b);
       });
@@ -343,19 +413,17 @@
       next.onclick=function(){ pos++; render(); window.scrollTo(0,0); }; nav.appendChild(next);
     }
     el.appendChild(nav);
-
     if(pos>0 && pos===Math.floor(vis.length/2)){
       var c=document.createElement("p"); c.className="cheer"; c.textContent="You're about halfway. Keep going — the hard part's nearly done."; el.appendChild(c);
     }
   }
 
   function renderResults(){
-    document.getElementById("fill").style.width = "100%";
-    document.getElementById("stepnum").textContent = "Your results";
-    var results = [];
-    RULES.forEach(function(fn){ try{ var r=fn(A); if(r) results.push(r); }catch(e){} });
-    var yes = results.filter(function(r){return r.level==="yes";});
-    var maybe = results.filter(function(r){return r.level==="maybe";});
+    document.getElementById("fill").style.width="100%";
+    document.getElementById("stepnum").textContent="Your results";
+    var results=[]; RULES.forEach(function(fn){ try{ var r=fn(A); if(r) results.push(r); }catch(e){} });
+    var order={urgent:0,yes:1,maybe:2};
+    results.sort(function(a,b){ return order[a.level]-order[b.level]; });
 
     var el=document.getElementById("app"); el.innerHTML="";
     var h=document.createElement("h1"); h.className="result-h"; h.textContent="What you may be entitled to"; el.appendChild(h);
@@ -364,133 +432,139 @@
     el.appendChild(sub);
 
     var list=document.createElement("div"); list.className="checklist";
-    yes.concat(maybe).forEach(function(r){
-      var d=document.createElement("div"); d.className="item"+(r.level==="maybe"?" maybe":"");
-      d.innerHTML='<div class="badge">'+(r.level==="yes"?"Worth applying":"Worth checking")+'</div>'+
-                  '<h3>'+r.name+'</h3><p>'+r.why+'</p>';
+    results.forEach(function(r){
+      var d=document.createElement("div"); d.className="item "+r.level;
+      var label = r.level==="urgent" ? "Do this now" : r.level==="yes" ? "Worth applying" : "Worth checking";
+      d.innerHTML='<div class="badge">'+label+'</div><h3>'+r.name+'</h3><p>'+r.why+'</p>'+
+                  '<p style="margin-top:6px"><strong>What to do:</strong> '+r.doThis+'</p>';
       list.appendChild(d);
     });
     el.appendChild(list);
 
-    // three actions
-    var actions = buildActions(A, yes, maybe);
+    var actions=buildActions(A,results);
     var ab=document.createElement("div"); ab.className="actions-box";
-    ab.innerHTML='<strong>Your next 3 things — in order</strong><ol>'+actions.map(function(a){return "<li>"+a+"</li>";}).join("")+'</ol>';
+    ab.innerHTML='<strong>Your next 3 things — in order</strong><ol>'+actions.map(function(x){return "<li>"+x+"</li>";}).join("")+'</ol>';
     el.appendChild(ab);
 
-    // drafts
     var dh=document.createElement("h2"); dh.style.fontSize="1.3rem"; dh.style.margin="24px 0 6px"; dh.textContent="Emails ready for you to send"; el.appendChild(dh);
-    var dhint=document.createElement("p"); dhint.className="hint"; dhint.textContent="Copy one, fill in the [square brackets], and send it through MyMSD or to your service centre. Keep a copy. You send it — not us."; el.appendChild(dhint);
-    buildDrafts(A, yes, maybe).forEach(function(dr){
+    var dhint=document.createElement("p"); dhint.className="hint"; dhint.textContent="Copy one, fill in the [square brackets], send it through MyMSD or to your service centre. Keep a copy. You send it — not us."; el.appendChild(dhint);
+    buildDrafts(A,results).forEach(function(dr){
       var det=document.createElement("details"); det.className="draft";
-      det.innerHTML='<summary>'+dr.title+'</summary><button class="copy">Copy this email</button><pre>'+esc(dr.body)+'</pre>';
-      det.querySelector(".copy").addEventListener("click", function(){
-        navigator.clipboard.writeText(dr.body).then(function(){ this.textContent="Copied ✓"; }.bind(this)).catch(function(){});
-      });
+      det.innerHTML='<summary>'+dr.title+'</summary><button class="copy">Copy this</button><pre>'+esc(dr.body)+'</pre>';
+      det.querySelector(".copy").addEventListener("click", function(){ var btn=this; navigator.clipboard.writeText(dr.body).then(function(){ btn.textContent="Copied ✓"; }).catch(function(){}); });
       el.appendChild(det);
     });
 
-    // case file
     var cf=document.createElement("h2"); cf.style.fontSize="1.3rem"; cf.style.margin="24px 0 6px"; cf.textContent="Save your notes"; el.appendChild(cf);
     var cfbtn=document.createElement("button"); cfbtn.className="copy"; cfbtn.textContent="Copy my notes to keep";
-    cfbtn.addEventListener("click", function(){
-      navigator.clipboard.writeText(caseFile(A, yes, maybe)).then(function(){ cfbtn.textContent="Copied ✓ — paste it somewhere safe"; }).catch(function(){});
-    });
+    cfbtn.addEventListener("click", function(){ navigator.clipboard.writeText(caseFile(A,results)).then(function(){ cfbtn.textContent="Copied ✓ — paste it somewhere safe"; }).catch(function(){}); });
     el.appendChild(cfbtn);
 
     var more=document.createElement("p"); more.style.marginTop="20px";
-    more.innerHTML='Got an unusual situation, a declined decision, or a WINZ debt? '+
-      '<a href="./index.html#start">Use the full AI version</a> — it can go deeper and draft anything.';
+    more.innerHTML='Unusual situation, a declined decision to fight, or a WINZ debt? <a href="./index.html#start">Use the full AI version</a> — it goes deeper and drafts anything.';
     el.appendChild(more);
-
-    var again=document.createElement("p"); again.style.marginTop="14px";
-    again.innerHTML='<a href="#" id="restart">Start again</a>';
-    el.appendChild(again);
+    var again=document.createElement("p"); again.style.marginTop="14px"; again.innerHTML='<a href="#" id="restart">Start again</a>'; el.appendChild(again);
     document.getElementById("restart").onclick=function(e){ e.preventDefault(); A={}; save(); pos=0; render(); window.scrollTo(0,0); };
 
     var dis=document.createElement("p"); dis.className="disclaim";
-    dis.innerHTML="Free, community-run, independent — not Work and Income, not the government. "+
-      "Not legal advice. If WINZ accuses you of fraud, get a lawyer through Community Law. "+
-      "If you're not coping: free call or text <strong>1737</strong>, or <strong>111</strong> in an emergency.";
+    dis.innerHTML="Free, community-run, independent — not Work and Income, not the government. Not legal advice. If WINZ accuses you of fraud, get a lawyer through Community Law. If you're not coping: free call or text <strong>1737</strong>, or <strong>111</strong> in an emergency.";
     el.appendChild(dis);
     window.scrollTo(0,0);
   }
 
-  function buildActions(a, yes, maybe){
+  function buildActions(a, results){
     var out=[];
-    var u=a.urgent||[];
-    if(u.includes("food")||u.includes("power")||u.includes("rent")||u.includes("housing"))
-      out.push("<strong>Today:</strong> phone <strong>0800 559 009</strong> about the urgent help (food / power / rent / housing). Say what you need and how much.");
-    if(a.income!=="benefit" && a.income!=="both" && a.age!=="65")
+    if(results.some(function(r){return r.level==="urgent";}))
+      out.push("<strong>Today:</strong> phone <strong>0800 559 009</strong> about the urgent items above. Say what you need and how much.");
+    if((a.trouble||[]).includes("declined") && a.declined_when!=="longer")
+      out.push("<strong>This week (there's a deadline):</strong> lodge a Review of Decision for the declined decision.");
+    if(!onBenefit(a) && a.age!=="65")
       out.push("<strong>This week:</strong> start your main benefit application on MyMSD (my.msd.govt.nz).");
-    if(["rent_private","board","own"].includes(a.housing))
+    if(["rent_private","board","own"].includes(a.housing) && !has(a,"already","as"))
       out.push("<strong>This week:</strong> book a phone appointment to apply for Accommodation Supplement — bring your tenancy/board agreement.");
     if((a.health==="long"||a.health==="severe") && out.length<3)
       out.push("<strong>Soon:</strong> book a longer GP appointment for a Disability Certificate listing your health costs.");
-    if(a.kids && a.kids!=="none" && out.length<3)
+    if(a.kids && a.kids!=="none" && a.kids!=="whangai" && out.length<3)
       out.push("<strong>Soon:</strong> register for Working for Families on myIR at ird.govt.nz.");
-    if(out.length===0) out.push("Book a phone appointment with Work and Income to go through everything on this list.");
+    if(!out.length) out.push("Book a phone appointment with WINZ to go through everything on this list.");
     return out.slice(0,3);
   }
 
-  function esc(s){ return String(s).replace(/[&<>]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;"}[c];}); }
+  function esc(s){ return String(s).replace(/[&<>]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;"}[c];}); }
 
-  function buildDrafts(a, yes, maybe){
-    var names = yes.concat(maybe).map(function(r){return r.name;});
+  function buildDrafts(a, results){
+    var names = results.map(function(r){return r.name;});
     var drafts=[];
-    var u=a.urgent||[];
-    if(u.length && !u.includes("none")){
+    var u=(a.urgent||[]).filter(function(x){return x!=="none";});
+    if(u.length){
       drafts.push({ title:"Urgent help + appointment request", body:
 "Subject: Urgent assistance request and appointment request — [Full name], client number [number]\n\n"+
-"Kia ora,\n\n"+
-"My name is [Full name], client number [number], date of birth [DD/MM/YYYY].\n\n"+
-"I need urgent help this week with: "+u.map(function(x){return {food:"food",power:"power arrears",rent:"rent arrears",housing:"emergency housing"}[x];}).filter(Boolean).join(", ")+".\n"+
-"I have no other way to pay for this. Money available in my accounts: $"+(a.bank||"[amount]")+", which is committed to [rent / power / debt] and not available.\n\n"+
-"I would also like a phone appointment to check I am receiving everything I am entitled to. Based on my situation I think I should check:\n"+
+"Kia ora,\n\nMy name is [Full name], client number [number], date of birth [DD/MM/YYYY].\n\n"+
+"I need urgent help this week with: "+u.map(function(x){return {food:"food",power:"power arrears",rent:"rent arrears",housing:"emergency housing"}[x];}).join(", ")+".\n"+
+"I have no other way to pay for this. Money in my accounts: $"+(a.bank||"[amount]")+", committed to [rent / power / debt] and not available.\n\n"+
+"I would also like a phone appointment to check I am receiving everything I am entitled to. Based on my situation, please check:\n"+
 names.map(function(n){return "  - "+n;}).join("\n")+"\n\n"+
-"Please tell me what you need from me to process the urgent help today, and the date and time of the appointment. I would like to bring a support person.\n\n"+
+"Please tell me what you need to process the urgent help today, and the appointment date and time. I would like to bring a support person.\n\n"+
 "Ngā mihi,\n[Full name]\n[phone] · [email]" });
     } else {
       drafts.push({ title:"Appointment request — full entitlement check", body:
 "Subject: Appointment request — checking my full entitlements — [Full name], client number [number]\n\n"+
-"Kia ora,\n\n"+
-"My name is [Full name], client number [number], date of birth [DD/MM/YYYY].\n\n"+
-"I would like a phone appointment to make sure I am receiving everything I am entitled to. Based on my situation I would like to check:\n"+
+"Kia ora,\n\nMy name is [Full name], client number [number], date of birth [DD/MM/YYYY].\n\n"+
+"I would like a phone appointment to make sure I am receiving everything I am entitled to. Please check:\n"+
 names.map(function(n){return "  - "+n;}).join("\n")+"\n\n"+
 "Please let me know the date and time. I would like to bring a support person.\n\n"+
 "Ngā mihi,\n[Full name]\n[phone] · [email]" });
     }
-    if(names.some(function(n){return n.indexOf("Disability Allowance")===0;})){
+    if((a.trouble||[]).includes("declined")){
+      drafts.push({ title:"Review of Decision request", body:
+"Subject: Application for Review of Decision — [Full name], client number [number]\n\n"+
+"Kia ora,\n\nI am applying for a review of the following decision.\n\n"+
+"- My name: [Full name]\n- Client number: [number]\n- Date of birth: [DD/MM/YYYY]\n"+
+"- Decision I am challenging: [describe it — e.g. the decision to decline my application for X]\n"+
+"- Date I was notified: [DD/MM/YYYY]"+(a.declined_when==="longer"?"  (This is more than three months ago. The reason for the delay is [reason — e.g. I was unwell / did not know there was a time limit].)":"")+"\n\n"+
+"Why I believe the decision is wrong:\n[Plain, factual points. Attach any evidence — a letter from your doctor, proof of a cost, a record of what you were told.]\n\n"+
+"What I think the correct decision is:\n[e.g. That I am granted X from [date].]\n\n"+
+"I would like to attend the review by phone, with a support person. Please also send me the information on my file relevant to this decision.\n\n"+
+"Ngā mihi,\n[Full name]\n[phone] · [email] · [date]" });
+    }
+    if((a.trouble||[]).includes("delay")){
+      drafts.push({ title:"Follow-up on a delay", body:
+"Subject: Follow-up on [what you applied for] — [Full name], client number [number]\n\n"+
+"Kia ora,\n\nOn [date] I applied for [what you applied for] [reference number if you have one]. I was told to expect a decision by [date/timeframe], and I have not had one.\n\n"+
+"This is causing [short factual impact — e.g. I cannot cover this week's food and power].\n\n"+
+"Please: 1) tell me the current status, 2) tell me if anything further is needed from me, 3) give me a date for the decision. If a decision has been made, please send it in writing with the reasons.\n\n"+
+"Ngā mihi,\n[Full name]\n[phone] · [email]" });
+    }
+    if(a.debt==="yes"){
+      drafts.push({ title:"Debt: ask for the breakdown", body:
+"Subject: Request for breakdown of alleged overpayment — [Full name], client number [number]\n\n"+
+"Kia ora,\n\nI have a letter dated [date] saying I was overpaid [$amount] for the period [dates].\n\n"+
+"Before anything is deducted or agreed, please send me in writing: how it was calculated (week by week), what income or change it is based on and the source, the exact period, and which rule it relies on. Please pause any deductions until I have checked this.\n\n"+
+"Ngā mihi,\n[Full name]\n[phone] · [email]" });
+    }
+    if(results.some(function(r){return r.name.indexOf("Disability Allowance")===0;})){
       drafts.push({ title:"Ask your GP for a Disability Certificate", body:
-"Kia ora [Dr name],\n\n"+
-"I'm applying to Work and Income for a Disability Allowance. It needs a Disability Certificate from you confirming:\n"+
-"  - my condition and that it has lasted / will last 6 months or more\n"+
-"  - the regular costs it causes me\n\n"+
-"My regular health-related costs are:\n"+
-"  - GP visits: $[amount] each, about [how often]\n"+
-"  - Prescriptions: $[amount]\n"+
-"  - [counselling / physio / travel to appointments / extra heating / special food]: $[amount]\n\n"+
-"Could we book a longer appointment so there's time to complete it properly? Thank you.\n\n"+
-"[Full name] · [DOB] · [phone]" });
+"Kia ora [Dr name],\n\nI'm applying to Work and Income for a Disability Allowance. It needs a Disability Certificate from you confirming:\n  - my condition, and that it has lasted / will last 6 months or more\n  - the regular costs it causes me\n\n"+
+"My regular health-related costs:\n  - GP visits: $[amount], about [how often]\n  - Prescriptions: $[amount]\n  - [counselling / physio / travel / extra heating / special food]: $[amount]\n\n"+
+"Could we book a longer appointment so there's time to complete it properly? Thank you.\n\n[Full name] · [DOB] · [phone]" });
     }
     return drafts;
   }
 
-  function caseFile(a, yes, maybe){
-    var L=["MY WINZ ADVOCATE NOTES","(keep this — paste it back next time)","Updated: "+new Date().toLocaleDateString("en-NZ"),"",
-      "MY SITUATION"];
-    L.push("- Income now: "+({benefit:"a benefit",wages:"wages",both:"benefit + wages",nothing:"nothing"}[a.income]||"[?]"));
-    L.push("- Age band: "+(a.age||"[?]")+"   |   "+(a.single==="partner"?"have a partner":"on my own"));
-    L.push("- Children: "+({none:"none",one_young:"youngest under 3",one_u14:"youngest 3-13",teen:"all 14+"}[a.kids]||"[?]"));
-    L.push("- Housing: "+({rent_private:"private rental",board:"boarding",kaingaora:"Kāinga Ora / community",own:"own home w/ mortgage",staying:"staying with family/friends",nofixed:"no fixed place"}[a.housing]||"[?]")+", $"+(a.housingcost||"0")+"/wk");
-    L.push("- Health: "+({no:"no condition",short:"short-term condition",long:"6+ month condition",severe:"severe long-term"}[a.health]||"[?]"));
-    L.push("- Money in bank: about $"+(a.bank||"[?]"));
+  function caseFile(a, results){
+    var L=["MY WINZ ADVOCATE NOTES","(keep this — paste it back next time)","Updated: "+new Date().toLocaleDateString("en-NZ"),"","MY SITUATION"];
+    L.push("- Income: "+({benefit:"a benefit",wages:"wages",both:"benefit + wages",nothing:"nothing"}[a.income]||"[?]")+(a.which_benefit?" ("+a.which_benefit+")":""));
+    L.push("- Age band: "+(a.age||"[?]")+"   |   "+(single(a)?"on my own":"have a partner"));
+    L.push("- Children: "+({none:"none",one_young:"youngest under 3",one_u14:"youngest 3-13",teen:"all 14+",whangai:"caring for a child not mine"}[a.kids]||"[?]"));
+    L.push("- Housing: "+({rent_private:"private rental",board:"boarding",kaingaora:"Kāinga Ora/community",own:"own home w/ mortgage",staying:"with family/friends",nofixed:"no fixed place"}[a.housing]||"[?]")+", $"+(a.housingcost||"0")+"/wk");
+    L.push("- Health: "+({no:"none",short:"short-term",long:"6+ months",severe:"severe long-term"}[a.health]||"[?]"));
+    L.push("- Money in bank: about $"+(a.bank||"[?]")+"   |   WINZ debt: "+({yes:"yes",no:"no",notsure:"unsure"}[a.debt]||"[?]"));
     L.push("- Residency: "+({yes:"citizen/resident",visa:"on a visa",unsure:"unsure"}[a.resident]||"[?]"));
+    if((a.trouble||[]).filter(function(x){return x!=="none";}).length) L.push("- Trouble: "+(a.trouble||[]).filter(function(x){return x!=="none";}).join(", "));
     L.push("","TO APPLY FOR / CHECK");
-    yes.forEach(function(r){ L.push("- [ ] "+r.name+"  (worth applying)"); });
-    maybe.forEach(function(r){ L.push("- [ ] "+r.name+"  (worth checking)"); });
-    L.push("","CORRESPONDENCE LOG (date | sent/received | what)","- ");
-    L.push("","DEADLINES","- ");
+    results.forEach(function(r){ L.push("- [ ] "+r.name+"  ("+(r.level==="urgent"?"do now":r.level==="yes"?"worth applying":"worth checking")+")"); });
+    L.push("","CORRESPONDENCE LOG (date | sent/received | what | reference #)","- ","","DEADLINES (what | by when)","- ");
+    if((a.trouble||[]).includes("declined")) L.push("- Review of Decision — within 3 months of the letter date");
     return L.join("\n");
   }
 
