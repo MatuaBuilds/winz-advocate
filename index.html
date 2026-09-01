@@ -91,7 +91,7 @@
     <p class="sub">It works out what you can apply for, writes the emails for you, and
       helps you push back when a decision is wrong. You always hit send yourself.</p>
     <div class="cta">
-      <a class="btn btn-primary" href="#start">Start using it</a>
+      <a class="btn btn-primary" href="./start.html">Start — work out what you're owed</a>
       <a class="btn btn-ghost" href="#guide">Just read the guide</a>
     </div>
     <p class="sub" style="margin-top:1.4em">Built for people whose ADHD, AuDHD or
@@ -101,26 +101,30 @@
   </header>
 
   <section id="start">
-    <h2>Start using it — 3 steps</h2>
-    <div class="panel">
-      <ol class="steps">
-        <li>Open a free account at <a href="https://claude.ai" target="_blank" rel="noopener">claude.ai</a>
-          (or another AI assistant you already use) and start a new chat.</li>
-        <li>Copy the whole tool with this button, and paste it into the chat.
-          <div class="copyrow">
-            <button class="btn" id="copyBtn">Copy the tool</button>
-            <span id="copyMsg" class="note"></span>
-          </div>
-          <span class="note">Button not working? <a href="./BUILD/winz-advocate-full-prompt.md" download>Download it</a>
-            and paste the contents instead.</span>
-        </li>
-        <li>Send: <em>“I need help with Work and Income.”</em> Then answer its questions,
-          one at a time. Stop whenever — paste your saved notes back next time to pick
-          up where you left off.</li>
-      </ol>
+    <h2>Two ways to use it</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>1. Work out what you're owed <span class="note">(quickest)</span></h3>
+        <p>Tap through about a dozen simple questions right here. At the end you get a
+          list of what to apply for, three things to do, and the emails written for
+          you. No account, no typing.</p>
+        <p style="margin-top:.8em"><a class="btn btn-primary" href="./start.html">Start</a></p>
+      </div>
+      <div class="card">
+        <h3>2. The full AI version <span class="note">(deeper)</span></h3>
+        <p>For an unusual situation, a declined decision, a WINZ debt, or drafting
+          anything: open a free account at
+          <a href="https://claude.ai" target="_blank" rel="noopener">claude.ai</a>,
+          start a chat, and paste in the whole tool.</p>
+        <div class="copyrow">
+          <button class="btn btn-ghost" id="copyBtn">Copy the tool</button>
+          <span id="copyMsg" class="note"></span>
+        </div>
+        <span class="note">Then send “I need help with Work and Income.”
+          <a href="./BUILD/winz-advocate-full-prompt.md" download>Download instead</a> ·
+          <a href="./docs/SET-UP-THE-CLAUDE-PROJECT.md">save it as a project</a></span>
+      </div>
     </div>
-    <p class="note">Want it as a saved project you don't paste each time? See
-      <a href="./docs/SET-UP-THE-CLAUDE-PROJECT.md">the setup guide</a>.</p>
   </section>
 
   <section>
