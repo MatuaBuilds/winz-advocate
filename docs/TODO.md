@@ -30,6 +30,19 @@ Wait ~1 min, hard-refresh the website. It should now have the new layout and a
   to Claude. It becomes the one big button on the site (zero pasting for users).
 - If not → the "Copy the tool" button is the best free option for now.
 
+## Build it out to match a real advocate
+
+Full map + gap analysis: **`docs/ADVOCATE-CAPABILITY-MAP.md`**. Work through the
+batches there:
+- Batch 1 — emergency benefit, stand-downs, overpayments/debt, emergency housing,
+  other special-needs grants (highest-frequency gaps)
+- Batch 2 — situations (family violence, prison release, young people) + work
+  obligations/assessments
+- Batch 3 — templates (initial application, deferral, Privacy Act file request,
+  overpayment relief, staff complaint, reduce debt repayments)
+- Batch 4 — appeals depth (Medical Appeal Board, SSAA, Ombudsman) + more referrals
+- Batch 5 — a deliberate "full entitlement audit" checklist
+
 ## Still open (no rush)
 
 1. ~~Check the main benefit dollar figures~~ **DONE 2026-09-01** — verified against
