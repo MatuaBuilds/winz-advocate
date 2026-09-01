@@ -5,75 +5,98 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>WINZ Advocate — free help with Work and Income</title>
 <meta name="description" content="A free, independent tool that helps you get what Work and Income (WINZ) owes you. Not the government.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#f6f4ef; --panel:#ffffff; --ink:#1f1d1a; --soft:#5b564e; --line:#e3ddd2;
-    --brand:#0d5c53; --brand-ink:#ffffff; --accent:#c8532b; --ring:rgba(13,92,83,.35);
+    --paper:#f7f3ec; --raise:#fffdf9; --ink:#221d17; --soft:#5f5749; --faint:#8a8071;
+    --line:#e6ddcd; --clay:#bf4f2a; --clay-ink:#fff; --pine:#2f5d4f;
+    --shadow:0 1px 2px rgba(34,29,23,.04), 0 8px 24px rgba(34,29,23,.06);
   }
   @media (prefers-color-scheme:dark){
     :root{
-      --bg:#14181a; --panel:#1c2225; --ink:#ecebe7; --soft:#a7a49d; --line:#2c343700;
-      --line:#2b3336; --brand:#3fb8a6; --brand-ink:#06201d; --accent:#ff7d54; --ring:rgba(63,184,166,.4);
+      --paper:#191510; --raise:#221d17; --ink:#f1eadd; --soft:#b6ab98; --faint:#8b8272;
+      --line:#332b20; --clay:#e5734b; --clay-ink:#2a0f04; --pine:#74b7a1;
+      --shadow:0 1px 2px rgba(0,0,0,.2), 0 10px 30px rgba(0,0,0,.28);
     }
   }
   *{box-sizing:border-box;margin:0}
   html{scroll-behavior:smooth}
-  body{background:var(--bg);color:var(--ink);
-    font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    -webkit-font-smoothing:antialiased;}
-  .wrap{max-width:760px;margin:0 auto;padding:22px 20px 90px}
-  a{color:var(--brand);text-underline-offset:2px}
-  h1{font-size:clamp(2rem,7vw,2.9rem);line-height:1.08;letter-spacing:-.02em;margin:.15em 0}
-  h2{font-size:1.3rem;letter-spacing:-.01em;margin:0 0 .6em}
-  p{margin:0 0 .9em}
-  section{margin:2.6em 0}
-  .badge{display:inline-flex;gap:.5em;align-items:center;font-size:.8rem;font-weight:600;
-    letter-spacing:.02em;text-transform:uppercase;color:var(--brand);
-    background:color-mix(in srgb,var(--brand) 12%,transparent);
-    border:1px solid color-mix(in srgb,var(--brand) 30%,transparent);
-    padding:.35em .7em;border-radius:999px}
-  .lede{font-size:1.2rem;color:var(--soft);margin:.5em 0 1.1em}
-  .cta{display:flex;flex-wrap:wrap;gap:.7em;margin:1.2em 0}
-  .btn{display:inline-block;font-weight:650;text-decoration:none;padding:.85em 1.3em;
-    border-radius:12px;border:1px solid transparent;cursor:pointer;font-size:1rem}
-  .btn-primary{background:var(--brand);color:var(--brand-ink)}
-  .btn-primary:hover{filter:brightness(1.06)}
-  .btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
-  .btn-ghost:hover{border-color:var(--brand)}
-  .panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:1.3em 1.4em}
-  .steps{counter-reset:s;list-style:none;padding:0;display:grid;gap:.9em}
-  .steps li{position:relative;padding-left:2.4em}
-  .steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:-.05em;
-    width:1.7em;height:1.7em;border-radius:50%;display:grid;place-items:center;
-    background:var(--brand);color:var(--brand-ink);font-weight:700;font-size:.85rem}
-  .copybar{display:flex;flex-wrap:wrap;gap:.6em;align-items:center;margin:.7em 0 .2em}
-  #copyBtn{background:var(--accent);color:#fff}
-  .ok{color:var(--brand);font-weight:600}
-  .grid{display:grid;gap:.8em}
-  @media(min-width:560px){.grid.two{grid-template-columns:1fr 1fr}}
-  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:1em 1.15em}
-  .card h3{font-size:1rem;margin:0 0 .3em}
-  .card p{font-size:.95rem;color:var(--soft);margin:0}
-  ul.plain{padding-left:1.2em;margin:.3em 0 0}
-  ul.plain li{margin:.35em 0}
-  .small{font-size:.9rem;color:var(--soft)}
-  .crisis{border-left:4px solid var(--accent)}
-  footer{margin-top:3.5em;padding-top:1.4em;border-top:1px solid var(--line);
-    font-size:.88rem;color:var(--soft)}
-  hr{border:0;border-top:1px solid var(--line);margin:2.6em 0}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    font-size:17px; line-height:1.6; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:680px; margin:0 auto; padding:32px 22px 96px}
+  a{color:var(--clay); text-underline-offset:3px; text-decoration-thickness:1px}
+  h1,h2,h3{font-family:Fraunces,Georgia,serif; font-weight:500; letter-spacing:-.005em; line-height:1.12}
+  h1{font-size:clamp(2.4rem,8vw,3.4rem); font-weight:600; margin:.24em 0 .18em}
+  h2{font-size:1.5rem; margin:0 0 .7em}
+  h3{font-size:1.06rem; font-family:Inter,sans-serif; font-weight:600; letter-spacing:0}
+  p{margin:0 0 1em}
+  section{margin:3em 0}
+  .kicker{
+    display:inline-block; font-size:.74rem; font-weight:600; letter-spacing:.11em;
+    text-transform:uppercase; color:var(--pine);
+    border:1px solid color-mix(in srgb,var(--pine) 35%,transparent);
+    border-radius:999px; padding:.4em .85em;
+  }
+  .lede{font-size:1.24rem; line-height:1.5; color:var(--ink); margin:.6em 0 1em}
+  .sub{color:var(--soft)}
+  .cta{display:flex; flex-wrap:wrap; gap:.7em; margin:1.6em 0 .4em}
+  .btn{
+    display:inline-block; font-weight:600; font-size:1rem; text-decoration:none;
+    padding:.9em 1.4em; border-radius:12px; border:1.5px solid transparent; cursor:pointer;
+    transition:transform .06s ease, filter .15s ease;
+  }
+  .btn:active{transform:translateY(1px)}
+  .btn-primary{background:var(--clay); color:var(--clay-ink)}
+  .btn-primary:hover{filter:brightness(1.05)}
+  .btn-ghost{background:transparent; color:var(--ink); border-color:var(--line)}
+  .btn-ghost:hover{border-color:var(--clay)}
+  .panel{background:var(--raise); border:1px solid var(--line); border-radius:18px; padding:1.5em 1.6em; box-shadow:var(--shadow)}
+  .steps{list-style:none; padding:0; display:grid; gap:1.3em; counter-reset:s}
+  .steps li{position:relative; padding-left:2.7em}
+  .steps li::before{
+    counter-increment:s; content:counter(s);
+    position:absolute; left:0; top:-.1em; width:1.9em; height:1.9em;
+    display:grid; place-items:center; border-radius:50%;
+    background:var(--pine); color:var(--paper); font-weight:700; font-size:.9rem;
+    font-family:Inter,sans-serif;
+  }
+  .copyrow{display:flex; flex-wrap:wrap; gap:.7em; align-items:center; margin:.8em 0 .3em}
+  #copyBtn{background:var(--pine); color:var(--paper); border-color:transparent}
+  .note{font-size:.92rem; color:var(--soft)}
+  .ok{color:var(--pine); font-weight:600}
+  .cards{display:grid; gap:.9em}
+  @media(min-width:540px){.cards.two{grid-template-columns:1fr 1fr}}
+  .card{background:var(--raise); border:1px solid var(--line); border-radius:14px; padding:1.15em 1.25em}
+  .card p{font-size:.96rem; color:var(--soft); margin:.35em 0 0}
+  ul.plain{padding-left:1.25em; margin:.4em 0 0}
+  ul.plain li{margin:.45em 0}
+  .rule{border-left:3px solid var(--clay); padding-left:1em; margin:1.1em 0}
+  .crisis{border:1px solid var(--line); border-left:4px solid var(--clay); background:var(--raise); border-radius:14px; padding:1.1em 1.3em}
+  hr{border:0; border-top:1px solid var(--line); margin:3em 0}
+  footer{margin-top:3.5em; padding-top:1.6em; border-top:1px solid var(--line); font-size:.9rem; color:var(--soft)}
+  .wordmark-sub{font-family:Inter,sans-serif; font-size:.95rem; color:var(--faint); letter-spacing:.02em; margin-top:.2em}
 </style>
 </head>
 <body>
 <div class="wrap">
 
   <header>
-    <span class="badge">Free · Independent · Not the government</span>
+    <span class="kicker">Free · Independent · Not the government</span>
     <h1>WINZ Advocate</h1>
-    <p class="lede">Get what Work and Income owes you. It works out what you can apply
-      for, writes the emails for you, and helps you push back when a decision is
-      wrong.</p>
-    <p>Built for people whose ADHD, AuDHD, or trauma makes the forms, phone calls, and
-      deadlines too much. You are always the one who hits send.</p>
+    <div class="wordmark-sub">a tool from The Village</div>
+    <p class="lede">Get what Work and Income owes you.</p>
+    <p class="sub">It works out everything you can apply for, writes the emails and the
+      requests for you, and helps you push back when a decision is wrong. Built for
+      people whose ADHD, AuDHD, or trauma makes the forms, phone calls and deadlines
+      too much. You are always the one who hits send.</p>
+    <p class="sub"><strong>Free, community-run, independent.</strong> Not Work and
+      Income. Not the government. Nobody is paid, and no one can put a login or a
+      price on it.</p>
     <div class="cta">
       <a class="btn btn-primary" href="#start">Start using it</a>
       <a class="btn btn-ghost" href="#guide">Just read the guide</a>
@@ -86,87 +109,83 @@
       <ol class="steps">
         <li>Open a free account at <a href="https://claude.ai" target="_blank" rel="noopener">claude.ai</a>
           (or another AI assistant you already use) and start a new chat.</li>
-        <li>Copy the whole tool with the button below, and paste it into the chat.
-          <div class="copybar">
+        <li>Copy the whole tool with this button, and paste it into the chat.
+          <div class="copyrow">
             <button class="btn" id="copyBtn">Copy the tool</button>
-            <span id="copyMsg" class="small"></span>
+            <span id="copyMsg" class="note"></span>
           </div>
-          <span class="small">Not working? <a href="./BUILD/winz-advocate-full-prompt.md" download>Download it instead</a>
-            and paste the contents.</span>
+          <span class="note">Button not working? <a href="./BUILD/winz-advocate-full-prompt.md" download>Download it</a>
+            and paste the contents instead.</span>
         </li>
-        <li>Send this message: <em>"I need help with Work and Income."</em>
-          Then just answer its questions, one at a time. Take breaks whenever — paste
-          your saved notes back in next time to pick up where you left off.</li>
+        <li>Send: <em>“I need help with Work and Income.”</em> Then answer its questions,
+          one at a time. Stop whenever — paste your saved notes back next time to pick
+          up where you left off.</li>
       </ol>
     </div>
-    <p class="small">Want it as a permanent project you don't have to paste each time?
-      See <a href="./docs/SET-UP-THE-CLAUDE-PROJECT.md">the setup guide</a>.</p>
+    <p class="note">Want it as a saved project you don't paste each time? See
+      <a href="./docs/SET-UP-THE-CLAUDE-PROJECT.md">the setup guide</a>.</p>
   </section>
 
   <section>
     <h2>What it does for you</h2>
-    <div class="grid two">
-      <div class="card"><h3>Works out your entitlements</h3><p>Asks about your
-        situation and tells you every payment you can apply for — with the reason and
-        the source for each.</p></div>
+    <div class="cards two">
+      <div class="card"><h3>Finds your entitlements</h3><p>Asks about your situation
+        and names every payment you can apply for — with the reason and the source
+        for each. It checks the lot, even the ones WINZ never mentions.</p></div>
       <div class="card"><h3>Writes the emails</h3><p>Ready-to-send messages to your
-        case manager: apply for a grant, book an appointment, chase a delay.</p></div>
-      <div class="card"><h3>Helps you push back</h3><p>When a decision is wrong, it
-        drafts your Review of Decision and preps you for the hearing. It knows the
-        rules better than the front desk.</p></div>
+        case manager: apply for a grant, book an appointment, chase a delay, dispute
+        a debt.</p></div>
+      <div class="card"><h3>Helps you push back</h3><p>When a decision is wrong it
+        drafts your Review of Decision, gives you the legal reason why, and preps you
+        for the hearing.</p></div>
       <div class="card"><h3>Keeps it together</h3><p>A simple case file tracks your
         deadlines, what you've applied for, and every reply from WINZ.</p></div>
     </div>
   </section>
 
   <section id="guide">
-    <h2>Read the guide (no AI needed)</h2>
-    <p>The plain-language guide works on its own:</p>
+    <h2>Read the guide</h2>
+    <p class="sub">Plain-language, and useful on its own — no AI needed.</p>
     <ul class="plain">
-      <li><a href="./knowledge/entitlements/overview.md">What you might be entitled to</a></li>
-      <li><a href="./knowledge/process/your-rights-and-how-to-push-back.md">Your rights, and how to push back</a></li>
-      <li><a href="./knowledge/entitlements/commonly-missed.md">Payments WINZ often doesn't mention</a></li>
-      <li><a href="./knowledge/process/2025-rule-changes.md">What changed in 2025</a></li>
-      <li><a href="./knowledge/support-network.md">Free human backup</a></li>
+      <li><a href="https://github.com/MatuaBuilds/winz-advocate/blob/main/knowledge/entitlements/overview.md">What you might be entitled to</a></li>
+      <li><a href="https://github.com/MatuaBuilds/winz-advocate/blob/main/knowledge/process/your-rights-and-how-to-push-back.md">Your rights, and how to push back</a></li>
+      <li><a href="https://github.com/MatuaBuilds/winz-advocate/blob/main/knowledge/entitlements/commonly-missed.md">Payments WINZ often doesn't mention</a></li>
+      <li><a href="https://github.com/MatuaBuilds/winz-advocate/blob/main/knowledge/how-winz-operates.md">How Work and Income actually operates</a></li>
+      <li><a href="https://github.com/MatuaBuilds/winz-advocate/blob/main/knowledge/support-network.md">Free human backup</a></li>
     </ul>
   </section>
 
-  <section>
-    <div class="panel">
-      <h2>The rules it always follows</h2>
-      <ul class="plain">
-        <li><strong>It never sends anything.</strong> It writes the draft — you read it and send it.</li>
-        <li><strong>It never invents an entitlement.</strong> Every claim points to its source.</li>
-        <li><strong>Amounts change</strong> (usually each 1 April) — check the current figure with WINZ.</li>
-        <li><strong>Fraud is different.</strong> If WINZ accuses you of benefit crime, that's criminal — get a lawyer through Community Law or Legal Aid.</li>
-        <li><strong>Your information stays yours.</strong> Nothing is stored or sent anywhere.</li>
-      </ul>
-    </div>
+  <section class="panel">
+    <h2>The rules it always follows</h2>
+    <div class="rule"><strong>It never sends anything.</strong> It writes the draft — you read it and send it.</div>
+    <div class="rule"><strong>It never invents an entitlement.</strong> Every claim points to its source.</div>
+    <div class="rule"><strong>Amounts change</strong> (usually each 1 April). It tells you to check the current figure with WINZ.</div>
+    <div class="rule"><strong>Fraud is different.</strong> If WINZ accuses you of benefit crime, that's criminal — get a lawyer through Community Law or Legal Aid.</div>
+    <div class="rule"><strong>Your information stays yours.</strong> Nothing is stored or sent anywhere.</div>
   </section>
 
   <section>
     <h2>Share what happened to you</h2>
-    <p>This tool gets stronger when people share what actually worked at WINZ — the
-      words, the evidence, the persistence. You don't need to be technical.</p>
+    <p class="sub">This tool gets stronger when people share what actually worked at
+      WINZ — the words, the evidence, the persistence. You don't need to be technical.</p>
     <p><a class="btn btn-ghost" href="./CONTRIBUTING.md">How to share</a></p>
-    <p class="small">Please remove personal details — we want the lesson, not the identity.</p>
+    <p class="note">Please remove personal details — we want the lesson, not the identity.</p>
   </section>
 
   <section>
     <h2>For advocates and organisations</h2>
-    <p>Use it, adapt it, translate it, embed it. Content is
+    <p class="sub">Use it, adapt it, translate it, embed it. Content is
       <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>; code is MIT.
-      The knowledge and everything else is on
-      <a href="https://github.com/MatuaBuilds/winz-advocate">GitHub</a>.</p>
+      Everything is on <a href="https://github.com/MatuaBuilds/winz-advocate">GitHub</a>.</p>
   </section>
 
   <hr>
 
-  <section class="panel crisis">
-    <h2>If you're not coping</h2>
+  <div class="crisis">
+    <h3 style="margin-bottom:.3em">If you're not coping</h3>
     <p style="margin:0">Free call or text <strong>1737</strong> any time to talk to a
       trained counsellor. In an emergency, <strong>111</strong>.</p>
-  </section>
+  </div>
 
   <footer>
     WINZ Advocate is a free community tool. It is not legal advice and is not a
@@ -186,8 +205,8 @@
       fetch('./BUILD/winz-advocate-full-prompt.md')
         .then(function(r){ if(!r.ok) throw new Error(); return r.text(); })
         .then(function(t){ return navigator.clipboard.writeText(t); })
-        .then(function(){ msg.innerHTML='<span class="ok">Copied ✓</span> now paste it into your chat'; })
-        .catch(function(){ msg.innerHTML='Couldn’t copy — use the download link above'; });
+        .then(function(){ msg.innerHTML='<span class="ok">Copied.</span> Now paste it into your chat.'; })
+        .catch(function(){ msg.innerHTML='Couldn’t copy — use the download link below.'; });
     });
   })();
 </script>

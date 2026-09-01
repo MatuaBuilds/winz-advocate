@@ -178,6 +178,14 @@ The machinery lives in `docs/EVALS/`:
 one change at a time, note what failed and why the change fixes it. Never fix a
 persona by making the prompt longer and vaguer.
 
+## Loop 8 — Design & usability
+
+Makes the tool feel right to use — the website and how the guide reads. Full brief,
+checklist, and backlog in `docs/DESIGN.md`. The loop: Bill reacts to how it looks →
+Claude does a design pass → screenshot (light + dark, phone width) → Bill reacts →
+repeat. Bill is the judge of aesthetics; Claude's job is to give him something
+concrete to react to, fast.
+
 ## The one-shot "knowledge health check"
 
 Paste this into a Claude Code session with the repo open (monthly, or after 1 April):
