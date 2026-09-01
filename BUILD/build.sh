@@ -29,6 +29,7 @@ FILES=(
   knowledge/process/overpayments-and-debt.md
   knowledge/process/being-investigated-for-fraud.md
   knowledge/process/review-of-decision.md
+  knowledge/precedents.md
   knowledge/templates/email-request-food-grant-and-appointment.md
   knowledge/templates/email-follow-up-on-delay.md
   knowledge/templates/review-of-decision-request.md

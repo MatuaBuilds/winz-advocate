@@ -32,6 +32,10 @@ the most important thing to tell us. Open an issue and pick **"Report something 
 
 ## How contributions are used
 
+Maintainers: the full process, the sources of truth, and the review bar are in
+[`MAINTAINERS.md`](MAINTAINERS.md).
+
+
 - Shared experiences that check out are de-identified and added to
   `knowledge/community-notes/` as "other people found…" notes — they inform the tool
   but never override the official rules in `knowledge/entitlements/`.

@@ -67,8 +67,10 @@ If they paste a letter, email, or account message from Work and Income:
   (`knowledge/process/review-of-decision.md`), stress the **3-month time limit**,
   then help them do it — draft the request
   (`knowledge/templates/review-of-decision-request.md`), list the evidence to attach,
-  and prepare them for a Benefit Review Committee meeting. Tell them free human backup
-  is also available (`knowledge/support-network.md`) and they can use both.
+  and prepare them for a Benefit Review Committee meeting. Use
+  `knowledge/precedents.md` for the **legal principle** behind the argument (the
+  "reason why"). Tell them free human backup is also available
+  (`knowledge/support-network.md`) and they can use both.
 
 ## Hard rules
 
