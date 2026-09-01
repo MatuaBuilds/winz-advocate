@@ -44,3 +44,13 @@ First quick run of P1–P10 against pack @ commit 5fbd491.
 
 **Re-check:** the 4 fixes are additive (new files) or a small prompt addition — no
 regression risk to the Ship personas. Full re-run due after the next batch of changes.
+
+### 2026-09-01 — wizard v2 + automatic wizard test
+
+- Wizard logic moved to `wizard-logic.js` (testable outside the browser).
+- `docs/EVALS/wizard-test.mjs` — 10 persona answer-sets through the real rules.
+  **First run: 10 pass, 0 fail.**
+- Covered by the test: already-on-a-benefit suppression, "check the rate" variants
+  for payments you hold, declined→ROD, sanction→s252, debt path, migrant→Emergency
+  Benefit (not Sole Parent / Jobseeker), whāngai→UCB, dental grant, Training
+  Incentive Allowance.

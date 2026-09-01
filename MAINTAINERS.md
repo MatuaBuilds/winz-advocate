@@ -178,6 +178,11 @@ The machinery lives in `docs/EVALS/`:
 one change at a time, note what failed and why the change fixes it. Never fix a
 persona by making the prompt longer and vaguer.
 
+**The wizard** (`start.html` + `wizard-logic.js`) has its own automatic test:
+`node docs/EVALS/wizard-test.mjs` — must be green before any wizard change is pushed.
+The wizard rules and the `knowledge/` files describe the same entitlements: change a
+rule or a figure in one, change it in the other in the same commit.
+
 ## Loop 8 — Design & usability
 
 Makes the tool feel right to use — the website and how the guide reads. Full brief,

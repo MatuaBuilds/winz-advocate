@@ -4,7 +4,21 @@ The eval loop is how WINZ Advocate gets **better at the job**, not just more
 knowledgeable. Run it after every meaningful change to the prompt or knowledge base,
 and on a schedule.
 
-## Quick run (after any change) — ~15 min
+## The wizard test (automatic — run after any wizard change)
+
+```
+node docs/EVALS/wizard-test.mjs
+```
+
+Runs 10 persona answer-sets through `wizard-logic.js` and checks each result
+includes what a good advocate would flag (and excludes what it shouldn't). Must be
+green before pushing a change to `wizard-logic.js` or `start.html`.
+
+**The drift rule:** `wizard-logic.js` rules and the `knowledge/` files describe the
+same entitlements. If you change an eligibility rule or a figure in one, change it in
+the other in the same commit. The wizard's wording must trace to the knowledge base.
+
+## Quick run — the AI version (after any change) — ~15 min
 
 Paste into a Claude Code session with the repo open:
 
