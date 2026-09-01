@@ -17,10 +17,17 @@ FILES=(
   knowledge/entitlements/temporary-additional-support.md
   knowledge/entitlements/childcare-assistance.md
   knowledge/entitlements/advance-payment-and-recoverable-assistance.md
+  knowledge/entitlements/other-special-needs-grants.md
+  knowledge/entitlements/emergency-housing.md
+  knowledge/entitlements/emergency-benefit.md
   knowledge/entitlements/commonly-missed.md
   knowledge/process/contacting-your-case-manager.md
+  knowledge/process/earning-while-on-a-benefit.md
+  knowledge/process/benefit-stand-downs.md
   knowledge/process/your-rights-and-how-to-push-back.md
   knowledge/process/2025-rule-changes.md
+  knowledge/process/overpayments-and-debt.md
+  knowledge/process/being-investigated-for-fraud.md
   knowledge/process/review-of-decision.md
   knowledge/templates/email-request-food-grant-and-appointment.md
   knowledge/templates/email-follow-up-on-delay.md

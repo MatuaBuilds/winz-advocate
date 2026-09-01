@@ -9,8 +9,9 @@ Use this as the map. Details and sources are in the individual files.
 | is not working / working part-time and wants more / can't work full-time due to health (short/medium term) | **Jobseeker Support** | `jobseeker-support.md` |
 | is a single parent/caregiver, youngest child under 14 | **Sole Parent Support** | `sole-parent-support.md` |
 | has a health condition or disability that severely limits work for 2+ years, is totally blind, or cares full-time for someone needing hospital-level care | **Supported Living Payment** | `supported-living-payment.md` |
-| is 65+ | **NZ Superannuation** (mention, not covered in detail in v1) | — |
-| is 16–19, not supported by parents, or a young parent | **Youth Payment / Young Parent Payment** (mention only in v1) | — |
+| is 65+ | **NZ Superannuation** (mention, not covered in detail yet) | — |
+| is 16–19, not supported by parents, or a young parent | **Youth Payment / Young Parent Payment** (mention only) | — |
+| can't support themselves and fits **no** other benefit (visa status, not here 2 years, between categories) | **Emergency Benefit** | `emergency-benefit.md` |
 
 ## Extra help (can be paid on top of a benefit OR wages)
 
@@ -27,8 +28,19 @@ Use this as the map. Details and sources are in the individual files.
 | If the person... | Check | File |
 |---|---|---|
 | has no money for food right now | **Special Needs Grant — food** | `special-needs-grant-food.md` |
+| needs power/bond/car/furniture/school costs paid, or is fleeing violence or leaving prison | **Other Special Needs Grants** (some non-recoverable) | `other-special-needs-grants.md` |
 | is on a benefit and needs a big essential item/bill paid | **Advance Payment of Benefit** (repayable) | `advance-payment-and-recoverable-assistance.md` |
 | is NOT on a benefit and needs an essential item/bill paid | **Recoverable Assistance Payment** (repayable) | `advance-payment-and-recoverable-assistance.md` |
+| has nowhere to stay tonight / next 7 nights | **Emergency Housing** grant | `emergency-housing.md` |
+
+## Situations that change things
+
+| If the person... | Check |
+|---|---|
+| is in a **stand-down** with no income | `../process/benefit-stand-downs.md` — hardship help is still available; challenge a 13-week non-entitlement |
+| is **working while on a benefit** | `../process/earning-while-on-a-benefit.md` — know the income-free zone and abatement so debts don't build |
+| has a **debt / overpayment** | `../process/overpayments-and-debt.md` — can be written off (WINZ error + good faith + inequity); repayments can be cut |
+| is being **investigated for fraud** | `../process/being-investigated-for-fraud.md` — **needs a lawyer**, right to silence, don't attend the interview yet |
 
 ## Almost always worth checking (people miss these)
 

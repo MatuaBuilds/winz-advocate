@@ -38,9 +38,9 @@ Ask for the decision **and the reasons**, in writing. You need this to challenge
 If the BRC decision still isn't right:
 
 - The SSAA is an **independent tribunal** (Ministry of Justice), three people.
-- **Time limit: short and strict** — sources vary (commonly reported as 3 months;
-  some sources say 60 working days). Treat it as urgent: lodge the appeal and tell
-  Work and Income, and confirm the current limit with an advocate the same week.
+- **Time limit: write to the SSAA within 60 working days** (about 12 weeks) of
+  receiving the Benefit Review Committee's decision and report. Also tell Work and
+  Income you're appealing. Act well before the deadline.
 - It's **free**. You can represent yourself, use an advocate, or a lawyer (Legal Aid
   may be available). Hearings are private and can be informal, remote, or "on the papers".
 - Hearings are usually 3–4 months after lodging.
@@ -70,9 +70,12 @@ process) — separate from challenging the decision itself. Free.
 
 - Community Law Manual — Challenging Work and Income decisions:
   https://communitylaw.org.nz/community-law-manual/chapter-23-dealing-with-work-and-income/challenging-work-and-income-decisions-reviews-and-appeals/
-- Community Law Manual — Social Security Appeal Authority:
-  https://communitylaw.org.nz/community-law-manual/chapter-23-dealing-with-work-and-income/
-- Work and Income — Reviews and appeals:
-  https://www.workandincome.govt.nz/about-work-and-income/feedback-and-complaints/review-of-decisions
-- Checked: 2026-09-01. Confirm current time limits and forms with an advocate or the
-  official page before relying on them.
+- Community Law Manual — Going to a Benefit Review Committee:
+  https://communitylaw.org.nz/community-law-manual/chapter-23-dealing-with-work-and-income/challenging-work-and-income-decisions-reviews-and-appeals/going-to-a-benefit-review-committee/
+- Community Law Manual — Going to the Social Security Appeal Authority:
+  https://communitylaw.org.nz/community-law-manual/chapter-23-dealing-with-work-and-income/challenging-work-and-income-decisions-reviews-and-appeals/right-of-appeal-to-independent-tribunal-going-to-the-social-security-appeal-authority/
+- Work and Income — Review of a decision:
+  https://www.workandincome.govt.nz/about-work-and-income/feedback-and-complaints/review-of-decisions.html
+- Checked: 2026-09-01. Review of Decision: within **3 months**. Appeal to SSAA: within
+  **60 working days** of the BRC decision. High Court (point of law only): within
+  **10 working days**. Re-verify on the official pages if a case is close to a limit.

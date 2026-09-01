@@ -21,8 +21,9 @@ Use this as the map. Details and sources are in the individual files.
 | is not working / working part-time and wants more / can't work full-time due to health (short/medium term) | **Jobseeker Support** | `jobseeker-support.md` |
 | is a single parent/caregiver, youngest child under 14 | **Sole Parent Support** | `sole-parent-support.md` |
 | has a health condition or disability that severely limits work for 2+ years, is totally blind, or cares full-time for someone needing hospital-level care | **Supported Living Payment** | `supported-living-payment.md` |
-| is 65+ | **NZ Superannuation** (mention, not covered in detail in v1) | — |
-| is 16–19, not supported by parents, or a young parent | **Youth Payment / Young Parent Payment** (mention only in v1) | — |
+| is 65+ | **NZ Superannuation** (mention, not covered in detail yet) | — |
+| is 16–19, not supported by parents, or a young parent | **Youth Payment / Young Parent Payment** (mention only) | — |
+| can't support themselves and fits **no** other benefit (visa status, not here 2 years, between categories) | **Emergency Benefit** | `emergency-benefit.md` |
 
 ## Extra help (can be paid on top of a benefit OR wages)
 
@@ -39,8 +40,19 @@ Use this as the map. Details and sources are in the individual files.
 | If the person... | Check | File |
 |---|---|---|
 | has no money for food right now | **Special Needs Grant — food** | `special-needs-grant-food.md` |
+| needs power/bond/car/furniture/school costs paid, or is fleeing violence or leaving prison | **Other Special Needs Grants** (some non-recoverable) | `other-special-needs-grants.md` |
 | is on a benefit and needs a big essential item/bill paid | **Advance Payment of Benefit** (repayable) | `advance-payment-and-recoverable-assistance.md` |
 | is NOT on a benefit and needs an essential item/bill paid | **Recoverable Assistance Payment** (repayable) | `advance-payment-and-recoverable-assistance.md` |
+| has nowhere to stay tonight / next 7 nights | **Emergency Housing** grant | `emergency-housing.md` |
+
+## Situations that change things
+
+| If the person... | Check |
+|---|---|
+| is in a **stand-down** with no income | `../process/benefit-stand-downs.md` — hardship help is still available; challenge a 13-week non-entitlement |
+| is **working while on a benefit** | `../process/earning-while-on-a-benefit.md` — know the income-free zone and abatement so debts don't build |
+| has a **debt / overpayment** | `../process/overpayments-and-debt.md` — can be written off (WINZ error + good faith + inequity); repayments can be cut |
+| is being **investigated for fraud** | `../process/being-investigated-for-fraud.md` — **needs a lawyer**, right to silence, don't attend the interview yet |
 
 ## Almost always worth checking (people miss these)
 
@@ -699,6 +711,192 @@ rent in advance), and other essential costs depending on your situation.
 
 ---
 
+<!-- FILE: knowledge/entitlements/other-special-needs-grants.md -->
+
+# Other Special Needs Grants and one-off help
+
+Beyond food (`special-needs-grant-food.md`), Work and Income can help with other
+**immediate, essential costs** you can't meet another way. Some are
+**non-recoverable** (you don't pay them back); some are **recoverable** (a debt) —
+always ask which, and ask for the non-recoverable option first if you might qualify.
+
+You do **not** have to be on a benefit for most of these (income and cash-asset
+tested).
+
+## Commonly granted
+
+| Need | Payment type | Notes |
+|---|---|---|
+| **Power / gas arrears** or reconnection | Special Needs Grant or Advance | Bring the bill / disconnection notice |
+| **Bond and rent in advance** | Recoverable Assistance / Advance | Bring the tenancy agreement or landlord letter |
+| **Moving costs** | Recoverable Assistance | Quotes help |
+| **Beds, bedding, essential furniture** | Advance / Recoverable Assistance | Get **two quotes** (one for the item, one dearer) |
+| **Fridge / washing machine** | Advance | No quote needed — Work and Income has a supplier arrangement |
+| **Car repairs / WoF / rego** where a car is essential (work, rural, disability, kids) | Recoverable Assistance | Explain why the car is essential |
+| **Glasses / dental / medical** | Disability Allowance (ongoing) or Emergency Dental/Medical grant (one-off, non-recoverable ~ up to $1,000/yr dental) | See `commonly-missed.md` |
+| **School uniforms, stationery, tech for school** | Recoverable Assistance | Also check school donation/hardship funds |
+| **Funeral costs** | Funeral Grant | Income/asset tested; for the person arranging the funeral |
+| **Fleeing family violence** | Special Needs Grant (often non-recoverable) | See a family violence service too; keep yourself safe first |
+| **Leaving prison** | **Steps to Freedom** grant | One-off, non-recoverable, arranged before or on release |
+| **Fire, flood, theft, civil emergency** | Civil Defence / Special Needs Grant | For essential replacement items |
+
+## How to apply
+
+- Phone **0800 559 009** or use **MyMSD**.
+- Say the exact cost, why it's essential, and why you can't meet it another way.
+- Bring the bill / quote / notice, recent bank statements, proof of income.
+- If told "no", ask which rule that's based on, get it in writing, and consider a
+  **Review of Decision** (`../process/review-of-decision.md`).
+
+## Discretion
+
+The 6-month Special Needs Grant limits and the Advance Payment cap **can be
+exceeded** in "exceptional circumstances" — see
+`../process/your-rights-and-how-to-push-back.md`.
+
+## Source
+
+- Work and Income — A–Z benefits / Urgent or unexpected costs:
+  https://www.workandincome.govt.nz/eligibility/urgent-costs/index.html
+- Auckland Action Against Poverty — Empowerment Booklet:
+  https://www.aaap.org.nz/resources
+- Community Law Manual — One-off payments for immediate and essential needs:
+  https://communitylaw.org.nz/community-law-manual/test/one-off-payments-for-immediate-and-essential-needs/
+- Checked: 2026-09-01. Grant amounts and which are recoverable change — confirm current.
+
+
+---
+
+<!-- FILE: knowledge/entitlements/emergency-housing.md -->
+
+# Emergency Housing
+
+## What it is
+
+An **Emergency Housing Special Needs Grant** pays for a place to stay (motel, hostel,
+some community housing) when you have **nowhere to stay tonight or within the next 7
+nights** and can't sort it yourself.
+
+## Who can get it
+
+- You have no accommodation, or can't stay where you are, and nowhere else to go.
+- The need is immediate.
+- You've explored other options (staying with family/friends, other housing).
+- NZ citizen, resident, or on a visa that allows it.
+
+You do **not** have to be on a benefit.
+
+## How it's paid
+
+- Usually granted **7 nights at a time**. To extend, you'll be asked to show you're
+  **actively looking for longer-term housing** and are on the **social housing
+  register** (Kāinga Ora — apply through Work and Income).
+- For the **first 7 days** the grant is normally **non-recoverable** (you don't pay
+  it back).
+- **After the first 7 days**, you're generally expected to **contribute** toward the
+  cost — commonly around **25% of your income** — and further help may be recorded as
+  a **recoverable** grant (a debt).
+
+## When Work and Income tries to make you repay — and how to push back
+
+Advocates report Work and Income makes people repay emergency housing costs when it
+decides they:
+- "**created their own homelessness**", or
+- **didn't search hard enough** for other accommodation, or
+- were **evicted for anti-social behaviour**.
+
+These decisions are often wrong or unfair. You can:
+- ask for the decision and the reason **in writing**
+- explain the real circumstances (family violence, an unlawful eviction, a landlord
+  selling, a health crisis, no affordable rentals in the area)
+- request a **Review of Decision** (`../process/review-of-decision.md`)
+- get free advocacy help — AAAP has specifically fought these (`../support-network.md`)
+
+## Also apply for / check
+
+- **Social housing register** (Kāinga Ora) — do this straight away; the wait counts
+  from your registration date.
+- **Accommodation Supplement** once you have somewhere (`accommodation-supplement.md`).
+- **Bond, rent in advance, moving costs** — `other-special-needs-grants.md`.
+- **Transition to Work** grants if a job is the reason for moving.
+
+## Source
+
+- Work and Income — Emergency housing:
+  https://www.workandincome.govt.nz/housing/nowhere-to-stay/emergency-housing.html
+- Auckland Action Against Poverty — Empowerment Booklet (Emergency Housing Special
+  Needs Grant): https://www.aaap.org.nz/resources
+- Community Law Manual — Dealing with Work and Income:
+  https://communitylaw.org.nz/community-law-manual/chapter-23-dealing-with-work-and-income/
+- Checked: 2026-09-01. Confirm the current contribution rules and 7-day terms with
+  Work and Income or a free advocate — these have changed before.
+
+
+---
+
+<!-- FILE: knowledge/entitlements/emergency-benefit.md -->
+
+# Emergency Benefit
+
+## What it is
+
+A weekly benefit for people who **can't support themselves and don't qualify for any
+other main benefit**. It's the catch-all when you fall between the categories.
+
+## Who it's for
+
+Common situations:
+
+- You're not a NZ citizen or permanent resident, but you're lawfully here and in
+  hardship (e.g. on a work or partnership visa, or your residence application is in
+  progress) — get immigration advice too, as some visas have conditions.
+- You've been in NZ less than the 2 years normally required for a main benefit.
+- You don't fit Jobseeker, Sole Parent Support, or Supported Living Payment but still
+  can't manage (e.g. between categories, unusual circumstances).
+- You're waiting on another benefit or payment to be sorted.
+
+You must be **16 or older**, in genuine hardship, and taking reasonable steps to
+improve your situation.
+
+## How much
+
+Paid at the rate of the main benefit that best matches your situation (Jobseeker,
+Sole Parent Support, etc.), income-tested. Extra help (Accommodation Supplement,
+Disability Allowance, TAS) can be paid on top.
+
+## How to apply
+
+- Phone **0800 559 009** — say you can't support yourself and don't qualify for
+  another benefit.
+- Do the "Check what you might get" tool first (check.msd.govt.nz) so you know what
+  else to ask about.
+- Bring ID, visa/immigration documents if relevant, bank account, proof of your
+  situation and costs.
+
+## Common issues
+
+- **Told "you're not eligible for anything"** without Emergency Benefit being
+  considered — ask specifically for it, and for the decision in writing.
+- **Granted for a short period only** — it's often time-limited and reviewed; diarise
+  the review date and reapply early.
+- **Visa conditions** — some temporary visas say you won't be a "charge on public
+  funds". Get immigration advice; this doesn't always block an Emergency Benefit in
+  genuine hardship, and a Review of Decision may apply.
+- If declined, you can request a **Review of Decision** — see
+  `../process/review-of-decision.md`.
+
+## Source
+
+- Work and Income — Emergency Benefit:
+  https://www.workandincome.govt.nz/products/a-z-benefits/emergency-benefit.html
+- Community Law Manual — Dealing with Work and Income:
+  https://communitylaw.org.nz/community-law-manual/chapter-23-dealing-with-work-and-income/
+- Checked: 2026-09-01. Confirm rate and residence rules with Work and Income or a
+  free advocate.
+
+
+---
+
 <!-- FILE: knowledge/entitlements/commonly-missed.md -->
 
 # Payments Work and Income routinely fails to mention
@@ -840,6 +1038,131 @@ person, phone is usually faster, and it creates a note on your file.
   https://communitylaw.org.nz/community-law-manual/chapter-23-dealing-with-work-and-income/
 - Checked: 2026-09-01. Phone hours and the review time limit should be re-verified on
   the official pages.
+
+
+---
+
+<!-- FILE: knowledge/process/earning-while-on-a-benefit.md -->
+
+# Earning money while on a benefit
+
+You can work and stay on a benefit. Your benefit reduces once you earn over a set
+amount — this is called **abatement**. Knowing the numbers stops Work and Income
+getting them wrong (a common cause of overpayment debts).
+
+## The income-free zone
+
+You can earn up to about **$160 a week before tax** (recent guide — confirm the
+current figure) **without** your main benefit reducing at all.
+
+Sole parents and Supported Living Payment recipients can choose **annual assessment**
+instead — around **$8,320 a year before tax** free of abatement — which suits
+irregular or seasonal work.
+
+## How fast the benefit reduces after that (guide figures)
+
+| Benefit | Reduces by |
+|---|---|
+| Jobseeker Support, single | **70c** for every $1 earned over the income-free zone |
+| Jobseeker Support, both partners on benefit | 35c per $1 each |
+| Sole Parent Support / Supported Living Payment | **30c** per $1 over the free zone, up to ~$250/wk; **70c** per $1 above that |
+| Youth Payment / Young Parent Payment | free up to ~$258/wk; then $1 per $1 (50c if partnered); nothing over ~$308/wk |
+
+**Special rules:** up to **$20/week** of earnings used for **childcare** can be
+ignored; for a **severely disabled** person, Work and Income can ignore some or all
+income.
+
+## What counts as income
+
+Wages, self-employment profit, ACC weekly compensation, some other payments. **Your
+partner's income counts too** for most benefits. Working for Families is **not**
+counted by Work and Income (it's IRD).
+
+## Watch for
+
+- **Report income for the right week.** Report it in the week you *earn* it (not when
+  it's paid), unless told otherwise. Getting this wrong creates debts.
+- **Irregular income** — ask about annual assessment if you're a sole parent or on SLP.
+- **Temporary Additional Support** abates on almost every dollar of extra income —
+  tell them when income changes so it's recalculated (up or down).
+- If a debt is raised over "undeclared" income you did declare, dispute it —
+  `overpayments-and-debt.md`.
+
+## Source
+
+- Community Law Manual — Earning income while on a benefit:
+  https://communitylaw.org.nz/community-law-manual/chapter-23-dealing-with-work-and-income/how-to-apply-for-a-benefit/earning-income-while-on-a-benefit/
+- Work and Income — Benefit rates / abatement:
+  https://www.workandincome.govt.nz/products/benefit-rates/benefit-rates-april-2026.html
+- Checked: 2026-09-01. The income-free zone and abatement thresholds change (often
+  each 1 April) — confirm current figures before relying on them.
+
+
+---
+
+<!-- FILE: knowledge/process/benefit-stand-downs.md -->
+
+# Benefit stand-downs
+
+## What a stand-down is
+
+A period at the start of a benefit when **you get no money**. Your payments start
+from the day *after* the stand-down ends.
+
+## How long
+
+- **Standard: 1 or 2 weeks.** Which one depends on your average weekly income (before
+  tax) over the last 26 or 52 weeks, your family situation, and number of children.
+  As a guide (single, no children): income under about **$1,620/week** → 1 week;
+  above that → 2 weeks. Thresholds rise by roughly $80 per child, and are higher with
+  a partner.
+- **Recent income / final pay / holiday pay / redundancy** can push you to the longer
+  stand-down but **not beyond 2 weeks** for a normal application.
+- **Up to 13 weeks — "non-entitlement period"** (different from a stand-down): if you
+  **left a job without a good reason** or were **dismissed for misconduct**. This one
+  is challengeable — "good reason" covers things like unsafe work, health, family
+  violence, harassment, or having to move.
+
+## When there is NO stand-down
+
+- Transferring from one benefit to another
+- Benefit suspended then restarted
+- Going back on a benefit **within 26 weeks** of coming off it for work
+- NZ Superannuation / Veteran's Pension
+- Sometimes for Sole Parent Support and Supported Living Payment — ask
+
+## The first week is unpaid too ("arrears")
+
+Even after the stand-down, the first payment covers the week just gone, so there's a
+further week's wait for money to land. Plan for this.
+
+## Getting through a stand-down
+
+You can get **hardship help during a stand-down**:
+- **Special Needs Grant for food** (`../entitlements/special-needs-grant-food.md`)
+- **Advance Payment / Recoverable Assistance** for rent, power, essentials
+  (`../entitlements/advance-payment-and-recoverable-assistance.md`)
+Say clearly: *"I'm in a benefit stand-down with no income and I need help with
+[food / rent / power] to get through it."*
+
+## Push back on
+
+- **A 13-week non-entitlement period** when you had a good reason to leave — request a
+  **Review of Decision** (`review-of-decision.md`) and set out the reason with evidence.
+- **A stand-down longer than 2 weeks** on a normal application — that's usually wrong;
+  ask for it in writing and challenge it.
+- **The benefit start date** — it should relate to when you *first made contact*, not
+  when the paperwork was finished. Ask for it to be corrected.
+
+## Source
+
+- Work and Income — Stand-down periods:
+  https://www.workandincome.govt.nz/online-services/apply/what-is-a-stand-down.html
+- Work and Income — How payments work:
+  https://www.workandincome.govt.nz/on-a-benefit/payments/how-payments-work.html
+- Community Law Manual — Dealing with Work and Income:
+  https://communitylaw.org.nz/community-law-manual/chapter-23-dealing-with-work-and-income/
+- Checked: 2026-09-01. Income thresholds change each 1 April — confirm current figures.
 
 
 ---
@@ -999,6 +1322,144 @@ than letting it stand.
 
 ---
 
+<!-- FILE: knowledge/process/overpayments-and-debt.md -->
+
+# Overpayments and debt to Work and Income
+
+## How overpayments happen
+
+Work and Income says it paid you more than you were entitled to — often because of
+**their** miscalculation or wrong advice, sometimes because income or a relationship
+wasn't reported. An overpayment is a **debt**, but it is **not** the same as fraud
+(see `being-investigated-for-fraud.md`).
+
+## You may NOT have to repay it
+
+Work and Income can **write off** an overpayment (or part of it) if **all** of these apply:
+
+1. it was caused by an **error by Work and Income** (e.g. they miscalculated, or gave
+   you wrong information), **and**
+2. you **received it in good faith** — you believed you were entitled to it, **and**
+3. you **changed your position** because of it (you spent it, or made decisions,
+   relying on that money), so repaying would be **inequitable** (unfair).
+
+If you think this fits your situation, say so in writing and ask for the debt to be
+**written off under this provision**. If refused, request a **Review of Decision**
+(`review-of-decision.md`).
+
+## Dispute the debt itself
+
+You can challenge:
+- **whether there is a debt at all** (e.g. you did report the change)
+- **the amount** (their calculation is wrong)
+- **the period** it covers
+
+Ask for a **full breakdown of how the debt was calculated**, in writing, then a
+Review of Decision if it doesn't add up. A Benefit Review Committee can look at this.
+
+## Reducing repayments
+
+- Repayments come out of your weekly payments as "deductions" / "offsets".
+- You can ask for them to be **reduced** — as low as **50c per payment** if that's
+  what you can afford. They should not leave you unable to afford food and rent.
+- If several debts are stacking up, ask for a **review of your total weekly
+  deductions**.
+- Say: *"The current deductions leave me short for essentials. I'm asking for them to
+  be reduced to $[amount] a week."* Put it in writing.
+
+## Relationship debt
+
+If a debt arose from an undisclosed relationship, a partner can be made jointly
+liable **only if** Work and Income proves the partner **knew about and benefited
+from** it. This is often assumed rather than proven — challenge it. The debt can
+follow both people even after separation, so get advice.
+
+## Get help
+
+Village Advocate can help you draft the write-off request, the breakdown request, and
+the repayment-reduction request. For a disputed debt tied to a **fraud allegation**,
+you need a **lawyer** — see `being-investigated-for-fraud.md` and `../support-network.md`.
+
+## Source
+
+- Community Law Manual — Overpayments: when you're paid too much by mistake:
+  https://communitylaw.org.nz/community-law-manual/test/trouble-with-work-and-income-penalties-investigations-and-overpayments/overpayments-when-youre-paid-too-much-by-mistake/
+- Community Law Manual — Trouble with Work and Income (penalties, investigations, overpayments):
+  https://communitylaw.org.nz/community-law-manual/test/trouble-with-work-and-income-penalties-investigations-and-overpayments/
+- Social Security Act 2018 (debt recovery and write-off provisions)
+- Checked: 2026-09-01. Confirm the write-off test wording with a free advocate.
+
+
+---
+
+<!-- FILE: knowledge/process/being-investigated-for-fraud.md -->
+
+# If Work and Income investigates you for fraud
+
+**This is the one area where you need a lawyer, not just an advocate.** A fraud
+investigation can lead to a **criminal prosecution**. Village Advocate can help you
+get organised and understand your rights, but it must **not** be your only help.
+
+**Get a lawyer or Community Law immediately** — before you answer anything. Community
+Law is free: https://communitylaw.org.nz/our-law-centres/ . Legal Aid may be
+available.
+
+## Your rights during an investigation
+
+- **Written notice first.** The investigation unit must give you **written notice at
+  least 5 working days before** they start asking others for information, so you have
+  time to respond yourself. You can ask for **more time**.
+- **You can stay silent.** You do **not** have to answer every question. Anything you
+  say can be used in a prosecution.
+- **You do not have to attend an interview.** If you do attend, you can bring a
+  **lawyer or support person**, and speak with them **in private** at any time.
+- **You can stop the interview at any time.**
+- **Ask for everything in writing** — the allegation, the period, the amount claimed.
+
+## What Work and Income can and can't do
+
+- They must ask **you** first for your records (bank statements, tenancy agreement,
+  employment details) before going to third parties.
+- They may only go **directly to your bank, employer, or others** if you don't
+  respond after repeated attempts, or they have reasonable grounds to think asking
+  you would compromise the investigation — and there are **limits** on how much they
+  can ask for.
+- The Privacy Commissioner has found MSD **systematically overstepped** these limits
+  in the past. If information was gathered improperly, a lawyer can challenge whether
+  it can be used.
+
+## Overpayment vs fraud
+
+- An **overpayment** is a debt — often from a mistake — and is handled through
+  `overpayments-and-debt.md`.
+- **Fraud** means Work and Income says you **deliberately** misled them. It can be
+  recovered as a debt **and/or** prosecuted. Not every overpayment is fraud, even
+  when Work and Income's letter uses that word.
+
+## What to do, step by step
+
+1. Do not answer questions or attend an interview yet.
+2. Contact **Community Law or a lawyer today**. Say: "Work and Income has started a
+   fraud investigation."
+3. Gather your own records so you and your lawyer can see the picture.
+4. Let your lawyer deal with Work and Income from here.
+5. If there's also a **debt**, the write-off and repayment-reduction routes in
+   `overpayments-and-debt.md` still apply — your lawyer/advocate can pursue those
+   alongside.
+
+## Source
+
+- Community Law Manual — Being accused of benefit fraud: Work and Income investigations:
+  https://communitylaw.org.nz/community-law-manual/test/trouble-with-work-and-income-penalties-investigations-and-overpayments/being-accused-of-benefit-fraud-work-and-income-investigations/
+- Work and Income — Fraud and investigations:
+  https://www.workandincome.govt.nz/on-a-benefit/your-rights-and-responsibilities/fraud-and-investigations.html
+- Office of the Privacy Commissioner — inquiry into MSD fraud investigations:
+  https://www.privacy.org.nz/publications/public-inquiries/msd-fraud-investigations-privacy-commissioner/
+- Checked: 2026-09-01.
+
+
+---
+
 <!-- FILE: knowledge/process/review-of-decision.md -->
 
 # Challenging a Work and Income decision
@@ -1041,9 +1502,9 @@ Ask for the decision **and the reasons**, in writing. You need this to challenge
 If the BRC decision still isn't right:
 
 - The SSAA is an **independent tribunal** (Ministry of Justice), three people.
-- **Time limit: short and strict** — sources vary (commonly reported as 3 months;
-  some sources say 60 working days). Treat it as urgent: lodge the appeal and tell
-  Work and Income, and confirm the current limit with an advocate the same week.
+- **Time limit: write to the SSAA within 60 working days** (about 12 weeks) of
+  receiving the Benefit Review Committee's decision and report. Also tell Work and
+  Income you're appealing. Act well before the deadline.
 - It's **free**. You can represent yourself, use an advocate, or a lawyer (Legal Aid
   may be available). Hearings are private and can be informal, remote, or "on the papers".
 - Hearings are usually 3–4 months after lodging.
@@ -1073,12 +1534,15 @@ process) — separate from challenging the decision itself. Free.
 
 - Community Law Manual — Challenging Work and Income decisions:
   https://communitylaw.org.nz/community-law-manual/chapter-23-dealing-with-work-and-income/challenging-work-and-income-decisions-reviews-and-appeals/
-- Community Law Manual — Social Security Appeal Authority:
-  https://communitylaw.org.nz/community-law-manual/chapter-23-dealing-with-work-and-income/
-- Work and Income — Reviews and appeals:
-  https://www.workandincome.govt.nz/about-work-and-income/feedback-and-complaints/review-of-decisions
-- Checked: 2026-09-01. Confirm current time limits and forms with an advocate or the
-  official page before relying on them.
+- Community Law Manual — Going to a Benefit Review Committee:
+  https://communitylaw.org.nz/community-law-manual/chapter-23-dealing-with-work-and-income/challenging-work-and-income-decisions-reviews-and-appeals/going-to-a-benefit-review-committee/
+- Community Law Manual — Going to the Social Security Appeal Authority:
+  https://communitylaw.org.nz/community-law-manual/chapter-23-dealing-with-work-and-income/challenging-work-and-income-decisions-reviews-and-appeals/right-of-appeal-to-independent-tribunal-going-to-the-social-security-appeal-authority/
+- Work and Income — Review of a decision:
+  https://www.workandincome.govt.nz/about-work-and-income/feedback-and-complaints/review-of-decisions.html
+- Checked: 2026-09-01. Review of Decision: within **3 months**. Appeal to SSAA: within
+  **60 working days** of the BRC decision. High Court (point of law only): within
+  **10 working days**. Re-verify on the official pages if a case is close to a limit.
 
 
 ---

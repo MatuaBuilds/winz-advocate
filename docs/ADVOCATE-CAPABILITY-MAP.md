@@ -110,13 +110,19 @@ Status key: **✅ covered** · **◑ partial/thin** · **✗ missing**
 
 ## Build plan — close the gaps
 
-### Batch 1 — highest-frequency gaps
-- `entitlements/emergency-benefit.md`
-- `process/benefit-stand-downs.md`
-- `process/overpayments-and-debt.md` — disputing a debt, WINZ error / good faith /
-  inequity, getting repayments reduced or written off
-- `entitlements/emergency-housing.md` — fuller, incl. the 25% contribution fight
-- `entitlements/other-special-needs-grants.md` — power, car, glasses, bond, whiteware, moving
+### Batch 1 — highest-frequency gaps ✅ DONE (2026-09-01)
+- [x] `entitlements/emergency-benefit.md`
+- [x] `process/benefit-stand-downs.md`
+- [x] `process/overpayments-and-debt.md` — WINZ error / good faith / inequity write-off,
+  disputing the debt, reducing repayments, relationship debt
+- [x] `process/being-investigated-for-fraud.md` — the criminal hard-limit, rights,
+  right to silence, lawyer now
+- [x] `entitlements/emergency-housing.md` — 7-day non-recoverable, the ~25%
+  contribution, fighting "created own homelessness"
+- [x] `entitlements/other-special-needs-grants.md` — power, bond, car, furniture,
+  school costs, family violence, Steps to Freedom, funerals
+- [x] `process/earning-while-on-a-benefit.md` — income-free zone + abatement rates
+- [x] SSAA time limit resolved: **60 working days** after the BRC decision
 
 ### Batch 2 — situations (new `knowledge/situations/` folder)
 - `situations/leaving-family-violence.md`
