@@ -153,6 +153,31 @@ Each blind spot becomes a `✗` line in `COVERAGE.md`.
 
 ---
 
+## Loop 7 — Quality (the tool gets better at the *job*)
+
+**Goal:** not just "knows more" — better diagnosis, stronger push-back, drafts that
+land, gathering done for the person. Knowledge and skill are different loops.
+
+The machinery lives in `docs/EVALS/`:
+- `RUBRIC.md` — how to score any response (accuracy is a hard gate; then
+  completeness, advocacy strength, safety, draft quality, human factors)
+- `personas.md` — realistic test cases, each with "must flag" and "traps"
+- `RUN.md` — the quick run (after every change), monthly (red-team + outcome
+  review), quarterly (senior-advocate review)
+- `../OUTCOMES.md` — what actually happened for real people (the true signal)
+- `../IMPROVEMENTS.md` — the log of every fail → fix
+
+**Cadence:**
+- **After any prompt or knowledge change** → quick eval run. A change that fixes one
+  persona must not break another.
+- **Monthly** → red-team pass + read `OUTCOMES.md`, feed patterns back.
+- **Quarterly** → senior-advocate-style review of real transcripts (with consent),
+  pointing Claude at MAP as well as the knowledge base.
+
+**Discipline:** `prompt/system-prompt.md` is the tool's skill — version it like code,
+one change at a time, note what failed and why the change fixes it. Never fix a
+persona by making the prompt longer and vaguer.
+
 ## The one-shot "knowledge health check"
 
 Paste this into a Claude Code session with the repo open (monthly, or after 1 April):

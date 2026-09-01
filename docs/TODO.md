@@ -43,6 +43,14 @@ batches there:
 - Batch 4 — appeals depth (Medical Appeal Board, SSAA, Ombudsman) + more referrals
 - Batch 5 — a deliberate "full entitlement audit" checklist
 
+## Run the eval suite (makes the tool better at the job)
+
+`docs/EVALS/` now has a rubric + 10 personas + a run guide. Do the **quick run**
+(`docs/EVALS/RUN.md`) against the current pack — score each persona, log fails in
+`docs/IMPROVEMENTS.md`, fix the prompt/knowledge, re-run. This is the loop that
+sharpens diagnosis, push-back, and drafts. `docs/OUTCOMES.md` waits for real-person
+results.
+
 ## Still open (no rush)
 
 1. ~~Check the main benefit dollar figures~~ **DONE 2026-09-01** — verified against
