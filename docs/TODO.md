@@ -32,11 +32,13 @@ Wait ~1 min, hard-refresh the website. It should now have the new layout and a
 
 ## Still open (no rush)
 
-1. **Check the dollar figures** — open each file in `knowledge/entitlements/`, check
-   the amounts against workandincome.govt.nz (they change each 1 April). Update the
-   file + the "Checked" date, then run `bash BUILD/build.sh` and `git push`.
-   Priority ones: accommodation-supplement (asset limits), disability-allowance
-   (max), special-needs-grant-food (limits), advance-payment (asset limits).
+1. ~~Check the main benefit dollar figures~~ **DONE 2026-09-01** — verified against
+   the 1 April 2026 rates page. Fixed Disability Allowance income limits (were
+   stale), Jobseeker/SPS/SLP rates, Child Disability Allowance, Accommodation
+   Supplement area table + asset limits. Still to spot-check when convenient:
+   **Special Needs Grant food limits/income/asset caps** and **Advance Payment asset
+   caps** — these are programme-set (not on the benefit-rates page), so check the
+   `special-needs-grant.html` and `recoverable-assistance-payment-grant.html` pages.
 2. **Confirm the SSAA appeal time limit** — sources disagreed (3 months vs 60
    working days). `knowledge/process/review-of-decision.md` currently hedges.
 3. **Test with 2–3 real people** — with their consent, you sitting beside them.
