@@ -19,7 +19,7 @@ _A–Z index last checked: 2026-09-01._
 | Youth Payment / Young Parent Payment | ✗ | Batch 2 — situations/young-person-or-young-parent.md |
 | NZ Superannuation | ✗ | next |
 | Veteran's Pension | ✗ | low priority |
-| Emergency Maintenance Allowance | ✗ | (sole parents, no other benefit — like Emergency Benefit) |
+| Emergency Maintenance Allowance | ◑ | entitlements/emergency-benefit.md (named) |
 
 ## Housing / accommodation
 
@@ -51,7 +51,7 @@ _A–Z index last checked: 2026-09-01._
 
 | Payment | Status | File |
 |---|---|---|
-| Working for Families / Best Start (IRD) | ◑ | overview.md — needs its own file |
+| Working for Families / Best Start (IRD) | ✅ | entitlements/working-for-families.md |
 | Childcare Subsidy | ✅ | entitlements/childcare-assistance.md |
 | OSCAR Subsidy | ✅ | entitlements/childcare-assistance.md |
 | Guaranteed / Flexible Childcare Assistance | ◑ | childcare-assistance.md |

@@ -26,6 +26,14 @@ Paid at the rate of the main benefit that best matches your situation (Jobseeker
 Sole Parent Support, etc.), income-tested. Extra help (Accommodation Supplement,
 Disability Allowance, TAS) can be paid on top.
 
+## Related: Emergency Maintenance Allowance
+
+If you're a **sole parent** who can't get Sole Parent Support (usually because of
+residence rules) but you're caring for a dependent child in hardship, ask about the
+**Emergency Maintenance Allowance** — it's the sole-parent version of the Emergency
+Benefit. Also check **Working for Families** via IRD (`working-for-families.md`), which
+can be paid regardless of residence for some visa holders.
+
 ## How to apply
 
 - Phone **0800 559 009** — say you can't support yourself and don't qualify for

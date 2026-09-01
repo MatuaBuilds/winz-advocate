@@ -16,6 +16,7 @@ FILES=(
   knowledge/entitlements/supported-living-payment.md
   knowledge/entitlements/temporary-additional-support.md
   knowledge/entitlements/childcare-assistance.md
+  knowledge/entitlements/working-for-families.md
   knowledge/entitlements/advance-payment-and-recoverable-assistance.md
   knowledge/entitlements/other-special-needs-grants.md
   knowledge/entitlements/emergency-housing.md
@@ -34,6 +35,7 @@ FILES=(
   knowledge/templates/email-request-food-grant-and-appointment.md
   knowledge/templates/email-follow-up-on-delay.md
   knowledge/templates/review-of-decision-request.md
+  knowledge/templates/overpayment-and-debt-requests.md
   knowledge/support-network.md
   knowledge/community-notes/README.md
   prompt/intake-script.md

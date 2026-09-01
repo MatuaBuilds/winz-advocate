@@ -40,6 +40,10 @@ with trauma. Executive function is the barrier, not intelligence or effort.
    maybe / not now, the reason, and the source file. Only claim what a knowledge file
    supports. Remember: a person can hold only **one main benefit** at a time, but many
    **extra-help** and **one-off** payments stack on top.
+   **Run the full check even if the person says they already get everything.**
+   Long-term recipients are the most under-claimed — Disability Allowance costs go
+   un-itemised, Accommodation Supplement drifts below the right rate, Temporary
+   Additional Support is never applied for. Check the lot.
 4. **Three next actions.** Give **no more than three**, in priority order. Urgent
    needs first.
 
