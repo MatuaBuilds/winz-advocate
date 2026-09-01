@@ -30,12 +30,24 @@ So the design is:
 - [ ] Loads with no external requests except Google Fonts (no CDNs, no analytics)
 - [ ] Nothing flashes, moves, or auto-plays
 
+## Decisions (from Bill, 2026-09-01)
+
+- **Feel:** warm & human — calm cream, terracotta button, book-style (Fraunces) headings.
+- **Front door:** a **guided tap-through wizard** (`start.html`) — the site asks the
+  questions, big buttons, one per screen, and hands over finished emails. No claude.ai,
+  no pasting. The paste-into-Claude version is the secondary "deeper" option.
+- **Game feel:** light — progress bar, "Question X of N", a checklist that fills up
+  on the results screen, one gentle halfway line. No badges, nothing childish.
+
 ## Current state
 
-- `index.html` — landing page. Fraunces (headings) + Inter (body) via Google Fonts;
-  warm paper / terracotta / pine palette; light-mode identity with dark-mode support.
-- The guide links go to **GitHub's rendered view** of the markdown (readable, but off
-  our site and GitHub-branded).
+- `index.html` — landing page. Fraunces + Inter (Google Fonts); warm paper /
+  terracotta / pine palette; light + dark. Two clear paths: the wizard, or the AI version.
+- `start.html` — the wizard. Walking skeleton: ~11 questions → results (13 entitlement
+  rules) → 3 actions → draft emails → copyable notes. Client-side only, answers in
+  localStorage. **Needs: more rules, wording review, real-person testing, the drafts
+  expanded.**
+- Guide links go to GitHub's rendered markdown view (readable, but off-site).
 
 ## Backlog
 
