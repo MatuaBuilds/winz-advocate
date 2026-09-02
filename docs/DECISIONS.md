@@ -88,3 +88,19 @@ Record every significant decision here so future sessions don't relitigate it.
 - `HOW-TO-USE-THIS.md`: one-page end-user guide, includes 1737 and 111.
 - Maintenance model: edit `knowledge/`, run `bash BUILD/build.sh`, re-upload the pack.
 - Remaining human steps tracked in PLAN.md Phase 3 checkboxes.
+
+## 2026-09-01 — Advocate Core direction (from Bill's live case study)
+
+- Bill wrote `docs/CASE-STUDY-BILL.md` from real use of an AI assistant for his own
+  life admin. Core insight: **the value is reducing the distance between overwhelm
+  and action, not providing information.** Principle: *never make the user carry
+  context the system can carry.* When avoidance is the barrier, help execute, not
+  just explain.
+- Architecture: WINZ Advocate = one **module**. Build an **Advocate Core** above the
+  modules for case management, context, priority, waiting states, correspondence,
+  evidence, next actions, wins. `docs/ADVOCATE-CORE.md` holds the model.
+- Applied now: 7 interaction behaviours added to the WINZ system prompt ("How to
+  carry the load"); case file gained next-3-actions, waiting-on, wins, evidence-held.
+  Core v0 (multi-case dashboard) is the next build (PLAN.md Phase 5).
+- Success measure changed: not "was the info correct" but "did something stuck start
+  moving, and did it get easier."

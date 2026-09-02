@@ -94,7 +94,21 @@ No offline model (dropped 2026-09-01). The tool is given away as text anyone can
 - [ ] Share with community orgs (AAAP, Community Law, food banks, marae)
 - [ ] Later, if funded: a hosted no-login website
 
-## Phase 5 — Only if it proves out and help arrives
+## Phase 5 — Advocate Core (the direction)
+
+From `docs/CASE-STUDY-BILL.md` + `docs/ADVOCATE-CORE.md`: WINZ Advocate becomes one
+**module** under a persistent advocate that holds context across a person's whole
+life admin (housing, health, ACC, money/debt, moving, providers) and keeps things
+moving — reducing the distance between overwhelm and action.
+
+- [x] Interaction behaviours folded into the WINZ system prompt ("How to carry the
+  load") + the case file (next 3 actions, waiting-on, wins, evidence-held)
+- [ ] **Core v0** — a multi-case "life dashboard" file (the case object + status
+  model) and the AI version taught to run it: read email → route to a case → update
+  → surface next ≤3 → carry waiting states → log wins
+- [ ] Later modules as their own knowledge packs under the Core
+
+## Phase 6 — Only if it proves out and help arrives
 
 A hosted site, or a local app for offline case files and deadline reminders. Recorded
 in `docs/DECISIONS.md` first. Not before.

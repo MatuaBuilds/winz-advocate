@@ -7,6 +7,23 @@ Last updated: [date]
 
 ---
 
+## Where things are — read this first
+
+**My next actions (never more than 3):**
+1.
+2.
+3.
+
+**Waiting on someone else** (not my job until they reply):
+| What | Who | Since | Chase if nothing by |
+|---|---|---|---|
+| | | | |
+
+**Wins so far** (things I said I'd do, and did):
+-
+
+---
+
 ## Situation
 
 - Age:
@@ -20,6 +37,13 @@ Last updated: [date]
 - Immigration / residency status:
 - Debts, especially to WINZ or for essentials:
 - Urgent needs this week (food, power, rent, medical):
+
+## Evidence I already have
+
+List documents you hold so you're not asked for them again — medical certificates,
+GP summary, ACC reports, tenancy/board agreement, bank statements, quotes, letters.
+
+-
 
 ## Entitlements identified
 
