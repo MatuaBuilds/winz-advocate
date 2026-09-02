@@ -170,10 +170,9 @@ answers the domain question.
 | Module | State | Where it lives |
 |---|---|---|
 | **WINZ / MSD** | **Built** — full knowledge base | `../knowledge/` (built into the pack) |
-| Housing & the move | Stub | `housing.md` |
+| **Housing & the move** | **Built** (v3) — real pack | `housing/` |
 | Health admin | Stub | `health-admin.md` |
 | Money & debt | Stub | `money-debt.md` |
-| Moving house (empty-home setup) | Stub | `moving-house.md` |
 | Providers & services | Stub | `providers.md` |
 | ACC | Not started | — |
 
@@ -185,49 +184,303 @@ Each module, as it's built, gets its own `COVERAGE.md` and follows the same
 `../MAINTAINERS.md` loops (sources of truth, currency, contributions, evals).
 
 
----
+============ MODULE: HOUSING ============
 
-<!-- modules/housing.md -->
 
-# Module: Housing & the move  (STUB)
 
-Not fully built. Enough to route and point to the right help.
+<!-- modules/housing/README.md -->
 
-## What this covers
+# Module: Housing
 
-Getting onto stable housing and preparing to relocate — the social housing register,
-private rentals, emergency housing, and the practical side of moving.
+Getting onto stable housing, holding onto the housing you have, and the practical
+side of moving. Sits under the Advocate Core (`core/advocate-core.md`).
 
-## Key points (verify before relying on them)
+| File | Covers |
+|---|---|
+| `social-housing.md` | The social housing register (Kāinga Ora / community providers) — how to apply, priority ratings, the wait |
+| `renting-your-rights.md` | Tenancy agreements, bond, rent increases, Healthy Homes, getting repairs done |
+| `facing-eviction.md` | Notice periods, rent-arrears termination, the Tenancy Tribunal — what's lawful and how to respond |
+| `the-move.md` | Setting up an empty home: delivered / installed / usable, supplier research |
 
-- **Social housing register (Kāinga Ora):** apply through Work and Income. The wait
-  counts from your **registration date** — get on it as early as possible, even
-  before you know where you're going.
-- **Housing paperwork with WINZ** is a WINZ-module matter (Accommodation Supplement,
-  emergency housing, bond/rent-in-advance grants) — route there.
-- **Accommodation confirmation letter:** a new landlord or the household you'll live
-  with usually needs to confirm the arrangement in writing for WINZ. Chase it as a
-  `Waiting on someone` item.
-- **Prepare before the address arrives.** Moving logistics, supplier research, and
-  the empty-home checklist (`moving-house.md`) can all happen while housing is still
-  in progress. Applications and delivery bookings wait for the confirmed address and
-  move-in date.
-- **If the move-out date is uncertain** (e.g. the current place might sell), keep two
-  timelines: the working date, and "if it changes". Don't let uncertainty stall the
-  preparation.
+**Money for housing** (Accommodation Supplement, emergency housing, bond and
+rent-in-advance grants, moving costs) is the **WINZ module** — see
+`../../knowledge/entitlements/accommodation-supplement.md`,
+`../../knowledge/entitlements/emergency-housing.md`,
+`../../knowledge/entitlements/other-special-needs-grants.md`.
+
+## Sources of truth
+
+1. **Residential Tenancies Act 1986** — `legislation.govt.nz`
+2. **Tenancy Services** — `tenancy.govt.nz` (Ministry of Business, Innovation & Employment)
+3. **Work and Income MAP — Social Housing** — `map.workandincome.govt.nz/map/social-housing/`
+4. **Kāinga Ora** — `kaingaora.govt.nz`
+5. **Community Law Manual** — housing and social-housing chapters
 
 ## Free human help
 
-- Community Law — tenancy and housing rights: https://communitylaw.org.nz
-- Tenants' advocacy services (search "[your town] tenant support")
-- Local housing navigators / iwi housing services (e.g. Te Pokapū in some regions)
+- Community Law — tenancy disputes and social housing: https://communitylaw.org.nz
+- Local tenant advocacy services (search "[your town] tenant advocate")
 - Citizens Advice Bureau — 0800 367 222
+- Regional housing navigators / iwi housing services
+
+## Status
+
+First real pack (v3). Checked 2026-09-03. Notice-period rules and the social-housing
+assessment are changing in 2026 — see `../../MAINTAINERS.md` Loop 2 and confirm before
+relying on specifics.
+
+
+<!-- modules/housing/social-housing.md -->
+
+# The social housing register
+
+Social housing = a Kāinga Ora house or a house from an approved community housing
+provider, at an **income-related rent** (you pay about 25% of your income; the
+government pays the rest).
+
+## How to apply
+
+- You apply **through Work and Income** (0800 559 009 or a service centre) — not
+  directly to Kāinga Ora.
+- Work and Income does a **housing needs assessment** and gives you a **priority
+  rating**.
+- **Apply as early as you can.** Your place in the queue counts from your
+  **registration date** — even if you don't know where you want to live yet.
+
+## Priority ratings
+
+| Rating | Meaning | On the register? |
+|---|---|---|
+| **A** — at risk | Severe and persistent housing need; immediate risk | **Yes** |
+| **B** — serious | Serious housing need | **Yes** |
+| **C** — moderate | Moderate need | No |
+| **D** — low / no need | | No |
+
+Only **A** and **B** go on the register. If you're rated C or D and disagree, you can
+ask for a **review of the decision** (there's a time limit — see
+`../../knowledge/process/review-of-decision.md`).
+
+## Making the assessment reflect reality
+
+The assessment looks at how hard it is for you to get and keep private housing.
+Things that raise your rating — make sure each is on record, with evidence:
+
+- **Overcrowding**, or living somewhere unsafe / unhealthy / insecure
+- **No fixed place**, couch-surfing, in a car, in emergency housing
+- **Health conditions or a disability** made worse by your housing, or that make
+  private renting hard
+- **Family violence** — you're leaving or have left
+- **Affordability** — private rents in your area are out of reach on your income
+- **Discrimination / selection bias** you've faced trying to rent
+- A **medical letter** or a letter from a support worker describing the impact
+
+## The wait
+
+Waits are long, especially for larger houses and in high-demand areas. While you wait:
+
+- Keep your details and situation **updated** with Work and Income — if things get
+  worse, your rating can go up.
+- **Emergency Housing** can cover you in the meantime
+  (`../../knowledge/entitlements/emergency-housing.md`).
+- You can list **more than one area** you'd accept a house in — more areas, more chances.
+
+## 2026 changes
+
+The needs assessment is being **redesigned in 2026** to focus more on *severe and
+persistent* barriers (supply, selection bias, mental health, addiction). Confirm the
+current criteria with Work and Income or a housing navigator.
 
 ## Source
 
-- Work and Income — Housing: https://www.workandincome.govt.nz/housing/
-- Kāinga Ora: https://kaingaora.govt.nz
-- Checked: 2026-09-01. Stub — confirm details with a housing navigator or Community Law.
+- Work and Income — Apply for public housing:
+  https://www.workandincome.govt.nz/housing/find-a-house/apply-for-public-housing.html
+- Work and Income MAP — Housing need priority ratings:
+  https://map.workandincome.govt.nz/map/social-housing/assessment-of-eligibility/housing-need-priority-ratings-01.html
+- Community Law Manual — Qualifying for social housing:
+  https://communitylaw.org.nz/community-law-manual/test/social-housing-tenants-in-state-and-community-housing/qualifying-for-social-housing/
+- Checked: 2026-09-03. Assessment changing in 2026 — re-check.
+
+
+<!-- modules/housing/renting-your-rights.md -->
+
+# Renting — your rights
+
+For private rentals and boarding. Based on the **Residential Tenancies Act 1986**.
+
+## The basics
+
+- **Written tenancy agreement** — you're entitled to one. It must state the rent, the
+  bond, the address, names, and start date. A **boarding house** tenancy (6+ boarders,
+  or a place run as a boarding house) has its own rules and a **48-hour** notice for
+  the landlord in some cases — get advice.
+- **Bond** — up to **4 weeks' rent**. The landlord must lodge it with **Tenancy
+  Services** within 23 working days and give you the receipt. If they didn't lodge it,
+  that's an unlawful act you can take to the Tribunal.
+- **Rent in advance** — a landlord can ask for at most **2 weeks** in advance, and
+  can't ask for more until that's used up.
+- **Rent increases** — once every **12 months**, with **60 days' written notice**.
+  A fixed-term agreement can't have the rent raised unless it says so.
+- **Letting fees** to tenants are **banned**.
+
+## Healthy Homes Standards
+
+All rentals must meet the **Healthy Homes Standards** — a fixed heater in the main
+living room, ceiling and underfloor insulation, ventilation (extractor fans in
+kitchen/bathroom), moisture and drainage control, and draught-stopping. Landlords
+must include a **compliance statement** with new or renewed tenancies.
+
+If your rental doesn't meet them, or is cold, damp, or mouldy: put the problem in
+**writing** to the landlord, keep a copy, and if it's not fixed, apply to the
+**Tenancy Tribunal** (see `facing-eviction.md`). This also matters for a **Disability
+Allowance** claim for extra heating (`../../knowledge/entitlements/disability-allowance.md`).
+
+## Repairs
+
+- The landlord must keep the place in a **reasonable state of repair**.
+- Ask in **writing**, give a reasonable time.
+- **Urgent repairs** (no water, no power, blocked drains, security): if the landlord
+  doesn't act, you can arrange the repair yourself and claim it back — keep receipts —
+  or go to the Tribunal.
+- Landlords must give **at least 48 hours' notice** to enter for maintenance (24
+  hours for other inspections; you can't be inspected more than once every 4 weeks).
+
+## If something's wrong
+
+1. Put it in writing to the landlord (email or letter), keep a copy.
+2. If not resolved, use **Tenancy Services' free mediation** (0800 836 262).
+3. If still not resolved, apply to the **Tenancy Tribunal** — the fee is about $20
+   and you don't need a lawyer.
+
+## Source
+
+- Tenancy Services — https://www.tenancy.govt.nz
+- Residential Tenancies Act 1986 — https://www.legislation.govt.nz/act/public/1986/0120/latest/whole.html
+- Community Law Manual — Housing / renting chapters — https://communitylaw.org.nz
+- Checked: 2026-09-03. Confirm current bond, notice, and Healthy Homes details on tenancy.govt.nz.
+
+
+<!-- modules/housing/facing-eviction.md -->
+
+# Facing eviction
+
+**A landlord can't just make you leave.** They have to give the right notice, and if
+you don't go, they have to get a **Tenancy Tribunal** order — they cannot lock you
+out, remove your things, or cut services. Doing that is illegal and you can claim
+against them.
+
+## Notice periods (periodic tenancies)
+
+| Landlord's reason | Notice |
+|---|---|
+| **No reason given** | **90 days** |
+| Landlord or family moving in | **42 days** (with a signed statement) |
+| Property sold with vacant possession required | **90 days** |
+| Extensive renovations / change of use / demolition | **90 days** |
+| Rent arrears | **14-day notice to remedy** first; then Tribunal |
+| Anti-social behaviour (3 incidents) or serious damage | **14 days** (with evidence) |
+
+**Fixed-term tenancy:** ends on the end date **only if** the landlord gives **90–21
+days' notice** that they won't renew; otherwise it rolls over to periodic. You can't
+be evicted mid-fixed-term without a Tribunal order.
+
+**Your notice to leave** (periodic): **21 days**.
+
+## Rent arrears — the process
+
+1. Landlord gives a **14-day notice to remedy** — you have 14 days to pay the arrears.
+2. If you pay within 14 days, the notice is spent.
+3. If not, the landlord can apply to the **Tribunal**. You get a hearing.
+4. At the hearing you can: propose a **repayment plan**, show the arrears are being
+   cleared (e.g. a WINZ Advance is coming —
+   `../../knowledge/entitlements/advance-payment-and-recoverable-assistance.md`), or
+   raise **landlord breaches** (unlodged bond, unhealthy home, unaddressed repairs)
+   as a counterclaim.
+5. The Tribunal can decline termination, or grant it with time to move.
+
+## What to do if you get a notice
+
+1. **Don't panic and don't just leave.** Check the notice: right reason, right notice
+   period, in writing, signed, correct dates.
+2. If it's **wrong or unfair**, you can challenge it at the Tribunal.
+3. **Get advice fast** — Community Law or a tenant advocate (free).
+4. Start the **social housing register** and **emergency housing** processes now in
+   parallel (`social-housing.md`).
+5. If it's **family violence**, you can apply to **withdraw from the tenancy** with
+   short notice and without breaking the lease — get advice.
+
+## The Tenancy Tribunal
+
+- Apply online at tenancy.govt.nz, ~$20.60 fee, no lawyer needed.
+- Free **mediation** first (0800 836 262) often resolves it.
+- Bring: the tenancy agreement, the notice, your written communications, photos,
+  receipts, rent records.
+
+## Source
+
+- Tenancy Services — Ending a tenancy: https://www.tenancy.govt.nz/ending-a-tenancy/
+- Tenancy Services — Rent arrears and the Tribunal: https://www.tenancy.govt.nz/disputes/
+- Community Law Manual — Housing chapters: https://communitylaw.org.nz
+- Checked: 2026-09-03. Notice-period rules changed recently and may change again —
+  confirm current periods on tenancy.govt.nz before acting.
+
+
+<!-- modules/housing/the-move.md -->
+
+# The move — setting up an empty home
+
+Part of the Housing module. See `README.md`.
+
+## The rule
+
+**Buying the item is not the outcome. The outcome is: delivered, installed, usable.**
+
+So for every essential item, the plan tracks not just "which one" but: delivery,
+assembly, installation, lead time, and total delivered cost.
+
+## Essentials checklist for an empty property
+
+| Item | Notes |
+|---|---|
+| Bed frame + mattress | Mattress often ships separate; check delivery + removal of packaging |
+| Bedding | Sheets, duvet, pillows |
+| Fridge / freezer | Delivery + positioning; WINZ has a supplier arrangement (no quote needed) |
+| Washing machine | Delivery + **installation** (plumbing); WINZ supplier arrangement |
+| Basic seating | One or two chairs / a couch |
+| Table + chairs | |
+| Essential kitchen | Pot, pan, plates, cutlery, kettle |
+| Heating | Especially if a health condition needs it |
+| Curtains / blinds | If not supplied |
+
+## Supplier research — what to check for each option
+
+- delivery available to the address, and cost
+- installation available (and cost) — critical for washing machines, sometimes fridges
+- assembly required, and whether they assemble
+- **MSD preferred supplier** status where relevant (affects a WINZ grant)
+- lead time from order to usable
+- total delivered + installed cost
+- suitability for the actual person (size, mobility, space)
+
+## Sequence
+
+- **Before the address is confirmed:** research suppliers, build the checklist, get
+  indicative costs, work out which items need a WINZ grant application.
+- **Once the address + move-in date are confirmed:** submit the grant applications,
+  then book delivery/installation to land on or just after move-in.
+
+## WINZ money for this
+
+Route to the WINZ module: Advance Payment / Recoverable Assistance for furniture and
+whiteware, Bond Grant, rent-in-advance, Moving Costs Grant. See
+`../../knowledge/entitlements/other-special-needs-grants.md`.
+
+## Source
+
+- Checked: 2026-09-01. Stub.
+
+
+============ MODULES (stubs) ============
+
 
 
 ---
@@ -328,63 +581,6 @@ separate cases, each with its own funding target and its own path:
 
 ---
 
-<!-- modules/moving-house.md -->
-
-# Module: Moving house — empty-home setup  (STUB)
-
-Not fully built. Enough to run the preparation.
-
-## The rule
-
-**Buying the item is not the outcome. The outcome is: delivered, installed, usable.**
-
-So for every essential item, the plan tracks not just "which one" but: delivery,
-assembly, installation, lead time, and total delivered cost.
-
-## Essentials checklist for an empty property
-
-| Item | Notes |
-|---|---|
-| Bed frame + mattress | Mattress often ships separate; check delivery + removal of packaging |
-| Bedding | Sheets, duvet, pillows |
-| Fridge / freezer | Delivery + positioning; WINZ has a supplier arrangement (no quote needed) |
-| Washing machine | Delivery + **installation** (plumbing); WINZ supplier arrangement |
-| Basic seating | One or two chairs / a couch |
-| Table + chairs | |
-| Essential kitchen | Pot, pan, plates, cutlery, kettle |
-| Heating | Especially if a health condition needs it |
-| Curtains / blinds | If not supplied |
-
-## Supplier research — what to check for each option
-
-- delivery available to the address, and cost
-- installation available (and cost) — critical for washing machines, sometimes fridges
-- assembly required, and whether they assemble
-- **MSD preferred supplier** status where relevant (affects a WINZ grant)
-- lead time from order to usable
-- total delivered + installed cost
-- suitability for the actual person (size, mobility, space)
-
-## Sequence
-
-- **Before the address is confirmed:** research suppliers, build the checklist, get
-  indicative costs, work out which items need a WINZ grant application.
-- **Once the address + move-in date are confirmed:** submit the grant applications,
-  then book delivery/installation to land on or just after move-in.
-
-## WINZ money for this
-
-Route to the WINZ module: Advance Payment / Recoverable Assistance for furniture and
-whiteware, Bond Grant, rent-in-advance, Moving Costs Grant. See
-`../knowledge/entitlements/other-special-needs-grants.md`.
-
-## Source
-
-- Checked: 2026-09-01. Stub.
-
-
----
-
 <!-- modules/providers.md -->
 
 # Module: Providers & services  (STUB)
@@ -432,7 +628,7 @@ chase date — not an open task on the person.
 _Auto-built from the source files. Do not edit this file directly — edit the
 source files and rebuild with `bash BUILD/build.sh`._
 
-Built: 2026-09-02
+Built: 2026-09-03
 
 
 ---

@@ -6,10 +6,9 @@ answers the domain question.
 | Module | State | Where it lives |
 |---|---|---|
 | **WINZ / MSD** | **Built** — full knowledge base | `../knowledge/` (built into the pack) |
-| Housing & the move | Stub | `housing.md` |
+| **Housing & the move** | **Built** (v3) — real pack | `housing/` |
 | Health admin | Stub | `health-admin.md` |
 | Money & debt | Stub | `money-debt.md` |
-| Moving house (empty-home setup) | Stub | `moving-house.md` |
 | Providers & services | Stub | `providers.md` |
 | ACC | Not started | — |
 

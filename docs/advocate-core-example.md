@@ -57,7 +57,7 @@ Last updated: 2026-09-01
 - **Current state:** listing essentials (bed, whiteware, seating, kitchen, heating);
   no suppliers researched yet.
 - **Next action:** research suppliers — delivery + installation + lead time + total
-  delivered cost + MSD preferred-supplier status. See `modules/moving-house.md`.
+  delivered cost + MSD preferred-supplier status. See `modules/housing/the-move.md`.
 - **Notes:** outcome = delivered, installed, usable.
 
 ### Disability Allowance claim

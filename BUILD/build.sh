@@ -90,9 +90,13 @@ CORE=BUILD/advocate-core-full-prompt.md
   cat core/case-tracker-template.md
   printf '\n\n============ MODULE: index ============\n\n'
   cat modules/README.md
-  for m in modules/housing.md modules/health-admin.md modules/money-debt.md modules/moving-house.md modules/providers.md; do
-    printf '\n\n---\n\n<!-- %s -->\n\n' "$m"
-    cat "$m"
+  printf '\n\n============ MODULE: HOUSING ============\n\n'
+  for m in modules/housing/README.md modules/housing/social-housing.md modules/housing/renting-your-rights.md modules/housing/facing-eviction.md modules/housing/the-move.md; do
+    printf '\n\n<!-- %s -->\n\n' "$m"; cat "$m"
+  done
+  printf '\n\n============ MODULES (stubs) ============\n\n'
+  for m in modules/health-admin.md modules/money-debt.md modules/providers.md; do
+    printf '\n\n---\n\n<!-- %s -->\n\n' "$m"; cat "$m"
   done
   printf '\n\n============ MODULE: WINZ (full knowledge pack) ============\n\n'
   cat "$OUT"

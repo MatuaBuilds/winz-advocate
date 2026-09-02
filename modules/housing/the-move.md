@@ -1,6 +1,6 @@
-# Module: Moving house — empty-home setup  (STUB)
+# The move — setting up an empty home
 
-Not fully built. Enough to run the preparation.
+Part of the Housing module. See `README.md`.
 
 ## The rule
 
@@ -44,7 +44,7 @@ assembly, installation, lead time, and total delivered cost.
 
 Route to the WINZ module: Advance Payment / Recoverable Assistance for furniture and
 whiteware, Bond Grant, rent-in-advance, Moving Costs Grant. See
-`../knowledge/entitlements/other-special-needs-grants.md`.
+`../../knowledge/entitlements/other-special-needs-grants.md`.
 
 ## Source
 
