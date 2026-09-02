@@ -38,8 +38,9 @@ ready-to-send email. Passes the Sam + Ben + wizard suites.
 
 ### v1.1 — Hardened (NOW)
 
-- [ ] Loop 1: clear the `COVERAGE.md` ✗ items in the common tiers (Training Incentive
-  Allowance, Youth/Young Parent Payment, NZ Super, Student Allowance, carer allowances)
+- [x] Loop 1: cleared the `COVERAGE.md` common-tier ✗ items — new files: Training
+  Incentive Allowance, Youth/Young Parent Payment, NZ Super, Student support,
+  caring-for-someone-elses-child (UCB/Orphan's + carer allowances)
 - [ ] Loop 7: run the full AI-version eval suite (P1–P10) + a red-team pass; fix; log
 - [ ] Wizard: one wording + dignity pass over every question and result line
 - [ ] Loop 8: Bill's design pass on the wizard (with reference pics)

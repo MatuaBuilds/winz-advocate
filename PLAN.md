@@ -149,8 +149,9 @@ layer around the existing WINZ module.
   (real tracker, gitignored)
 - [x] `docs/EVALS/advocate-core-test.md` — the 6 questions, all pass on trace
 - [x] WINZ untouched: `knowledge/`, wizard, `winz-advocate-full-prompt.md` all still build; wizard test 10/10
-- [ ] **Bill:** review the proposed changes; run the Core live; decide if `knowledge/`
-  ever moves under `modules/winz/` (recommendation: not yet)
+- [x] **Bill ratified v2 (2026-09-01)** — keep as built; `knowledge/` stays put (not
+  moved under `modules/winz/`)
+- [ ] Bill: run the Core live with `case-files/bill-live-case.md`, log gaps in `docs/IMPROVEMENTS.md`
 
 ## Phase 6 — Only if it proves out and help arrives
 

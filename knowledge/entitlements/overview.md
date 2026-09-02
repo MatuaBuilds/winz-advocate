@@ -9,9 +9,10 @@ Use this as the map. Details and sources are in the individual files.
 | is not working / working part-time and wants more / can't work full-time due to health (short/medium term) | **Jobseeker Support** | `jobseeker-support.md` |
 | is a single parent/caregiver, youngest child under 14 | **Sole Parent Support** | `sole-parent-support.md` |
 | has a health condition or disability that severely limits work for 2+ years, is totally blind, or cares full-time for someone needing hospital-level care | **Supported Living Payment** | `supported-living-payment.md` |
-| is 65+ | **NZ Superannuation** (mention, not covered in detail yet) | — |
-| is 16–19, not supported by parents, or a young parent | **Youth Payment / Young Parent Payment** (mention only) | — |
+| is 65+ | **NZ Superannuation** | `nz-superannuation.md` |
+| is 16–19, not supported by parents, or a young parent | **Youth Payment / Young Parent Payment** | `youth-payment-and-young-parent-payment.md` |
 | can't support themselves and fits **no** other benefit (visa status, not here 2 years, between categories) | **Emergency Benefit** | `emergency-benefit.md` |
+| is raising a child who isn't theirs because the parents can't | **Unsupported Child's / Orphan's Benefit** + carer support | `caring-for-someone-elses-child.md` |
 
 ## Extra help (can be paid on top of a benefit OR wages)
 
@@ -21,7 +22,9 @@ Use this as the map. Details and sources are in the individual files.
 | has ongoing costs from a health condition/disability (6+ months) | **Disability Allowance** | `disability-allowance.md` |
 | still can't meet essential living costs after other help | **Temporary Additional Support** | `temporary-additional-support.md` |
 | pays for early childhood education or before/after-school care | **Childcare Assistance (Childcare Subsidy / OSCAR)** | `childcare-assistance.md` |
-| has children (any income check via IRD) | **Working for Families / Best Start** (mention — IRD administers) | — |
+| has children | **Working for Families / Best Start** (IRD administers) | `working-for-families.md` |
+| is on SPS/SLP (or a sole parent on another benefit) and studying or wants to | **Training Incentive Allowance** | `training-incentive-allowance.md` |
+| is a student | still gets food grants, RAP, emergency dental, TAS, etc. | `student-support.md` |
 
 ## One-off help
 

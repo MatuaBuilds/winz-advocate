@@ -116,3 +116,15 @@ Record every significant decision here so future sessions don't relitigate it.
   (gitignored, local); a de-identified fixture at `docs/advocate-core-example.md`.
 - `docs/EVALS/advocate-core-test.md` — 6 verification questions, all pass on trace.
 - Not a SaaS rebuild — thin layer around the existing WINZ module, per Bill's spec.
+
+## 2026-09-01 — v2 ratified; v1.1 started
+
+- **Bill ratified the Advocate Core (v2)** — keep as built. `knowledge/` stays where
+  it is (not moved under `modules/winz/`) — revisit only when a 2nd domain has depth.
+- **v1.1 Loop 1 done:** cleared the COVERAGE common-tier ✗ items. New entitlement
+  files: training-incentive-allowance, youth-payment-and-young-parent-payment,
+  nz-superannuation, student-support, caring-for-someone-elses-child (UCB/Orphan's +
+  Clothing Allowance, Establishment Grant, Holiday & Birthday, Extraordinary Care Fund).
+  Remaining ✗ are genuinely lower-priority (Veteran's Pension, seasonal/self-employ
+  grants, Home Help, residential care).
+- knowledge pack now ~2645 lines; wizard test still 10/10.

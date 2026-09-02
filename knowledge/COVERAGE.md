@@ -16,8 +16,8 @@ _A–Z index last checked: 2026-09-01._
 | Sole Parent Support | ✅ | entitlements/sole-parent-support.md |
 | Supported Living Payment | ✅ | entitlements/supported-living-payment.md |
 | Emergency Benefit | ✅ | entitlements/emergency-benefit.md |
-| Youth Payment / Young Parent Payment | ✗ | Batch 2 — situations/young-person-or-young-parent.md |
-| NZ Superannuation | ✗ | next |
+| Youth Payment / Young Parent Payment | ✅ | entitlements/youth-payment-and-young-parent-payment.md |
+| NZ Superannuation | ✅ | entitlements/nz-superannuation.md |
 | Veteran's Pension | ✗ | low priority |
 | Emergency Maintenance Allowance | ◑ | entitlements/emergency-benefit.md (named) |
 
@@ -56,10 +56,10 @@ _A–Z index last checked: 2026-09-01._
 | OSCAR Subsidy | ✅ | entitlements/childcare-assistance.md |
 | Guaranteed / Flexible Childcare Assistance | ◑ | childcare-assistance.md |
 | Early Learning Payment | ✗ | next (0–2, with a Family Start / social worker) |
-| Unsupported Child's Benefit | ◑ | commonly-missed.md — deserves own file |
-| Orphan's Benefit | ✗ | next |
-| Clothing Allowance (OB/UCB) / Holiday & Birthday Allowance | ✗ | next — carers miss these |
-| Extraordinary Care Fund | ✗ | next (OB/UCB carers, exceptional costs) |
+| Unsupported Child's Benefit | ✅ | entitlements/caring-for-someone-elses-child.md |
+| Orphan's Benefit | ✅ | entitlements/caring-for-someone-elses-child.md |
+| Clothing Allowance (OB/UCB) / Holiday & Birthday Allowance | ✅ | entitlements/caring-for-someone-elses-child.md |
+| Extraordinary Care Fund | ✅ | entitlements/caring-for-someone-elses-child.md |
 | School and Year Start-up Payment | ◑ | other-special-needs-grants.md |
 | Emergency Maintenance Allowance | ✗ | (see main benefits) |
 | International Custody Dispute Payment | ✗ | rare |
@@ -83,7 +83,7 @@ _A–Z index last checked: 2026-09-01._
 
 | Payment | Status | File |
 |---|---|---|
-| Training Incentive Allowance | ✗ | next — big one for sole parents / SLP studying |
+| Training Incentive Allowance | ✅ | entitlements/training-incentive-allowance.md |
 | Course Participation Assistance | ✗ | next |
 | Transition to Work Grant | ◑ | other-special-needs-grants.md |
 | Employment/New Employment Transition Assistance | ✗ | next (childcare gap when starting work) |
@@ -99,14 +99,14 @@ _A–Z index last checked: 2026-09-01._
 
 | Payment | Status | File |
 |---|---|---|
-| Student Allowance / Accommodation Benefit / Student Loan | ✗ | next — students also get hardship help (noted in commonly-missed.md) |
+| Student Allowance / Accommodation Benefit / Student Loan | ✅ | entitlements/student-support.md |
 
 ## Cards
 
 | Item | Status | File |
 |---|---|---|
 | Community Services Card | ◑ | commonly-missed.md |
-| SuperGold Card | ✗ | with NZ Super file |
+| SuperGold Card | ◑ | entitlements/nz-superannuation.md |
 
 ## Winter / seasonal
 

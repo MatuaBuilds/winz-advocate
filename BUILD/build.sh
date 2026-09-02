@@ -17,6 +17,11 @@ FILES=(
   knowledge/entitlements/temporary-additional-support.md
   knowledge/entitlements/childcare-assistance.md
   knowledge/entitlements/working-for-families.md
+  knowledge/entitlements/training-incentive-allowance.md
+  knowledge/entitlements/student-support.md
+  knowledge/entitlements/youth-payment-and-young-parent-payment.md
+  knowledge/entitlements/nz-superannuation.md
+  knowledge/entitlements/caring-for-someone-elses-child.md
   knowledge/entitlements/advance-payment-and-recoverable-assistance.md
   knowledge/entitlements/other-special-needs-grants.md
   knowledge/entitlements/emergency-housing.md

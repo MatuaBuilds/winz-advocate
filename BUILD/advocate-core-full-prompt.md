@@ -450,9 +450,10 @@ Use this as the map. Details and sources are in the individual files.
 | is not working / working part-time and wants more / can't work full-time due to health (short/medium term) | **Jobseeker Support** | `jobseeker-support.md` |
 | is a single parent/caregiver, youngest child under 14 | **Sole Parent Support** | `sole-parent-support.md` |
 | has a health condition or disability that severely limits work for 2+ years, is totally blind, or cares full-time for someone needing hospital-level care | **Supported Living Payment** | `supported-living-payment.md` |
-| is 65+ | **NZ Superannuation** (mention, not covered in detail yet) | — |
-| is 16–19, not supported by parents, or a young parent | **Youth Payment / Young Parent Payment** (mention only) | — |
+| is 65+ | **NZ Superannuation** | `nz-superannuation.md` |
+| is 16–19, not supported by parents, or a young parent | **Youth Payment / Young Parent Payment** | `youth-payment-and-young-parent-payment.md` |
 | can't support themselves and fits **no** other benefit (visa status, not here 2 years, between categories) | **Emergency Benefit** | `emergency-benefit.md` |
+| is raising a child who isn't theirs because the parents can't | **Unsupported Child's / Orphan's Benefit** + carer support | `caring-for-someone-elses-child.md` |
 
 ## Extra help (can be paid on top of a benefit OR wages)
 
@@ -462,7 +463,9 @@ Use this as the map. Details and sources are in the individual files.
 | has ongoing costs from a health condition/disability (6+ months) | **Disability Allowance** | `disability-allowance.md` |
 | still can't meet essential living costs after other help | **Temporary Additional Support** | `temporary-additional-support.md` |
 | pays for early childhood education or before/after-school care | **Childcare Assistance (Childcare Subsidy / OSCAR)** | `childcare-assistance.md` |
-| has children (any income check via IRD) | **Working for Families / Best Start** (mention — IRD administers) | — |
+| has children | **Working for Families / Best Start** (IRD administers) | `working-for-families.md` |
+| is on SPS/SLP (or a sole parent on another benefit) and studying or wants to | **Training Incentive Allowance** | `training-incentive-allowance.md` |
+| is a student | still gets food grants, RAP, emergency dental, TAS, etc. | `student-support.md` |
 
 ## One-off help
 
@@ -1130,6 +1133,308 @@ start it for you.
   https://communitylaw.org.nz/community-law-manual/test/the-working-for-families-tax-credit-package/
 - Checked: 2026-09-01. Amounts and thresholds change each 1 April — confirm current
   figures with IRD.
+
+
+---
+
+<!-- FILE: knowledge/entitlements/training-incentive-allowance.md -->
+
+# Training Incentive Allowance (TIA)
+
+## What it is
+
+Help with the **cost of study** — fees, books, equipment, transport, childcare, and
+extra caring costs — for people on certain benefits doing a course that will improve
+their job prospects. It's **not a loan** and you don't pay it back.
+
+## Who can get it
+
+You must be receiving one of:
+
+- **Sole Parent Support**
+- **Supported Living Payment** (health condition/disability, or caring for someone)
+- **Young Parent Payment** (sole parents)
+- **Emergency Benefit / Emergency Maintenance Allowance** (sole parents)
+- **Jobseeker Support** (sole parents, if you can still meet your work obligations)
+
+The course must be:
+- **NZQA levels 1–7**
+- at least **12 weeks** long
+- likely to **improve your employment skills**
+
+## How much
+
+**$143.08 per week of study**, up to **$5,723.20 in a 52-week period** (guide figures
+— confirm current). You can take it weekly, as an up-front payment to the provider,
+or a mix.
+
+## How to apply
+
+- Complete the **TIA application form** — within **28 days of your course starting**.
+- Phone **0800 559 009** to book an appointment.
+- Bring: course enrolment details, a breakdown of costs (fees, books, equipment,
+  transport, childcare).
+
+## Common issues
+
+- **Missing the 28-day window** — apply as soon as you enrol, even before the course starts.
+- **Not claiming childcare / transport** — these are covered, not just fees.
+- **Told it's only for higher study** — it covers levels 1–7, including foundation courses.
+- Also check **Course Participation Assistance** (help with course-related costs for
+  people on Jobseeker doing an approved activity) and **Student Allowance / Student
+  Loan** if the course is long enough (`student-support.md`).
+
+## Source
+
+- Work and Income — Training Incentive Allowance:
+  https://www.workandincome.govt.nz/products/a-z-benefits/training-incentive-allowance.html
+- Checked: 2026-09-01. Rates change each 1 April — confirm the current weekly and
+  annual figures.
+
+
+---
+
+<!-- FILE: knowledge/entitlements/student-support.md -->
+
+# Student support (Studylink) — and the hardship help students still get
+
+Studylink (part of MSD) runs student money. The big thing advocates fix: **students
+can also get most Work and Income hardship help, and Studylink rarely tells them.**
+
+## Student Allowance
+
+- A **weekly payment you don't pay back**, for living costs while studying.
+- Usually **full-time study**. Part-time is possible if a disability means you can't
+  study full-time and the provider recommends it.
+- **Income tested:** your own and a partner's income; and **your parents' income if
+  you're under 24** (this stops at 24). If parental income is over the threshold you
+  get nothing — but you can still get the **Student Loan living costs**.
+- **Accommodation Benefit** is paid with it (a flat weekly amount toward rent — you
+  don't pay it back). Sole parents can get it at the Accommodation Supplement rate.
+
+## Student Loan
+
+- **Course fees**, **course-related costs** (a set annual amount), and **living
+  costs** (weekly, if you're not getting the full Student Allowance).
+- You repay it once you're earning over the threshold. Course-related costs and fees
+  are worth taking even if you skip living costs.
+
+## What students can ALSO get (from Work and Income)
+
+Studylink doesn't administer these — you apply to **Work and Income** (0800 559 009):
+
+- **Special Needs Grant for food** — same rules as anyone
+- **Recoverable Assistance Payment** — bond, rent in advance, furniture, a car repair
+- **Emergency Dental / Emergency Medical** grants
+- **Temporary Additional Support** — if essential costs exceed income
+- **Disability Allowance / Child Disability Allowance**
+- **Childcare Assistance**
+- **Accommodation Supplement** — if studying **part-time** (full-time students use the
+  Accommodation Benefit instead)
+
+## Studying while on a benefit
+
+- You can study **full-time and stay on Sole Parent Support**.
+- You can study **part-time on Jobseeker Support** while available for full-time work.
+- On Sole Parent Support / Supported Living Payment doing a course? Check the
+  **Training Incentive Allowance** (`training-incentive-allowance.md`).
+
+## Source
+
+- Studylink — Student Allowance:
+  https://www.studylink.govt.nz/products/a-z-products/student-allowance.html
+- Studylink — Student Loan:
+  https://www.studylink.govt.nz/products/a-z-products/student-loan.html
+- Auckland Action Against Poverty — Empowerment Booklet (students section):
+  https://www.aaap.org.nz/resources
+- Checked: 2026-09-01. Thresholds change each 1 April — confirm current.
+
+
+---
+
+<!-- FILE: knowledge/entitlements/youth-payment-and-young-parent-payment.md -->
+
+# Youth Payment & Young Parent Payment
+
+For **16–19 year olds** who can't be supported by their parents. Managed through a
+**Youth Service provider**, not a normal case manager.
+
+## Youth Payment
+
+For a young person **16–17** (sometimes 18–19 if still studying toward NCEA level 2)
+who:
+
+- **can't live with or be supported by** a parent or guardian — e.g. they've left
+  Oranga Tamariki care, or a parent has died, is in prison or hospital, lives
+  overseas, or the relationship has broken down
+- has **no dependent children**
+- is a NZ citizen or permanent resident, normally here
+
+## Young Parent Payment
+
+For a **16–19 year old parent** (or their 16–19 partner) with a dependent child, in a
+similar support gap — or a 19-year-old sole parent who'd otherwise get Sole Parent
+Support.
+
+## Obligations
+
+- Be in **full-time education, training, or work-based learning** toward **NCEA level
+  2** or equivalent (Young Parent Payment: this can start once the youngest child
+  turns 1).
+- Work with a **Youth Service provider** (a coach who helps you plan and stay on track).
+- Complete a **budgeting course**, and (Young Parent Payment) a **parenting course**.
+
+## How the money works
+
+- Part is **managed for you** — some goes on a **payment card** and bills can be paid
+  directly — with a smaller amount "in hand". As you meet obligations you can earn
+  **incentive payments** and move more money into your own control.
+- **Winter Energy Payment** is automatic in winter.
+- **Accommodation Supplement, Disability Allowance, hardship grants** can be paid on
+  top — ask.
+
+## How to apply
+
+- Apply through **MyMSD**, or phone **0800 559 009** and ask for **Youth Service**.
+- A Family Court judge's consent is needed to apply while in a relationship (unless
+  earlier written parental consent applies).
+
+## Common issues
+
+- **Money management feels controlling** — it's built into these payments, but as you
+  meet obligations you can get more control; ask your Youth coach.
+- **Turning 18/20** — you move to Jobseeker Support or Sole Parent Support; get help
+  before the switch so nothing lapses.
+- Not being told about **Accommodation Supplement** or hardship grants.
+
+## Source
+
+- Work and Income — Youth Payment:
+  https://www.workandincome.govt.nz/products/a-z-benefits/youth-payment.html
+- Work and Income — Young Parent Payment:
+  https://www.workandincome.govt.nz/products/a-z-benefits/young-parent-payment.html
+- Checked: 2026-09-01. Rates and the exact NCEA/age rules change — confirm current.
+
+
+---
+
+<!-- FILE: knowledge/entitlements/nz-superannuation.md -->
+
+# NZ Superannuation
+
+The pension for people **65 and over**. Not covered in full depth here — the key
+points an advocate needs, and the extra help Super recipients also miss.
+
+## Who can get it
+
+- **65 or older**
+- NZ citizen, permanent resident, or residence-class visa holder
+- Have **lived in NZ** for a set number of years since age 20 (currently moving from
+  10 years toward **20 years**, phased in by birth date — check where you sit) — with
+  some of that time after age 50
+- Normally live in NZ (there are portability rules for living overseas)
+
+## Key points
+
+- **Not income tested for you.** You can keep working full-time and get the full
+  amount. Your other income doesn't reduce it.
+- **A younger partner** who isn't yet 65: you can no longer include them in your Super
+  (that option ended in 2020). They may need their own benefit — check.
+- **Rates** differ by living situation: single living alone, single sharing, and
+  couple (each partner). Set each 1 April. It's taxed.
+- **Apply before you turn 65** — up to 12 weeks ahead — so it starts on time.
+- **SuperGold Card** comes with it: discounts and off-peak public transport.
+
+## Extra help Super recipients also get (commonly missed)
+
+- **Accommodation Supplement** — if you rent, board, or pay a mortgage
+  (`accommodation-supplement.md`)
+- **Disability Allowance** — ongoing health costs (`disability-allowance.md`)
+- **Temporary Additional Support** — if essential costs exceed income
+  (`temporary-additional-support.md`)
+- **Winter Energy Payment** — automatic, 1 May–1 Oct
+- **Special Needs Grants**, **emergency dental/medical**, **Advance Payment** — same
+  as any low-income person
+- **Rates rebate** (from your council), and the **Residential Care Subsidy** if you
+  move into care
+
+## How to apply
+
+- **MyMSD**, or phone **0800 552 002** (the over-65 line).
+
+## Source
+
+- Work and Income — NZ Superannuation:
+  https://www.workandincome.govt.nz/products/a-z-benefits/nz-superannuation.html
+- Work and Income — Seniors:
+  https://www.workandincome.govt.nz/eligibility/seniors/superannuation/
+- Checked: 2026-09-01. The residence-years requirement is phasing in and the rates
+  change each 1 April — confirm current.
+
+
+---
+
+<!-- FILE: knowledge/entitlements/caring-for-someone-elses-child.md -->
+
+# Caring for someone else's child — UCB, Orphan's Benefit & carer support
+
+If you're raising a child who isn't your own because their parents can't, there's a
+set of payments — and carers routinely miss most of them because Work and Income
+doesn't spell them out.
+
+## Unsupported Child's Benefit (UCB)
+
+- For a **main caregiver** (not a birth, adoptive, or step-parent) of a child **18 or
+  under** whose parents **can't provide care** because of a **family breakdown**
+  (e.g. grandparent or aunty raising a grandchild/niece).
+- **Not income tested** — you can work full-time and still get it.
+- The **child's** income (a trust, ACC, an estate, investments) can affect it.
+- If you're working, you can also get the **In-Work Tax Credit** (IRD).
+
+## Orphan's Benefit
+
+- Similar payment where the child's parents have **died**, can't be found, or have a
+  **serious long-term disability** and can't care for the child.
+
+## The carer support that comes with UCB / Orphan's Benefit
+
+Approved carers **automatically** get a **Clothing Allowance**, and can also get:
+
+| Payment | For |
+|---|---|
+| **Establishment Grant** | one-off ~$350 per child when the benefit starts, for setup costs |
+| **Holiday and Birthday Allowance** | a payment around the child's birthday and Christmas |
+| **School and Year Start-up Payment** | annual, toward school costs |
+| **Extraordinary Care Fund** | for exceptional costs — e.g. a child with high needs, or one showing real promise in something (sport, arts, academic) |
+| **Child Disability Allowance** | if the child has a serious disability (`commonly-missed.md`) |
+
+## How to apply
+
+- Apply through **Work and Income** (0800 559 009). You have **20 working days from
+  first contact** to complete it — so make contact early.
+- Evidence that helps: the child's **full birth certificate**, any **court order or
+  guardianship** papers, **Family Group Conference** outcome, the parents' details,
+  and a letter from a doctor / kōhanga reo / school confirming you care for the child
+  full-time.
+
+## Common issues
+
+- **Only being given the UCB** and none of the extras — ask for the Establishment
+  Grant, Clothing Allowance, and the others by name.
+- **Told to get a benefit for yourself instead** — UCB is paid *for the child* and
+  doesn't stop you getting your own support.
+- **Backdating** — ask whether it can start from when you first took on the care.
+
+## Source
+
+- Work and Income — Unsupported Child's Benefit:
+  https://www.workandincome.govt.nz/products/a-z-benefits/unsupported-childs-benefit.html
+- Work and Income — Orphan's Benefit:
+  https://www.workandincome.govt.nz/products/a-z-benefits/orphans-benefit.html
+- Work and Income — Extraordinary Care Fund:
+  https://www.workandincome.govt.nz/products/a-z-benefits/extraordinary-care-fund.html
+- Checked: 2026-09-01. The Establishment Grant amount and other figures change —
+  confirm current.
 
 
 ---
