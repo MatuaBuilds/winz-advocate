@@ -41,19 +41,20 @@ ready-to-send email. Passes the Sam + Ben + wizard suites.
 - [x] Loop 1: cleared the `COVERAGE.md` common-tier ✗ items — new files: Training
   Incentive Allowance, Youth/Young Parent Payment, NZ Super, Student support,
   caring-for-someone-elses-child (UCB/Orphan's + carer allowances)
-- [ ] Loop 7: run the full AI-version eval suite (P1–P10) + a red-team pass; fix; log
-- [ ] Wizard: one wording + dignity pass over every question and result line
-- [ ] Loop 8: Bill's design pass on the wizard (with reference pics)
-- [ ] Loop 3: test with 3 real people (consent, Bill beside them) → `docs/OUTCOMES.md`
+- [x] Loop 7: AI-version eval P1–P10 + red-team — 10 Ship / 0 Fix, no holes (docs/EVALS/ai-version-run-2026-09-01.md); wizard suite 12/12
+- [x] Wizard: wording pass (standardised "the full version" references; youth wording)
+- [ ] Loop 8: design pass on the wizard + landing (Claude iterates; Bill reacts when he wants)
+- [ ] Loop 3: test with 3 real people (consent, Bill beside them) → `docs/OUTCOMES.md` — in `FOR-BILL.md`
 **Done when:** no ✗ in COVERAGE common tiers · eval suites green · 3 real people
 through it · fixes logged in `IMPROVEMENTS.md`.
 
-### v2 — Advocate Core (BUILT — awaiting Bill's ratify)
+### v2 — Advocate Core ✅ RATIFIED (2026-09-01)
 
 The thin layer above the modules: multi-case tracking, status model, "carry the
-load" behaviours, routing. WINZ is module 1, unmoved.
-**Done when:** the 6 verification questions pass on a **live** run with a real case
-file (trace already passes) · WINZ standalone unaffected · logged in `IMPROVEMENTS.md`.
+load" behaviours, routing. WINZ is module 1, unmoved. Ratified as built; `knowledge/`
+stays put.
+**Remaining:** one **live** run with a real case file (trace already passes) →
+`FOR-BILL.md`.
 
 ### v3 — Modules 2–4
 

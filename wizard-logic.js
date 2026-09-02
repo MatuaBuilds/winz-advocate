@@ -141,7 +141,7 @@
     function declined(a){
       if(!has(a,"trouble","declined")) return null;
       var w = a.declined_when, level = "yes", why, doThis;
-      if(w==="within3"){ why="WINZ turned something down and you're still inside the 3-month window to challenge it. A Review of Decision is designed to be done without a lawyer — and WINZ can't cut your benefit for lodging one."; doThis="Lodge a Review of Decision now — ask for the form, or write a letter. Get it date-stamped, keep a copy. The full AI version can draft this for you."; }
+      if(w==="within3"){ why="WINZ turned something down and you're still inside the 3-month window to challenge it. A Review of Decision is designed to be done without a lawyer — and WINZ can't cut your benefit for lodging one."; doThis="Lodge a Review of Decision now — ask for the form, or write a letter. Get it date-stamped, keep a copy. The full version (the “deeper” option on the home page) can draft it for you."; }
       else if(w==="longer"){ level="maybe"; why="It's been more than 3 months, but a late Review of Decision can still be accepted if you have a 'good and sufficient reason' for the delay (being unwell, overwhelmed, or not knowing the deadline can count)."; doThis="Lodge the Review of Decision anyway and explain the delay. Get free advocacy help — Community Law or AAAP."; }
       else { why="There's a 3-month limit to challenge a WINZ decision, counted from the date on the letter. Check that date."; doThis="Find the decision letter and check the date. If it's within 3 months, lodge a Review of Decision straight away."; }
       return { level:level, name:"Review of Decision (challenge the decline)", why:why, doThis:doThis };
@@ -156,13 +156,13 @@
       if(!has(a,"trouble","delay")) return null;
       return { level:"yes", name:"Follow up on the delay",
         why:"You're entitled to a decision and to know how long it will take. Chasing it in writing creates a record and often unsticks it.",
-        doThis:"Send a written follow-up (MyMSD or email) asking for the current status and a date for the decision. The AI version can draft this." };
+        doThis:"Send a written follow-up (MyMSD or email) asking for the current status and a date for the decision. The full version can draft it for you." };
     },
     function debt(a){
       if(a.debt!=="yes") return null;
       return { level:"yes", name:"Sort out the debt / deductions",
         why:"A WINZ debt can be disputed (whether it exists, the amount, the period). If it came from a WINZ error and you received the money in good faith, it can be written off. And the weekly deductions can be reduced — as low as 50c — so they don't leave you short.",
-        doThis:"Ask for a full breakdown of the debt in writing. Then ask for a write-off (if it was their mistake) or for the deductions to be reduced. The AI version has ready templates for all three." };
+        doThis:"Ask for a full breakdown of the debt in writing. Then ask for a write-off (if it was their mistake) or for the deductions to be reduced. The full version has ready templates for all three." };
     },
     function youthPayment(a){
       if(onBenefit(a)) return null;
