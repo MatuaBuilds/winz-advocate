@@ -104,3 +104,15 @@ Record every significant decision here so future sessions don't relitigate it.
   Core v0 (multi-case dashboard) is the next build (PLAN.md Phase 5).
 - Success measure changed: not "was the info correct" but "did something stuck start
   moving, and did it get easier."
+
+## 2026-09-01 — Phase 3B: Advocate Core built as a thin layer
+
+- `core/advocate-core.md` + `core/case-tracker-template.md` + `modules/` (WINZ built,
+  5 stubs). `BUILD/advocate-core-full-prompt.md` = Core + tracker + modules + WINZ pack.
+- **Privacy call:** Bill's real 6-case file → `case-files/bill-live-case.md`
+  (gitignored, local only). `docs/CASE-STUDY-BILL.md` redacted to general lessons.
+  `docs/advocate-core-example.md` = de-identified public test fixture.
+  (Note: git history still contains the earlier un-redacted CASE-STUDY-BILL.md —
+  Bill's call whether to scrub it.)
+- `docs/EVALS/advocate-core-test.md` — 6 verification questions, all pass on trace.
+- Not a SaaS rebuild — thin layer around the existing WINZ module, per Bill's spec.

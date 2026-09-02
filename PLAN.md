@@ -94,19 +94,25 @@ No offline model (dropped 2026-09-01). The tool is given away as text anyone can
 - [ ] Share with community orgs (AAAP, Community Law, food banks, marae)
 - [ ] Later, if funded: a hosted no-login website
 
-## Phase 5 — Advocate Core (the direction)
+## Phase 3B — Advocate Core (thin layer)  ✅ built, verified on trace
 
-From `docs/CASE-STUDY-BILL.md` + `docs/ADVOCATE-CORE.md`: WINZ Advocate becomes one
+From `docs/CASE-STUDY-BILL.md` + `docs/ADVOCATE-CORE.md`: WINZ Advocate is one
 **module** under a persistent advocate that holds context across a person's whole
-life admin (housing, health, ACC, money/debt, moving, providers) and keeps things
-moving — reducing the distance between overwhelm and action.
+life admin and keeps things moving.
 
-- [x] Interaction behaviours folded into the WINZ system prompt ("How to carry the
-  load") + the case file (next 3 actions, waiting-on, wins, evidence-held)
-- [ ] **Core v0** — a multi-case "life dashboard" file (the case object + status
-  model) and the AI version taught to run it: read email → route to a case → update
-  → surface next ≤3 → carry waiting states → log wins
-- [ ] Later modules as their own knowledge packs under the Core
+- [x] `core/advocate-core.md` — Core operating instructions (accept unstructured
+  updates, sort into cases, read-first, reuse evidence, ≤3 front burner, carry
+  waiting, name wins, route to modules)
+- [x] `core/case-tracker-template.md` — the case object × N, with the status model
+- [x] `modules/` — WINZ (built, = the knowledge pack) + stubs: housing, health-admin,
+  money-debt, moving-house, providers
+- [x] `BUILD/advocate-core-full-prompt.md` — Core + tracker + modules + WINZ pack
+- [x] Test fixtures: `case-files/bill-live-case.md` (real, gitignored) +
+  `docs/advocate-core-example.md` (de-identified, public)
+- [x] `docs/EVALS/advocate-core-test.md` — the 6 verification questions, all pass on trace
+- [ ] **Bill:** run it live (`advocate-core-full-prompt.md` + his case file), log gaps
+- [ ] Build out the module stubs as their own knowledge packs (each with COVERAGE + loops)
+- [ ] NOT a SaaS rebuild — prove the thin layer first
 
 ## Phase 6 — Only if it proves out and help arrives
 

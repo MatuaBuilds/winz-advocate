@@ -76,3 +76,20 @@ FULL=BUILD/winz-advocate-full-prompt.md
   cat "$OUT"
 } > "$FULL"
 echo "Wrote $FULL ($(wc -l < "$FULL") lines)"
+
+# Advocate Core pack: core instructions + case tracker + module stubs + WINZ pack.
+CORE=BUILD/advocate-core-full-prompt.md
+{
+  cat core/advocate-core.md
+  printf '\n\n============ CASE TRACKER TEMPLATE ============\n\n'
+  cat core/case-tracker-template.md
+  printf '\n\n============ MODULE: index ============\n\n'
+  cat modules/README.md
+  for m in modules/housing.md modules/health-admin.md modules/money-debt.md modules/moving-house.md modules/providers.md; do
+    printf '\n\n---\n\n<!-- %s -->\n\n' "$m"
+    cat "$m"
+  done
+  printf '\n\n============ MODULE: WINZ (full knowledge pack) ============\n\n'
+  cat "$OUT"
+} > "$CORE"
+echo "Wrote $CORE ($(wc -l < "$CORE") lines)"

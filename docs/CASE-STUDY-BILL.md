@@ -60,97 +60,30 @@ The advocate then turns that into:
 
 **When avoidance is the barrier, help execute the task instead of only explaining it.**
 
-## Current live cases
+## The live cases (held privately)
 
-### 1. Housing
+Six real cases ran in parallel during this use: **housing**, **empty-home move-in
+prep**, a **Disability Allowance cost claim**, **therapy**, **money / KiwiSaver
+hardship + a one-off funding target**, and a **pre-move support network**.
 
-Goal: Secure stable housing and prepare for relocation.
+The specific detail is kept out of this public file. The working version lives at
+`case-files/bill-live-case.md` (gitignored, local only). A de-identified worked
+version — safe to share, and used as the Advocate Core test fixture — is at
+`docs/advocate-core-example.md`.
 
-Current state:
-- Work and Income housing paperwork signed.
-- MyMSD document upload section is open.
-- Accommodation confirmation letter requested from current household.
-- Working move-out date is 15 December 2026.
-- Date may change if the current property sells or circumstances change.
+The reusable lessons from those cases:
 
-Current status: Waiting on accommodation letter and housing process.
-
-Important behaviour: Do not treat housing as only an application problem. Prepare for
-the move before the address arrives.
-
-### 2. Empty House Move-In
-
-Goal: Be able to move into an empty property and make it functional immediately.
-
-Current preparation areas: bed, mattress, bedding, fridge/freezer, washing machine,
-basic seating, table/chairs, essential kitchen items, utilities, moving costs,
-delivery, assembly, installation.
-
-Important learning: Buying the item is not enough. The real outcome is: **delivered,
-installed, usable.**
-
-Supplier research should therefore include: delivery availability, installation
-availability, assembly requirements, MSD preferred supplier status where relevant,
-lead time, total delivered cost, suitability for the actual user.
-
-Status: Preparation can happen before the final address exists. Applications and
-delivery booking occur once the address and move-in date are confirmed.
-
-### 3. Disability Allowance / Medicinal Cannabis
-
-Goal: Get ongoing prescribed medicinal cannabis cost recognised through Work and
-Income Disability Allowance.
-
-Existing evidence: Work Capacity Medical Certificate, clinical history, ACC reports,
-GP health summary, Dispensed medicinal cannabis approval letter, prescription/
-treatment information.
-
-Current learning: Do not repeatedly rebuild the medical story. Reuse existing medical
-evidence.
-
-The missing piece identified by the case manager is mainly: current cost evidence,
-current certification of the ongoing disability-related cost.
-
-Actions taken: Disability Allowance form obtained; request sent to Dispensed; request
-sent to regular GP / Totara Health; Dispensed confirmed the request has been escalated
-to their medical team.
-
-Status: Waiting on providers.
-
-### 4. Therapy
-
-Goal: Maintain consistent therapeutic support.
-
-Current state: Therapy has been re-engaged and organised.
-
-Status: Stable / active.
-
-### 5. Money / KiwiSaver
-
-Goal: Improve stability and transport.
-
-Current priority: Significant financial hardship KiwiSaver application.
-
-Likely work required: identify provider; locate correct hardship form; confirm
-evidence requirements; gather income and expenses; gather debt information; gather
-housing and stability evidence; document transport need; document why reliable
-transport supports health, therapy, housing, and stability.
-
-Separate money target: Approximately NZD $1,700 for Türkiye flights.
-
-Important behaviour: Do not turn every financial problem into one large "money" issue.
-Break money into separate cases and funding targets.
-
-### 6. Rotorua Support Network
-
-Goal: Build support before relocating.
-
-Services contacted include: Te Pokapū / housing navigation; Community Law; Health and
-Disability Advocacy.
-
-Important learning: The advocate should not just provide a list of services. It should
-track: who was contacted, what was asked, when they replied, what they can actually
-help with, next action, whether the relationship was useful.
+- **Housing is not only an application.** Prepare the move before the address arrives.
+- **"Bought" is not the outcome — "delivered, installed, usable" is.** Supplier
+  research must cover delivery, installation, assembly, lead time, total delivered
+  cost, MSD preferred-supplier status, and suitability for the actual person.
+- **Do not rebuild the medical story.** Reuse the evidence that already exists. The
+  gap for a cost claim is usually the *current cost evidence and certification the
+  cost is ongoing* — not the diagnosis.
+- **Don't collapse money into one problem.** Each funding target is its own case with
+  its own path.
+- **Don't just hand over a list of services.** Track each: what was asked, when they
+  replied, what they can actually help with, whether the relationship was useful.
 
 ## Status model
 
