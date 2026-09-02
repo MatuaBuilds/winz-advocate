@@ -100,9 +100,25 @@
   var A = load(), pos = 0;
   function load(){ try{ return JSON.parse(localStorage.getItem("wa_answers")||"{}"); }catch(e){ return {}; } }
   function save(){ try{ localStorage.setItem("wa_answers", JSON.stringify(A)); }catch(e){} }
-  function visible(){ return Q.filter(function(q){ return !(q.skipIf && q.skipIf(A)); }); }
+  function visible(){ return W.questionsForIntent(A); }
+
+  function renderIntent(){
+    document.getElementById("fill").style.width = "0%";
+    document.getElementById("stepnum").textContent = "Start";
+    var el = document.getElementById("app"); el.innerHTML="";
+    var h=document.createElement("h1"); h.className="q"; h.textContent="What do you need help with?"; el.appendChild(h);
+    var p=document.createElement("p"); p.className="hint"; p.textContent="Pick the closest. We'll only ask what that needs, then write the emails for you."; el.appendChild(p);
+    var wrap=document.createElement("div"); wrap.className="choices"; el.appendChild(wrap);
+    W.INTENTS.forEach(function(it){
+      var b=document.createElement("button"); b.className="choice"; b.type="button";
+      b.innerHTML='<span>'+it.label+'</span>';
+      b.addEventListener("click", function(){ A._intent=it.id; W.applyIntent(A); save(); pos=0; render(); window.scrollTo(0,0); });
+      wrap.appendChild(b);
+    });
+  }
 
   function render(){
+    if(!A._intent) return renderIntent();
     var vis = visible();
     if(pos >= vis.length) return renderResults();
     var q = vis[pos];
@@ -139,8 +155,9 @@
     }
 
     var nav=document.createElement("div"); nav.className="nav";
-    if(pos>0){ var back=document.createElement("button"); back.className="btn btn-back"; back.textContent="Back";
-      back.onclick=function(){ pos--; render(); window.scrollTo(0,0); }; nav.appendChild(back); }
+    var back=document.createElement("button"); back.className="btn btn-back"; back.textContent="Back";
+    back.onclick=function(){ if(pos>0){ pos--; } else { A._intent=null; save(); } render(); window.scrollTo(0,0); };
+    nav.appendChild(back);
     if(q.type==="amount" || q.multi){
       var next=document.createElement("button"); next.className="btn btn-next"; next.textContent="Next";
       if(q.multi && !(A[q.id]||[]).length){ next.disabled=true; }
@@ -158,20 +175,33 @@
     var results = W.evaluate(A);
 
     var el=document.getElementById("app"); el.innerHTML="";
-    var h=document.createElement("h1"); h.className="result-h"; h.textContent="What you may be entitled to"; el.appendChild(h);
+    var it = (W.INTENTS.filter(function(x){return x.id===A._intent;})[0]) || {label:""};
+    var focused = results.filter(function(r){return r._focus;});
+    var extra   = results.filter(function(r){return !r._focus;});
+
+    var h=document.createElement("h1"); h.className="result-h";
+    h.textContent = it.id && it.id!=="audit" && it.id!=="other" ? ("For: "+it.label) : "What you may be entitled to";
+    el.appendChild(h);
     var sub=document.createElement("p"); sub.className="hint";
-    sub.textContent="Based on what you told us. These are guides, not decisions — amounts and rules change, so confirm with Work and Income. This tool never contacts them for you.";
+    sub.textContent="Based on what you told us. Guides, not decisions — amounts and rules change, so confirm with Work and Income. This tool never contacts them for you; you send everything.";
     el.appendChild(sub);
 
-    var list=document.createElement("div"); list.className="checklist";
-    results.forEach(function(r){
-      var d=document.createElement("div"); d.className="item "+r.level;
-      var label = r.level==="urgent" ? "Do this now" : r.level==="yes" ? "Worth applying" : "Worth checking";
-      d.innerHTML='<div class="badge">'+label+'</div><h3>'+r.name+'</h3><p>'+r.why+'</p>'+
-                  '<p style="margin-top:6px"><strong>What to do:</strong> '+r.doThis+'</p>';
-      list.appendChild(d);
-    });
-    el.appendChild(list);
+    function renderItems(arr){
+      var list=document.createElement("div"); list.className="checklist";
+      arr.forEach(function(r){
+        var d=document.createElement("div"); d.className="item "+r.level;
+        var label = r.level==="urgent" ? "Do this now" : r.level==="yes" ? "Worth applying" : "Worth checking";
+        d.innerHTML='<div class="badge">'+label+'</div><h3>'+r.name+'</h3><p>'+r.why+'</p>'+
+                    '<p style="margin-top:6px"><strong>What to do:</strong> '+r.doThis+'</p>';
+        list.appendChild(d);
+      });
+      return list;
+    }
+    el.appendChild(renderItems(focused.length?focused:results));
+    if(focused.length && extra.length){
+      var eh=document.createElement("h2"); eh.style.fontSize="1.2rem"; eh.style.margin="22px 0 4px"; eh.textContent="Also worth checking while you're at it"; el.appendChild(eh);
+      el.appendChild(renderItems(extra));
+    }
 
     var actions=buildActions(A,results);
     var ab=document.createElement("div"); ab.className="actions-box";

@@ -112,6 +112,57 @@
       skipIf:function(a){ return a.resident!=="yes"; }}
   ];
 
+  // Intent-first: the person says what they need; we ask only what that needs.
+  // ask = question ids to show, in order.  focus = rule names to feature (others
+  // still computed and shown under "also worth checking").
+  var INTENTS = [
+    { id:"food",     label:"Food this week",
+      implies:{ urgent:["food"] },
+      ask:["income","single","kids","bank","resident"],
+      focus:["foodGrant","arrears"] },
+    { id:"arrears",  label:"Behind on power or rent",
+      ask:["urgent","income","which_benefit","bank","resident"],
+      focus:["arrears","foodGrant","debt"] },
+    { id:"housing",  label:"Nowhere to stay",
+      implies:{ urgent:["housing"], housing:"nofixed" },
+      ask:["income","kids","resident","newhere"],
+      focus:["emergencyHousing","mainBenefit","foodGrant"] },
+    { id:"benefit",  label:"Apply for a benefit",
+      ask:["income","age","kids","single","housing","housingcost","health","healthcosts","resident","newhere"],
+      focus:["mainBenefit","youthPayment","accommodation","disability","wff","tas"] },
+    { id:"decision", label:"They declined something, or sanctioned me",
+      ask:["trouble","declined_when","income","which_benefit"],
+      focus:["declined","sanction","delay"] },
+    { id:"bigcost",  label:"Money for a big cost (car, dental, whiteware…)",
+      ask:["bigcosts","income","bank","resident"],
+      focus:["dental","otherGrants","arrears"] },
+    { id:"debt",     label:"Sort out a WINZ debt",
+      ask:["debt","income","which_benefit"],
+      focus:["debt"] },
+    { id:"audit",    label:"Check I'm getting everything I can",
+      ask:null,   // all questions
+      focus:null }, // everything, ordered by level
+    { id:"other",    label:"Something else / not sure",
+      ask:null, focus:null }
+  ];
+
+  function intentById(id){ for(var i=0;i<INTENTS.length;i++) if(INTENTS[i].id===id) return INTENTS[i]; return null; }
+
+  function applyIntent(a){
+    var it = intentById(a._intent);
+    if(it && it.implies){ for(var k in it.implies){ if(a[k]===undefined || a[k]===null) a[k]=it.implies[k]; } }
+    return a;
+  }
+
+  function questionsForIntent(a){
+    var it = intentById(a._intent);
+    if(!it || !it.ask) return QUESTIONS.filter(function(q){ return !(q.skipIf && q.skipIf(a)); });
+    var ids = it.ask;
+    return QUESTIONS.filter(function(q){
+      return ids.indexOf(q.id) !== -1 && !(q.skipIf && q.skipIf(a));
+    }).sort(function(x,y){ return ids.indexOf(x.id) - ids.indexOf(y.id); });
+  }
+
   function num(x){ x = parseFloat(String(x||"").replace(/[^0-9.]/g,"")); return isNaN(x)?0:x; }
   function onBenefit(a){ return a.income==="benefit" || a.income==="both"; }
   function has(a,k,v){ return (a[k]||[]).indexOf(v) !== -1; }
@@ -279,17 +330,28 @@
 
   function evaluate(a){
     var out = [];
-    for(var i=0;i<RULES.length;i++){ try{ var r = RULES[i](a); if(r) out.push(r); }catch(e){} }
+    for(var i=0;i<RULES.length;i++){
+      try{ var r = RULES[i](a); if(r){ r._rule = RULES[i].name; out.push(r); } }catch(e){}
+    }
     var order = { urgent:0, yes:1, maybe:2 };
-    out.sort(function(x,y){ return order[x.level]-order[y.level]; });
+    var it = intentById(a._intent);
+    var focus = it && it.focus;
+    out.sort(function(x,y){
+      if(focus){
+        var fx = focus.indexOf(x._rule) !== -1, fy = focus.indexOf(y._rule) !== -1;
+        if(fx !== fy) return fx ? -1 : 1;
+      }
+      return order[x.level]-order[y.level];
+    });
+    // tag which are "focus" (main answer) vs "also worth checking"
+    out.forEach(function(r){ r._focus = !focus || focus.indexOf(r._rule) !== -1; });
     return out;
   }
 
-  function visibleQuestions(a){
-    return QUESTIONS.filter(function(q){ return !(q.skipIf && q.skipIf(a)); });
-  }
+  function visibleQuestions(a){ return questionsForIntent(a); }
 
-  var API = { QUESTIONS:QUESTIONS, RULES:RULES, evaluate:evaluate, visibleQuestions:visibleQuestions,
+  var API = { QUESTIONS:QUESTIONS, RULES:RULES, INTENTS:INTENTS, evaluate:evaluate, applyIntent:applyIntent,
+              visibleQuestions:visibleQuestions, questionsForIntent:questionsForIntent,
               helpers:{ num:num, onBenefit:onBenefit, has:has, single:single } };
 
   if (typeof module !== "undefined" && module.exports) module.exports = API;
