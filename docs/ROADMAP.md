@@ -56,11 +56,19 @@ stays put.
 **Remaining:** one **live** run with a real case file (trace already passes) →
 `FOR-BILL.md`.
 
-### v3 — Modules 2–4
+### v3 — Modules 2–4  (IN PROGRESS)
 
 Build `housing`, `money-debt`, `health-admin` from stubs into real packs. Each gets:
 its own `COVERAGE.md`, its sources of truth, its own persona evals, and wiring into
 the Core's routing.
+
+- [x] **Housing** — `modules/housing/` real pack (social housing register, renting
+  rights, facing eviction, the move). In the Core pack. 5 eval personas listed.
+- [ ] Money & debt — build from `modules/money-debt.md` stub
+- [ ] Health admin — build from `modules/health-admin.md` stub
+- [ ] A `core-routing-test` — a mixed-domain case, check the Core sends each part to
+  the right module
+
 **Done when:** each module passes its own eval suite · the Core routes a mixed-domain
 case correctly · loops 1/2/7 extended to cover them.
 
