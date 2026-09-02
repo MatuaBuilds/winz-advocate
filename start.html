@@ -33,19 +33,21 @@
   .bar > i{display:block; height:100%; background:var(--pine); border-radius:999px; transition:width .35s ease}
   .steplabel{font-size:.82rem; color:var(--faint); margin-top:7px; display:flex; justify-content:space-between}
   .steplabel a{color:var(--faint)}
-  .screen{margin-top:22px}
-  .q{font-size:1.45rem; margin:0 0 6px}
-  .hint{color:var(--soft); font-size:.98rem; margin-bottom:20px}
-  .choices{display:grid; gap:12px}
+  .screen{margin-top:20px}
+  .q{font-size:1.4rem; margin:0 0 6px; text-wrap:balance}
+  .hint{color:var(--soft); font-size:.96rem; margin-bottom:18px}
+  .choices{display:grid; gap:10px}
   button.choice{
     text-align:left; font:inherit; color:var(--ink); background:var(--raise);
-    border:1.5px solid var(--line); border-radius:14px; padding:16px 18px; cursor:pointer;
-    display:flex; align-items:center; gap:12px; min-height:58px; box-shadow:var(--shadow);
+    border:1.5px solid var(--line); border-radius:14px; padding:14px 16px; cursor:pointer;
+    display:flex; align-items:center; gap:12px; min-height:54px; box-shadow:var(--shadow);
   }
   button.choice:hover{border-color:var(--clay)}
   button.choice:active{transform:translateY(1px)}
   button.choice[aria-pressed="true"]{border-color:var(--pine); background:var(--pine-soft)}
   button.choice .tick{width:22px; height:22px; border-radius:50%; border:2px solid var(--faint); flex:none; display:grid; place-items:center; font-size:.8rem}
+  /* square indicator for pick-many questions */
+  .choices.multi button.choice .tick{border-radius:6px}
   button.choice[aria-pressed="true"] .tick{border-color:var(--pine); background:var(--pine); color:var(--paper)}
   .nav{display:flex; gap:10px; margin-top:24px}
   .btn{font:inherit; font-weight:600; border-radius:12px; padding:14px 20px; cursor:pointer; border:1.5px solid transparent}
@@ -116,7 +118,7 @@
       el.appendChild(box);
       box.querySelector("input").addEventListener("input", function(e){ A[q.id]=e.target.value; save(); });
     } else {
-      var wrap=document.createElement("div"); wrap.className="choices";
+      var wrap=document.createElement("div"); wrap.className="choices"+(q.multi?" multi":"");
       q.options.forEach(function(o){
         var b=document.createElement("button"); b.className="choice"; b.type="button";
         var chosen = q.multi ? has(A,q.id,o.v) : A[q.id]===o.v;
@@ -141,6 +143,7 @@
       back.onclick=function(){ pos--; render(); window.scrollTo(0,0); }; nav.appendChild(back); }
     if(q.type==="amount" || q.multi){
       var next=document.createElement("button"); next.className="btn btn-next"; next.textContent="Next";
+      if(q.multi && !(A[q.id]||[]).length){ next.disabled=true; }
       next.onclick=function(){ pos++; render(); window.scrollTo(0,0); }; nav.appendChild(next);
     }
     el.appendChild(nav);
