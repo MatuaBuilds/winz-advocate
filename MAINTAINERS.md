@@ -2,7 +2,7 @@
 
 The tool gets better because these loops run over it — not because someone rewrites
 it. Anyone can run them — Bill, a helper, or a Claude session with this repo open.
-The version pathway is in `docs/ROADMAP.md`.
+The version pathway is in `docs/ROADMAP.md`. A session runs autonomously per `docs/AUTONOMOUS-LOOP.md` and queues Bill-only items in `docs/FOR-BILL.md`.
 
 ## Loops index
 
