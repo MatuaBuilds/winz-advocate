@@ -1,7 +1,7 @@
 # Advocate Core — worked example (de-identified)
 
 A sample case tracker used to test and demo the Advocate Core. Based on the shape of
-a real multi-case situation (`docs/CASE-STUDY-BILL.md`), with the specifics
+a real multi-case situation (`docs/bill-live-case.md`), with the specifics
 generalised. Verification questions and expected answers are in
 `docs/EVALS/advocate-core-test.md`.
 

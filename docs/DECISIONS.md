@@ -91,7 +91,7 @@ Record every significant decision here so future sessions don't relitigate it.
 
 ## 2026-09-01 — Advocate Core direction (from Bill's live case study)
 
-- Bill wrote `docs/CASE-STUDY-BILL.md` from real use of an AI assistant for his own
+- Bill wrote `docs/bill-live-case.md` from real use of an AI assistant for his own
   life admin. Core insight: **the value is reducing the distance between overwhelm
   and action, not providing information.** Principle: *never make the user carry
   context the system can carry.* When avoidance is the barrier, help execute, not
@@ -109,10 +109,10 @@ Record every significant decision here so future sessions don't relitigate it.
 
 - `core/advocate-core.md` + `core/case-tracker-template.md` + `modules/` (WINZ built,
   5 stubs). `BUILD/advocate-core-full-prompt.md` = Core + tracker + modules + WINZ pack.
-- **Privacy call:** Bill's real 6-case file → `case-files/bill-live-case.md`
-  (gitignored, local only). `docs/CASE-STUDY-BILL.md` redacted to general lessons.
-  `docs/advocate-core-example.md` = de-identified public test fixture.
-  (Note: git history still contains the earlier un-redacted CASE-STUDY-BILL.md —
-  Bill's call whether to scrub it.)
+- **Privacy:** Bill explicitly directed `docs/bill-live-case.md` be added with the
+  full case study content (health, therapy, finances) as a deliberate build-in-public
+  case study. Done, with a header noting it's a deliberate share and can be redacted
+  on request. A structured working tracker is at `case-files/bill-live-case.md`
+  (gitignored, local); a de-identified fixture at `docs/advocate-core-example.md`.
 - `docs/EVALS/advocate-core-test.md` — 6 verification questions, all pass on trace.
 - Not a SaaS rebuild — thin layer around the existing WINZ module, per Bill's spec.

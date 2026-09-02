@@ -94,25 +94,63 @@ No offline model (dropped 2026-09-01). The tool is given away as text anyone can
 - [ ] Share with community orgs (AAAP, Community Law, food banks, marae)
 - [ ] Later, if funded: a hosted no-login website
 
-## Phase 3B — Advocate Core (thin layer)  ✅ built, verified on trace
+## Phase 3B — Extract Advocate Core from real use
 
-From `docs/CASE-STUDY-BILL.md` + `docs/ADVOCATE-CORE.md`: WINZ Advocate is one
-**module** under a persistent advocate that holds context across a person's whole
-life admin and keeps things moving.
+**Goal:** take the behaviours proven during Bill's live use and separate the general
+advocate behaviour from the WINZ-specific knowledge. The WINZ module remains intact.
+Build a thin Advocate Core above it.
 
-- [x] `core/advocate-core.md` — Core operating instructions (accept unstructured
-  updates, sort into cases, read-first, reuse evidence, ≤3 front burner, carry
-  waiting, name wins, route to modules)
-- [x] `core/case-tracker-template.md` — the case object × N, with the status model
-- [x] `modules/` — WINZ (built, = the knowledge pack) + stubs: housing, health-admin,
-  money-debt, moving-house, providers
+### Advocate Core responsibilities
+
+Each live case should track: goal · current state · evidence held · people/services
+involved · correspondence · waiting on · next action · deadline · wins/completed actions.
+
+### Required behaviour
+
+- Accept unstructured life updates.
+- Sort updates into the correct case.
+- Preserve context across the case.
+- Read new correspondence in context.
+- Reuse existing evidence before asking for more.
+- Distinguish between work the user must do and work that is waiting on someone else.
+- Keep no more than three active priorities.
+- Reduce tasks when the user is overloaded.
+- Record completed actions and visible wins.
+- Route domain-specific questions to the correct module.
+
+### First real test case
+
+Use `docs/bill-live-case.md`. It exercises: housing · disability allowance · health ·
+therapy · KiwiSaver · moving-house preparation · support providers · waiting states ·
+correspondence · progress tracking.
+
+### Verify Phase 3B
+
+The system should be able to answer:
+1. What is currently front burner?
+2. What is waiting on someone else?
+3. What evidence already exists?
+4. What is the single best next action?
+5. What has been completed recently?
+6. What changed when a new email or document arrived?
+
+**Key design rule:** *Never make the user carry context the system can carry for them.*
+
+Do not begin a SaaS rebuild yet. First prove the Advocate Core as a small working
+layer around the existing WINZ module.
+
+### Status (built this session — awaiting Bill's review)
+
+- [x] `core/advocate-core.md`, `core/case-tracker-template.md`
+- [x] `modules/` — WINZ = the existing `knowledge/` (unmoved); stubs for housing,
+  health-admin, money-debt, moving-house, providers
 - [x] `BUILD/advocate-core-full-prompt.md` — Core + tracker + modules + WINZ pack
-- [x] Test fixtures: `case-files/bill-live-case.md` (real, gitignored) +
-  `docs/advocate-core-example.md` (de-identified, public)
-- [x] `docs/EVALS/advocate-core-test.md` — the 6 verification questions, all pass on trace
-- [ ] **Bill:** run it live (`advocate-core-full-prompt.md` + his case file), log gaps
-- [ ] Build out the module stubs as their own knowledge packs (each with COVERAGE + loops)
-- [ ] NOT a SaaS rebuild — prove the thin layer first
+- [x] `docs/advocate-core-example.md` (de-identified fixture); `case-files/bill-live-case.md`
+  (real tracker, gitignored)
+- [x] `docs/EVALS/advocate-core-test.md` — the 6 questions, all pass on trace
+- [x] WINZ untouched: `knowledge/`, wizard, `winz-advocate-full-prompt.md` all still build; wizard test 10/10
+- [ ] **Bill:** review the proposed changes; run the Core live; decide if `knowledge/`
+  ever moves under `modules/winz/` (recommendation: not yet)
 
 ## Phase 6 — Only if it proves out and help arrives
 

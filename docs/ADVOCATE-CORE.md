@@ -1,6 +1,6 @@
 # Advocate Core — the model
 
-The distilled design from [`CASE-STUDY-BILL.md`](CASE-STUDY-BILL.md). This is where
+The distilled design from [`bill-live-case.md`](bill-live-case.md). This is where
 the project is heading: WINZ Advocate becomes **one module** under a persistent
 advocate that holds context and keeps life moving.
 
