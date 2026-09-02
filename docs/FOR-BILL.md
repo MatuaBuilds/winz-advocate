@@ -3,6 +3,13 @@
 The autonomous loop keeps working and drops items here instead of stopping. None of
 this blocks other progress. Do them when you can.
 
+## New — react when you wake up
+
+- [ ] **The wizard is now intent-first** — open
+  https://matuabuilds.github.io/winz-advocate/start.html . First screen asks "what do
+  you need help with?" and only asks the questions that need. Tell me if the intent
+  list is right, or the wording's off.
+
 ## Now
 
 - [ ] **Run the Advocate Core live.** Open claude.ai → new chat → paste
