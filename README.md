@@ -9,8 +9,9 @@ whose ADHD, AuDHD, or trauma makes the system's forms, calls, and deadlines a se
 barrier. **Not Work and Income. Not the government.**
 
 **New here?** Working on the project → [`START-HERE.md`](START-HERE.md) then
-[`HOW-WE-WORK.md`](HOW-WE-WORK.md). Want to use it → [`HOW-TO-USE-THIS.md`](HOW-TO-USE-THIS.md).
-Want to help → [`CONTRIBUTING.md`](CONTRIBUTING.md).
+[`HOW-WE-WORK.md`](HOW-WE-WORK.md). The plan → [`docs/ROADMAP.md`](docs/ROADMAP.md).
+The loops → [`MAINTAINERS.md`](MAINTAINERS.md). Want to use it →
+[`HOW-TO-USE-THIS.md`](HOW-TO-USE-THIS.md). Want to help → [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## Documents
 

@@ -1,8 +1,27 @@
-# Maintainers — how the knowledge base keeps growing
+# Maintainers — the loops that keep the tool improving
 
-The knowledge base is a living brain. This file is the loop that keeps it complete,
-current, and honest. Anyone can run these — Bill, a helper, or a Claude session with
-this repo open.
+The tool gets better because these loops run over it — not because someone rewrites
+it. Anyone can run them — Bill, a helper, or a Claude session with this repo open.
+The version pathway is in `docs/ROADMAP.md`.
+
+## Loops index
+
+| # | Loop | Cadence | Run it |
+|---|---|---|---|
+| 1 | **Completeness** | monthly + quarterly A–Z check | work `knowledge/COVERAGE.md` ✗ items |
+| 2 | **Currency** | monthly + after 1 April | re-fetch each `## Source`; prefer MAP |
+| 3 | **Contributions** | as they arrive | GitHub issues → verify → add |
+| 4 | **Precedents** | quarterly | NZLII → `knowledge/precedents.md` |
+| 5 | **Persona sweep** | quarterly | 20 life situations through the base |
+| 6 | **Institutional watch** | quarterly | Ombudsman/OAG/OIA → `how-winz-operates.md` |
+| 7 | **Quality / evals** | after every change; monthly red-team | `docs/EVALS/RUN.md`; `node docs/EVALS/wizard-test.mjs` |
+| 8 | **Design & usability** | Bill reacts → pass → screenshot | `docs/DESIGN.md` |
+
+Plus the **one-shot knowledge health check** (below) — runs 1, 2, 4, 6 in one pass.
+
+---
+
+The knowledge base is a living brain. This file is the detail behind each loop.
 
 **The sources of truth**, in order:
 1. Legislation — `legislation.govt.nz` (Social Security Act 2018 + regulations + the
