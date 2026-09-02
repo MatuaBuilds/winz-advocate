@@ -75,6 +75,20 @@ const PERSONAS = [
     must:["Accommodation Supplement — check it's at the right rate","Winter Energy"],
     mustNot:["Jobseeker Support","Accommodation Supplement"] },
 
+  { id:"Kayla — 17, left OT care, no income",
+    a:{ urgent:["food"], bigcosts:["none"], income:"nothing", age:"u18", kids:"none",
+        single:"single", housing:"board", housingcost:"180", health:"no", bank:"5",
+        debt:"no", trouble:["none"], resident:"yes", newhere:"yes" },
+    must:["Special Needs Grant — food","Youth Payment / Young Parent Payment"],
+    mustNot:["Jobseeker Support"] },
+
+  { id:"Nan — raising two grandkids",
+    a:{ urgent:["none"], bigcosts:["school"], income:"wages", age:"25_64", kids:"whangai",
+        single:"single", housing:"own", housingcost:"0", health:"no", bank:"800",
+        debt:"no", trouble:["none"], resident:"yes", newhere:"yes" },
+    must:["Unsupported Child's Benefit","Grants for school uniform"],
+    mustNot:["Working for Families","Sole Parent Support"] },
+
   { id:"Rangi — sanctioned",
     a:{ urgent:["none"], bigcosts:["none"], income:"benefit", which_benefit:"jobseeker",
         already:["none"], age:"25_64", kids:"none", single:"single", housing:"board",

@@ -164,7 +164,16 @@
         why:"A WINZ debt can be disputed (whether it exists, the amount, the period). If it came from a WINZ error and you received the money in good faith, it can be written off. And the weekly deductions can be reduced — as low as 50c — so they don't leave you short.",
         doThis:"Ask for a full breakdown of the debt in writing. Then ask for a write-off (if it was their mistake) or for the deductions to be reduced. The AI version has ready templates for all three." };
     },
+    function youthPayment(a){
+      if(onBenefit(a)) return null;
+      if(a.age!=="u18" && a.age!=="18_19") return null;
+      return { level: a.age==="u18" ? "yes" : "maybe", name:"Youth Payment / Young Parent Payment",
+        why:"You're 16–19 and can't be supported by your parents. It's run through a Youth Service provider (a coach), and some of the money is managed for you at first — you get more control as you meet your obligations."
+          + (a.age==="18_19" ? " (At 18–19, Jobseeker Support may fit instead — Youth Payment is mainly for those still studying toward NCEA level 2.)" : ""),
+        doThis:"Phone 0800 559 009 and ask for Youth Service, or apply on MyMSD. You'll need to be in education or training toward NCEA level 2." };
+    },
     function mainBenefit(a){
+      if(a.age==="u18") return null; // youthPayment covers under-18
       if(onBenefit(a)){
         if(a.which_benefit==="notsure" || a.which_benefit==="other")
           return { level:"maybe", name:"Check you're on the right benefit", why:"Being on the wrong benefit can cost you money — Supported Living Payment pays more than Jobseeker, for example.", doThis:"Ask WINZ which benefit you're on and whether a different one fits your situation better." };

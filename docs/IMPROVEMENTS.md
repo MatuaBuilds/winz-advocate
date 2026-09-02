@@ -45,6 +45,17 @@ First quick run of P1–P10 against pack @ commit 5fbd491.
 **Re-check:** the 4 fixes are additive (new files) or a small prompt addition — no
 regression risk to the Ship personas. Full re-run due after the next batch of changes.
 
+### 2026-09-01 — v1.1 Loop 1 (knowledge) + wizard youth handling
+
+- Added 5 entitlement files (Training Incentive Allowance, Youth/Young Parent Payment,
+  NZ Super, student support, caring-for-someone-elses-child). No AI-version eval
+  regression expected (additive); full P1–P10 re-run still pending.
+- **Wizard fix:** an under-18 was being shown "Jobseeker Support" (min age 18).
+  Added a `youthPayment` rule and `mainBenefit` now returns null for `u18`.
+- Wizard personas added: Kayla (17, left OT care → Youth Payment, not Jobseeker),
+  Nan (grandparent raising grandkids → UCB + school-costs grant, not WFF/SPS).
+- **Wizard test: 12 pass, 0 fail.**
+
 ### 2026-09-01 — wizard v2 + automatic wizard test
 
 - Wizard logic moved to `wizard-logic.js` (testable outside the browser).
