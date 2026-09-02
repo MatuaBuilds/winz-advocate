@@ -43,7 +43,7 @@ ready-to-send email. Passes the Sam + Ben + wizard suites.
   caring-for-someone-elses-child (UCB/Orphan's + carer allowances)
 - [x] Loop 7: AI-version eval P1–P10 + red-team — 10 Ship / 0 Fix, no holes (docs/EVALS/ai-version-run-2026-09-01.md); wizard suite 12/12
 - [x] Wizard: wording pass (standardised "the full version" references; youth wording)
-- [ ] Loop 8: design pass on the wizard + landing (Claude iterates; Bill reacts when he wants)
+- [x] Loop 8: design pass done (square multi-selects, tighter spacing, disabled Next until a pick). Bill reacts on his own time.
 - [ ] Loop 3: test with 3 real people (consent, Bill beside them) → `docs/OUTCOMES.md` — in `FOR-BILL.md`
 **Done when:** no ✗ in COVERAGE common tiers · eval suites green · 3 real people
 through it · fixes logged in `IMPROVEMENTS.md`.
